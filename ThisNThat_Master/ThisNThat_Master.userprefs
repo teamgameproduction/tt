@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\TT_Scripts\WeightSense.cs">
+    <Files>
+      <File FileName="Assets\TT_Scripts\FlapReset.cs" Line="39" Column="41" />
+      <File FileName="Assets\TT_Scripts\Controller.cs" Line="1" Column="1" />
+      <File FileName="Assets\TT_Scripts\BluePickup.cs" Line="1" Column="1" />
+      <File FileName="Assets\TT_Scripts\Digable.cs" Line="1" Column="1" />
+      <File FileName="Assets\TT_Scripts\WeightSense.cs" Line="39" Column="52" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

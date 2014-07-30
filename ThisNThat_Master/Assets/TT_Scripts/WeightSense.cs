@@ -19,11 +19,11 @@ public class WeightSense : MonoBehaviour
 	{
 		if (TotalMass < 3)
 		{
-			gameObject.transform.position = new Vector3 (gameObject.transform.position.x, PushedReset, gameObject.transform.position.z);
+			//gameObject.transform.position = new Vector3 (gameObject.transform.position.x, PushedReset, gameObject.transform.position.z);
 		}
 		else
 		{
-			gameObject.transform.position = new Vector3 (gameObject.transform.position.x, PushedDown, gameObject.transform.position.z);
+			//gameObject.transform.position = new Vector3 (gameObject.transform.position.x, PushedDown, gameObject.transform.position.z);
 		}
 	
 	}
