@@ -12,6 +12,7 @@ public class CS_EnviroMovement : MonoBehaviour {
 
 	//Bools to designate type of movement
 	public bool MovementXYZ;
+	public bool RotationXYZ;
 	public bool Oscillating;
 	public bool OscillatingVertical;
 	public bool DestroyOnCollision;
@@ -33,6 +34,10 @@ public class CS_EnviroMovement : MonoBehaviour {
 	//Vector 3 Movement
 	public Vector3 MoveDirection;
 
+	public Vector3 RotateDirection;
+
+
+
 
 	
 	
@@ -49,6 +54,10 @@ public class CS_EnviroMovement : MonoBehaviour {
 		//Movement in the xyz directions
 		if (TriggerBool.collision == true && MovementXYZ == true){
 			MoveXYZ();
+		}
+
+		if (TriggerBool.collision == true && RotationXYZ == true){
+			RotateXYZ();
 		}
 
 		//Everything Below  in the Update is for Oscillation
@@ -149,6 +158,10 @@ public class CS_EnviroMovement : MonoBehaviour {
 	//Function to move on the xyz axis
 	void MoveXYZ(){
 		this.transform.Translate (MoveDirection.x * Time.deltaTime,MoveDirection.y * Time.deltaTime, MoveDirection.z * Time.deltaTime);
+	}
+
+	void RotateXYZ(){
+		transform.Rotate(RotateDirection.x * Time.deltaTime,RotateDirection.y * Time.deltaTime,RotateDirection.z * Time.deltaTime);
 	}
 
 	void OnCollisionEnter (Collision other)
