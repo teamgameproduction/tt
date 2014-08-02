@@ -39,25 +39,35 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>D:/Program Files/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>D:/Program Files/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\TT_Scripts\BluePickup.cs" />
+     <Compile Include="Assets\TT_Scripts\Bounce.cs" />
      <Compile Include="Assets\TT_Scripts\CS_RenderDigProx.cs" />
      <Compile Include="Assets\TT_Scripts\CS_RenderProx.cs" />
      <Compile Include="Assets\TT_Scripts\CharacterControl\CS_BluePickup.cs" />
      <Compile Include="Assets\TT_Scripts\CharacterControl\CS_Controller.cs" />
      <Compile Include="Assets\TT_Scripts\CharacterControl\CS_FlapReset.cs" />
      <Compile Include="Assets\TT_Scripts\CharacterControl\CS_RedDig.cs" />
+     <Compile Include="Assets\TT_Scripts\Controller.cs" />
+     <Compile Include="Assets\TT_Scripts\Digable.cs" />
      <Compile Include="Assets\TT_Scripts\EnviroScripts\CS_Bounce.cs" />
      <Compile Include="Assets\TT_Scripts\EnviroScripts\CS_Digable.cs" />
      <Compile Include="Assets\TT_Scripts\EnviroScripts\CS_Updraft.cs" />
      <Compile Include="Assets\TT_Scripts\EnviroScripts\CS_WeightSense.cs" />
+     <Compile Include="Assets\TT_Scripts\FlapReset.cs" />
      <Compile Include="Assets\TT_Scripts\Movement\CS_EnviroMovement.cs" />
      <Compile Include="Assets\TT_Scripts\Movement\CS_GenericTrigger.cs" />
+     <Compile Include="Assets\TT_Scripts\RedDig.cs" />
+     <Compile Include="Assets\TT_Scripts\RenderDigProx.cs" />
+     <Compile Include="Assets\TT_Scripts\RenderProx.cs" />
+     <Compile Include="Assets\TT_Scripts\Updraft.cs" />
+     <Compile Include="Assets\TT_Scripts\WeightSense.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
