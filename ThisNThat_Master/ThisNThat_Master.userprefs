@@ -1,10 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\TT_Scripts\Movement\CS_EnviroMovement.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\TT_Scripts\BluePickup.cs">
     <Files>
-      <File FileName="Assets\TT_Scripts\Movement\CS_GenericTrigger.cs" Line="35" Column="4" />
-      <File FileName="Assets\TT_Scripts\Movement\CS_EnviroMovement.cs" Line="26" Column="36" />
-      <File FileName="Assets\TT_Scripts\EnviroScripts\CS_Digable.cs" Line="20" Column="25" />
+      <File FileName="Assets\TT_Scripts\Movement\CS_GenericTrigger.cs" Line="1" Column="1" />
+      <File FileName="Assets\TT_Scripts\Movement\CS_EnviroMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\TT_Scripts\EnviroScripts\CS_Digable.cs" Line="1" Column="1" />
+      <File FileName="Assets\TT_Scripts\Controller.cs" Line="1" Column="1" />
+      <File FileName="Assets\TT_Scripts\BluePickup.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
