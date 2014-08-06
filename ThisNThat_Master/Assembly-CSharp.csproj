@@ -46,16 +46,17 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Character\CS_AnimationController.cs" />
      <Compile Include="Assets\Scripts\Character\CS_BluePickup.cs" />
      <Compile Include="Assets\Scripts\Character\CS_Controller.cs" />
      <Compile Include="Assets\Scripts\Character\CS_FlapReset.cs" />
      <Compile Include="Assets\Scripts\Character\CS_RedDig.cs" />
      <Compile Include="Assets\Scripts\Efficiency\CS_EnviroMovement.cs" />
+     <Compile Include="Assets\Scripts\Efficiency\CS_RenderDigProx.cs" />
      <Compile Include="Assets\Scripts\Efficiency\CS_RenderProx.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_Bounce.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_Digable.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_GenericTrigger.cs" />
-     <Compile Include="Assets\Scripts\Environment\CS_RenderDigProx.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_Updraft.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_WeightSense.cs" />
      <Compile Include="Assets\Scripts\GUI\HUD.cs" />

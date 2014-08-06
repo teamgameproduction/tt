@@ -3,28 +3,38 @@ using System.Collections;
 
 public class CS_Digable : MonoBehaviour 
 {
-						public bool 		IsRedTouching = false;
-						public  CS_Controller 	controller;
+						public bool 			IsRedTouching = false;
+	[HideInInspector]	public  CS_Controller 	controller;
+	[HideInInspector]	public  CS_BluePickup 	bluePickup;
 
 	// Use this for initialization
 	void Start () 
 	{
 		controller = GameObject.Find ("CharacterController").GetComponent< CS_Controller>();
+		bluePickup = GameObject.Find ("characterBlue").GetComponent< CS_BluePickup>();
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		if (Input.GetKeyDown ("f") && IsRedTouching == true && controller.IsCharacterRed == true)
+		/*if (Input.GetKeyDown ("r") && IsRedTouching == true && controller.IsCharacterRed == true ||
+		    Input.GetKeyDown ("r") && IsRedTouching == true && bluePickup.PickedUp == true)
+		{
+			Destroy (gameObject);
+		}*/
+	}
+
+	void OnMouseDown()
+	{
+		if (IsRedTouching == true && controller.IsCharacterRed == true || IsRedTouching == true && bluePickup.PickedUp == true)
 		{
 			Destroy (gameObject);
 		}
-
 	}
 
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.gameObject.tag == "Player") 
+		if (other.gameObject.name == "characterRed") 
 		{
 			//Debug.Log ("I dig that");
 			IsRedTouching = true;
@@ -33,7 +43,7 @@ public class CS_Digable : MonoBehaviour
 	
 	void OnTriggerExit(Collider other)
 	{
-		if (other.gameObject.tag == "Player") 
+		if (other.gameObject.name == "characterRed") 
 		{
 			IsRedTouching = false;
 		}

@@ -117,7 +117,8 @@ public class CS_Controller : MonoBehaviour
 			CameraRed.camera.enabled = true;
 
 			//Resets Red if he is being carried by Blue
-			if (bluePickup.PickedUp == true){
+			if (bluePickup.PickedUp == true)
+			{
 				bluePickup.PickedUpObject.rigidbody.isKinematic = false;
 				bluePickup.PickedUp = false;
 				gmcharacterBlue.rigidbody.mass = gmcharacterBlue.rigidbody.mass - bluePickup.PickedUpObject.rigidbody.mass;
@@ -150,7 +151,7 @@ public class CS_Controller : MonoBehaviour
 
 	}
 
-	//Attack of the LERPS!!!
+	//ICE MOVEMENT
 //-------------------------------------------------------------------------------------------------------
 	void LerpPos()
 	{

@@ -1,10 +1,8 @@
 using UnityEngine;
 using System.Collections;
 
-public class CS_BluePickup : MonoBehaviour 
+public class CS_BluePickup : MonoBehaviour //This script allows Blue to pick up Red
 {
-
-						//This script allows Blue to pick up Red
 						public bool PickupRange = false;
 						public bool PickedUp = false;
 						public GameObject PickedUpObject;
@@ -81,7 +79,6 @@ public class CS_BluePickup : MonoBehaviour
 		{
 			PickupRange = true;
 			PickedUpObject = other.gameObject;
-
 		}
 	}
 
