@@ -7,7 +7,7 @@ public class CS_BluePickup : MonoBehaviour //This script allows Blue to pick up 
 						public bool PickedUp = false;
 						public GameObject PickedUpObject;
 
-	[HideInInspector]	public  CS_Controller 	controller;
+	[HideInInspector]	public CS_Controller controller;
 						public GameObject gmcharacterRed;
 						//public GameObject gmcharacterBlue;
 
