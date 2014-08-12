@@ -3,9 +3,9 @@ using System.Collections;
 
 public class Inventory : MonoBehaviour 
 {
-public static int pickupGauge = 0;
-
-
+	public static int pickupGauge = 0;
+	
+	
 	// Use this for initialization
 	void Start () 
 	{
@@ -15,9 +15,9 @@ public static int pickupGauge = 0;
 	// Update is called once per frame
 	void Update () 
 	{
-	
+		
 	}
-
+	
 	void GenericPickup()
 	{
 		pickupGauge++;

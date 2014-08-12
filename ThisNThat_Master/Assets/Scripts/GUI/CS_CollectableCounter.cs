@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-	[ExecuteInEditMode]
 
 public class CS_CollectableCounter : MonoBehaviour 
 {
@@ -9,6 +8,8 @@ public class CS_CollectableCounter : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
+		//Set the coiin count text
 		guiText.text = "Stuff x" + collectableCounter;
+
 	}
 }
