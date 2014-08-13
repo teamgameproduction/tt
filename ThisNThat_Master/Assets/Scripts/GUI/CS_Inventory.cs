@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Inventory : MonoBehaviour 
+public class CS_Inventory : MonoBehaviour 
 {
 	public static int pickupGauge = 0;
 	
