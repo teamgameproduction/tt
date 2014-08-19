@@ -48,7 +48,7 @@ public class CS_BluePickup : MonoBehaviour //This script allows Blue to pick up 
 		//CPRy = gmcharacterRed.transform.position.y;
 		//CPBy -= CPRy = yDifference;
 		//print (yDifference);
-		if (Input.GetKeyDown("f") && PickupRange == true && controller.IsCharacterRed == false && PickedUp == false)
+		if (Input.GetKeyDown("f") && PickupRange == true && controller.IsCharacterRed == 2 && PickedUp == false)
 		{
 			//gmcharacterRed.transform.parent=gameObject.transform;
 			PickedUp = true;

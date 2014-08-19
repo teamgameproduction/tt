@@ -29,7 +29,7 @@ public class CS_Bounce : MonoBehaviour
 		{
 			print ("get ready to bounce");
 
-			if (controller.IsCharacterRed == true)
+			if (controller.IsCharacterRed == 1)
 			{
 				gmcharacterRed.rigidbody.AddForce (Vector3.up * RedBounceForce);
 			}

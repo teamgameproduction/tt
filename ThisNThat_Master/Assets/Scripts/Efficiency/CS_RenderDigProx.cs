@@ -28,7 +28,7 @@ public class CS_RenderDigProx : MonoBehaviour
 	void Update () 
 	{
 		
-		if (controller.IsCharacterRed == true)
+		if (controller.IsCharacterRed == 1)
 		{
 			CharacterXpos = gmcharacterRed.transform.position.x;
 		}

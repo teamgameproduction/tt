@@ -25,7 +25,7 @@ public class CS_FlapReset : MonoBehaviour
 	{
 		if (other.gameObject.tag == "Ground" || other.gameObject.tag == "Player") 
 		{
-			if (controller.IsCharacterRed == true)
+			if (controller.IsCharacterRed == 1)
 			{
 				//if the character is red, reset red's available jumps
 				controller.RedFlaps = controller.RedMaxFlaps;
@@ -38,7 +38,7 @@ public class CS_FlapReset : MonoBehaviour
 		}
 		if (other.gameObject.tag == "Slippery") 
 		{
-			if (controller.IsCharacterRed == true)
+			if (controller.IsCharacterRed == 1)
 			{
 				//if the character is red, reset red's available jumps
 				controller.RedFlaps = controller.RedMaxFlaps;
@@ -57,7 +57,7 @@ public class CS_FlapReset : MonoBehaviour
 	void OnCollisionExit(Collision other)
 	{
 		Grounded = false;
-		if(controller.IsCharacterRed == true)
+		if(controller.IsCharacterRed == 1)
 		{
 			controller.RedOnSlip = false;
 		}

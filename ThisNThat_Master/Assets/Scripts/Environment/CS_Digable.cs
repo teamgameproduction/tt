@@ -26,7 +26,7 @@ public class CS_Digable : MonoBehaviour
 
 	void OnMouseDown()
 	{
-		if (IsRedTouching == true && controller.IsCharacterRed == true || IsRedTouching == true && bluePickup.PickedUp == true)
+		if (IsRedTouching == true && controller.IsCharacterRed == 1 || IsRedTouching == true && bluePickup.PickedUp == true)
 		{
 			Destroy (gameObject);
 		}

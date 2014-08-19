@@ -37,14 +37,14 @@ public class CS_Updraft : MonoBehaviour
 
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.gameObject.tag == "Player" && controller.IsCharacterRed == false) 
+		if (other.gameObject.tag == "Player" && controller.IsCharacterRed == 2) 
 		{
 			IsInUpdraft = true;
 		}
 	}
 
 	void OnTriggerExit(Collider other){
-		if (other.gameObject.tag == "Player" && controller.IsCharacterRed == false) 
+		if (other.gameObject.tag == "Player" && controller.IsCharacterRed == 2) 
 		{
 			IsInUpdraft = false;
 		}

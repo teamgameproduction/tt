@@ -4,7 +4,7 @@ using System.Collections;
 public class CS_Triggered_Lights : MonoBehaviour 
 {
 	public bool touch;
-	public bool lightInteract = true;
+	public bool lightInteract;
 	
 	
 	
@@ -12,6 +12,7 @@ public class CS_Triggered_Lights : MonoBehaviour
 	void Start () 
 	{
 		touch = false;
+		lightInteract = false;
 		gameObject.light.intensity = 6;
 		
 	}
@@ -41,11 +42,11 @@ public class CS_Triggered_Lights : MonoBehaviour
 	
 	void OnTriggerEnter(Collider other)
 	{
-		
+		if (other.gameObject.tag == "Player")
+
 		touch = true;
+		lightInteract = true;
 		print ("I Work Here!");
-		
-		if (!other.CompareTag ("Player"))
 			
 		{
 			return;
@@ -56,6 +57,7 @@ public class CS_Triggered_Lights : MonoBehaviour
 	{
 		if(other.gameObject.tag == "Player")
 		{
+			lightInteract = false;
 			touch = false;
 		}
 	}
@@ -65,7 +67,6 @@ public class CS_Triggered_Lights : MonoBehaviour
 		
 		yield return new WaitForSeconds(0.1f);
 		lightInteract = true;
-		print ("HI");
 	}
 	
 }

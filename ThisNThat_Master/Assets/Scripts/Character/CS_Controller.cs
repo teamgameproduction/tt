@@ -4,7 +4,7 @@ using System.Collections;
 public class CS_Controller : MonoBehaviour 
 {
 						//CHARACTER
-	[HideInInspector]	public bool 		IsCharacterRed = true;
+	[HideInInspector]	public int 			IsCharacterRed = 1;
 	[HideInInspector]	public GameObject 	gmcharacterRed;
 	[HideInInspector]	public GameObject 	gmcharacterBlue;
 	[HideInInspector]	private bool 		PlayedOnce = false ;
@@ -31,6 +31,12 @@ public class CS_Controller : MonoBehaviour
 	[HideInInspector]	public int 			BlueFlaps = 0;
 	[HideInInspector]	public int 			RedFlaps = 0;
 	[HideInInspector]	public float 		BlueFlapRestoreForce = 300.0f;
+						
+						//Slow Movement
+						public float    	slowMove;
+						public bool			touch = false;
+
+						
 
 						//PICKUP
 	[HideInInspector]	public  CS_BluePickup bluePickup;
@@ -50,14 +56,16 @@ public class CS_Controller : MonoBehaviour
 
 		//Set Red as default character
 		gmcharacterRed.transform.parent = gameObject.transform;
-		IsCharacterRed = true;
+		IsCharacterRed = 1;
+
+		slowMove = 2.0f;
 	}
 	
 	void Update () 
 	{
 		//MOVEMENT
 //-------------------------------------------------------------------------------------------------------
-		if (RedOnSlip == true && IsCharacterRed == true || BlueOnSlip == true && IsCharacterRed == false)
+		if (RedOnSlip == true && IsCharacterRed == 1 || BlueOnSlip == true && IsCharacterRed == 2)
 		{
 			if (Input.GetAxis("Horizontal") > 0.0f)
 			{
@@ -77,7 +85,7 @@ public class CS_Controller : MonoBehaviour
 		}
 		else
 		{
-			if (Input.GetAxis("Horizontal") != 0.0f)
+			if (Input.GetAxis("Horizontal") != 0.0f && IsCharacterRed != 3)
 			{
 				MoveDirection = Input.GetAxisRaw("Horizontal");
 				this.transform.Translate((MoveDirection * Speed) * Time.deltaTime, 0, 0);
@@ -87,14 +95,14 @@ public class CS_Controller : MonoBehaviour
 
 		//SWITCH CHARACTERS
 //-------------------------------------------------------------------------------------------------------
-		if (Input.GetKeyDown("e") && IsCharacterRed == true){
+		if (Input.GetKeyDown("e") && IsCharacterRed == 1){
 
 			//Detaches children from the controller
 			transform.DetachChildren();
 
 			//Attaches character 2 to the controller
 			gmcharacterBlue.transform.parent=gameObject.transform;
-			IsCharacterRed = false;
+			IsCharacterRed = 2;
 			//PlayedOnce is needed to stop the script from reattaching to character 1
 			PlayedOnce = true;
 			//switches camera
@@ -105,12 +113,12 @@ public class CS_Controller : MonoBehaviour
 
 		//ATTACH CHARACTERS
 //-------------------------------------------------------------------------------------------------------
-		if (Input.GetKeyDown("e") && IsCharacterRed == false && PlayedOnce == false)
+		if (Input.GetKeyDown("e") && IsCharacterRed == 2 && PlayedOnce == false)
 		{
 			transform.DetachChildren();
 
 			gmcharacterRed.transform.parent=gameObject.transform;
-			IsCharacterRed = true;
+			IsCharacterRed = 1;
 
 			//Switches camera
 			CameraBlue.camera.enabled = false;
@@ -136,12 +144,12 @@ public class CS_Controller : MonoBehaviour
 //-------------------------------------------------------------------------------------------------------
 		if (Input.GetButtonDown ("Jump")) 
 		{
-			if (IsCharacterRed == true && RedFlaps > 0)
+			if (IsCharacterRed == 1 && RedFlaps > 0)
 			{
 				RedFlap();
 				RedFlaps --;
 			}
-			else if (IsCharacterRed == false && BlueFlaps > 0) 
+			else if (IsCharacterRed == 2 && BlueFlaps > 0) 
 			{
 				BlueFlap ();
 				BlueFlaps --;
@@ -178,6 +186,18 @@ public class CS_Controller : MonoBehaviour
 	{
 		gmcharacterBlue.rigidbody.AddForce (Vector3.up * BlueFlapForce);
 	}
+
+
+//-------------------------------------------------------------------------------------------------------
+
+	//Slow Movement
+//-------------------------------------------------------------------------------------------------------
+	void OnTriggerEnter(Collider other)
+	{
+
+
+	}
+
 //-------------------------------------------------------------------------------------------------------
 
 	//Sugar

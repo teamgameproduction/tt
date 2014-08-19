@@ -26,7 +26,7 @@ public class CS_RenderProx : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		if (controller.IsCharacterRed == true)
+		if (controller.IsCharacterRed == 1)
 		{
 			CharacterXpos = gmcharacterRed.transform.position.x;
 		}

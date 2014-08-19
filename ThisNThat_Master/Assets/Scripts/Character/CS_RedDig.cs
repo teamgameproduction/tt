@@ -15,7 +15,7 @@ public class CS_RedDig : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		if (Input.GetKeyDown ("f") && controller.IsCharacterRed == true)
+		if (Input.GetKeyDown ("f") && controller.IsCharacterRed == 1)
 		{
 			Destroy (TriggeringDirt);
 		}
