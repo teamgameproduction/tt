@@ -16,9 +16,7 @@ public class CS_GenericTrigger : MonoBehaviour
 	void Update () 
 	{
 		if (timerDuration == 0)
-		{
-
-		}
+		{}
 		else if (collision && timerDuration > 0f)
 		{
 			timerDuration -= Time.deltaTime;
