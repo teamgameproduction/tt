@@ -41,6 +41,10 @@ public class CS_Controller : MonoBehaviour
 						//PICKUP
 	[HideInInspector]	public  CS_BluePickup bluePickup;
 
+
+	public bool RedIsFacingRight = true;
+	public bool BlueIsFacingRight = true;
+
 	void Start () 
 	{
 		//Finds the two characters and the controller and labels them
@@ -106,8 +110,8 @@ public class CS_Controller : MonoBehaviour
 			//PlayedOnce is needed to stop the script from reattaching to character 1
 			PlayedOnce = true;
 			//switches camera
-			CameraRed.camera.enabled = false;
-			CameraBlue.camera.enabled = true;
+			//CameraRed.camera.enabled = false;
+			//CameraBlue.camera.enabled = true;
 		}
 //-------------------------------------------------------------------------------------------------------
 
@@ -121,8 +125,8 @@ public class CS_Controller : MonoBehaviour
 			IsCharacterRed = 1;
 
 			//Switches camera
-			CameraBlue.camera.enabled = false;
-			CameraRed.camera.enabled = true;
+			//CameraBlue.camera.enabled = false;
+			//CameraRed.camera.enabled = true;
 
 			//Resets Red if he is being carried by Blue
 			if (bluePickup.PickedUp == true)
@@ -157,6 +161,17 @@ public class CS_Controller : MonoBehaviour
 		}
 //-------------------------------------------------------------------------------------------------------
 
+		//Turn the character
+		if (IsCharacterRed == 1){
+			if (Input.GetKeyDown ("d") && RedIsFacingRight == false){
+				gmcharacterRed.transform.rotation = Quaternion.AngleAxis(0, Vector3.up);
+				RedIsFacingRight = true;
+			}
+			if (Input.GetKeyDown ("a") && RedIsFacingRight == true){
+				gmcharacterRed.transform.rotation = Quaternion.AngleAxis(180, Vector3.up);
+				RedIsFacingRight = false;
+			}
+		}
 	}
 
 		//ICE MOVEMENT
