@@ -56,12 +56,11 @@
      <Compile Include="Assets\Scripts\Character\CS_Controller.cs" />
      <Compile Include="Assets\Scripts\Character\CS_FlapReset.cs" />
      <Compile Include="Assets\Scripts\Character\CS_RedDig.cs" />
+     <Compile Include="Assets\Scripts\Efficiency\CS_EnviroMovement.cs" />
      <Compile Include="Assets\Scripts\Efficiency\CS_RenderDigProx.cs" />
      <Compile Include="Assets\Scripts\Efficiency\CS_RenderProx.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_Bounce.cs" />
-     <Compile Include="Assets\Scripts\Environment\CS_BreakablePlatform.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_Digable.cs" />
-     <Compile Include="Assets\Scripts\Environment\CS_EnviroMovement.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_GenericTrigger.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_Kill.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_Timed_Kill_Platform.cs" />
