@@ -1,0 +1,628 @@
+fileFormatVersion: 2
+guid: 854e1d5990ff7cf4e8fc0d7641b425c0
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: BE_Arm_L
+    100002: BE_Arm_R
+    100004: BE_Leg_L
+    100006: BE_Leg_R
+    100008: BE_Spine
+    100010: BN_Arm1_L
+    100012: BN_Arm1_R
+    100014: BN_Belly
+    100016: BN_Foot1_L
+    100018: BN_Foot1_R
+    100020: BN_Foot2_L
+    100022: BN_Foot2_R
+    100024: BN_Hand1_L
+    100026: BN_Hand1_R
+    100028: BN_Hand2_L
+    100030: BN_Hand2_R
+    100032: BN_Head
+    100034: BN_Leg1_L
+    100036: BN_Leg1_R
+    100038: BN_Leg2_L
+    100040: BN_Leg2_R
+    100042: BN_Leg3_L
+    100044: BN_Leg3_R
+    100046: BN_pelvis
+    100048: BN_root
+    100050: BN_Shoulder_L
+    100052: BN_Shoulder_R
+    100054: BN_Spine1
+    100056: BN_Spine2
+    100058: BN_Spine3
+    100060: BN_Spine4
+    100062: //RootNode
+    100064: Red_mesh
+    400000: BE_Arm_L
+    400002: BE_Arm_R
+    400004: BE_Leg_L
+    400006: BE_Leg_R
+    400008: BE_Spine
+    400010: BN_Arm1_L
+    400012: BN_Arm1_R
+    400014: BN_Belly
+    400016: BN_Foot1_L
+    400018: BN_Foot1_R
+    400020: BN_Foot2_L
+    400022: BN_Foot2_R
+    400024: BN_Hand1_L
+    400026: BN_Hand1_R
+    400028: BN_Hand2_L
+    400030: BN_Hand2_R
+    400032: BN_Head
+    400034: BN_Leg1_L
+    400036: BN_Leg1_R
+    400038: BN_Leg2_L
+    400040: BN_Leg2_R
+    400042: BN_Leg3_L
+    400044: BN_Leg3_R
+    400046: BN_pelvis
+    400048: BN_root
+    400050: BN_Shoulder_L
+    400052: BN_Shoulder_R
+    400054: BN_Spine1
+    400056: BN_Spine2
+    400058: BN_Spine3
+    400060: BN_Spine4
+    400062: //RootNode
+    400064: Red_mesh
+    2300000: BN_Belly
+    2300002: BN_Foot1_L
+    2300004: BN_Foot1_R
+    2300006: BN_Foot2_L
+    2300008: BN_Foot2_R
+    2300010: BN_Hand1_L
+    2300012: BN_Hand1_R
+    2300014: BN_Hand2_L
+    2300016: BN_Hand2_R
+    2300018: BN_Head
+    2300020: BN_pelvis
+    2300022: BN_root
+    3300000: BN_Belly
+    3300002: BN_Foot1_L
+    3300004: BN_Foot1_R
+    3300006: BN_Foot2_L
+    3300008: BN_Foot2_R
+    3300010: BN_Hand1_L
+    3300012: BN_Hand1_R
+    3300014: BN_Hand2_L
+    3300016: BN_Hand2_R
+    3300018: BN_Head
+    3300020: BN_pelvis
+    3300022: BN_root
+    4300000: Red_mesh
+    4300002: BN_root
+    4300004: BN_pelvis
+    4300006: BN_Belly
+    4300008: BN_Head
+    4300010: BN_Hand1_L
+    4300012: BN_Hand2_L
+    4300014: BN_Hand1_R
+    4300016: BN_Hand2_R
+    4300018: BN_Foot1_L
+    4300020: BN_Foot2_L
+    4300022: BN_Foot1_R
+    4300024: BN_Foot2_R
+    7400000: Idle
+    7400002: Run
+    7400004: Jump
+    7400006: Falling
+    7400008: SmashDig
+    9500000: //RootNode
+    13700000: Red_mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 109
+      lastFrame: 378
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BN_root
+        weight: 1
+      - path: BN_root/BN_pelvis
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Belly
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L/BN_Leg2_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Foot1_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Foot1_L/BN_Foot2_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R/BN_Leg2_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Foot1_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Foot1_R/BN_Foot2_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BN_Arm1_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BN_Arm1_L/BE_Arm_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BN_Arm1_L/BE_Arm_L/BN_Hand1_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BN_Arm1_L/BE_Arm_L/BN_Hand1_L/BN_Hand2_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BN_Arm1_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BN_Arm1_R/BE_Arm_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BN_Arm1_R/BE_Arm_R/BN_Hand1_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BN_Arm1_R/BE_Arm_R/BN_Hand1_R/BN_Hand2_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Spine3
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BN_Spine4
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BN_Spine4/BE_Spine
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BN_Spine4/BE_Spine/BN_Head
+        weight: 1
+      - path: Red_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BN_root
+        weight: 1
+      - path: BN_root/BN_pelvis
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Belly
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L/BN_Leg2_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Foot1_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Foot1_L/BN_Foot2_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R/BN_Leg2_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Foot1_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Foot1_R/BN_Foot2_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BN_Arm1_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BN_Arm1_L/BE_Arm_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BN_Arm1_L/BE_Arm_L/BN_Hand1_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BN_Arm1_L/BE_Arm_L/BN_Hand1_L/BN_Hand2_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BN_Arm1_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BN_Arm1_R/BE_Arm_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BN_Arm1_R/BE_Arm_R/BN_Hand1_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BN_Arm1_R/BE_Arm_R/BN_Hand1_R/BN_Hand2_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Spine3
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BN_Spine4
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BN_Spine4/BE_Spine
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BN_Spine4/BE_Spine/BN_Head
+        weight: 1
+      - path: Red_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Jump
+      takeName: Take 001
+      firstFrame: 30
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BN_root
+        weight: 1
+      - path: BN_root/BN_pelvis
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Belly
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L/BN_Leg2_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Foot1_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Foot1_L/BN_Foot2_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R/BN_Leg2_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Foot1_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Foot1_R/BN_Foot2_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BN_Arm1_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BN_Arm1_L/BE_Arm_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BN_Arm1_L/BE_Arm_L/BN_Hand1_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BN_Arm1_L/BE_Arm_L/BN_Hand1_L/BN_Hand2_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BN_Arm1_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BN_Arm1_R/BE_Arm_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BN_Arm1_R/BE_Arm_R/BN_Hand1_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BN_Arm1_R/BE_Arm_R/BN_Hand1_R/BN_Hand2_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Spine3
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BN_Spine4
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BN_Spine4/BE_Spine
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BN_Spine4/BE_Spine/BN_Head
+        weight: 1
+      - path: Red_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Falling
+      takeName: Take 001
+      firstFrame: 60
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BN_root
+        weight: 1
+      - path: BN_root/BN_pelvis
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Belly
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L/BN_Leg2_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Foot1_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Foot1_L/BN_Foot2_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R/BN_Leg2_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Foot1_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Foot1_R/BN_Foot2_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BN_Arm1_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BN_Arm1_L/BE_Arm_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BN_Arm1_L/BE_Arm_L/BN_Hand1_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BN_Arm1_L/BE_Arm_L/BN_Hand1_L/BN_Hand2_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BN_Arm1_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BN_Arm1_R/BE_Arm_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BN_Arm1_R/BE_Arm_R/BN_Hand1_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BN_Arm1_R/BE_Arm_R/BN_Hand1_R/BN_Hand2_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Spine3
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BN_Spine4
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BN_Spine4/BE_Spine
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BN_Spine4/BE_Spine/BN_Head
+        weight: 1
+      - path: Red_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: SmashDig
+      takeName: Take 001
+      firstFrame: 81
+      lastFrame: 108
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BN_root
+        weight: 1
+      - path: BN_root/BN_pelvis
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Belly
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L/BN_Leg2_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Foot1_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Foot1_L/BN_Foot2_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R/BN_Leg2_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Foot1_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Foot1_R/BN_Foot2_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BN_Arm1_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BN_Arm1_L/BE_Arm_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BN_Arm1_L/BE_Arm_L/BN_Hand1_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BN_Arm1_L/BE_Arm_L/BN_Hand1_L/BN_Hand2_L
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BN_Arm1_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BN_Arm1_R/BE_Arm_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BN_Arm1_R/BE_Arm_R/BN_Hand1_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BN_Arm1_R/BE_Arm_R/BN_Hand1_R/BN_Hand2_R
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Spine3
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BN_Spine4
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BN_Spine4/BE_Spine
+        weight: 1
+      - path: BN_root/BN_pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BN_Spine4/BE_Spine/BN_Head
+        weight: 1
+      - path: Red_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
