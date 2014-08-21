@@ -12,14 +12,21 @@ public class CS_LevelSelect : MonoBehaviour
 	[HideInInspector]	public Vector3 		offset_03;
 						public enum 		LevelType {Null, Cave, Arctic, Forest, Volcano, Sub1, Sub2, Sub3}
 						public LevelType 	Level;
-						public bool			buttonsAreUp = false;			
+						public bool			buttonsAreUp = true;
 						public float		subButtonRiseSpeed = 0.8f;
+						public float 		buttonRiseDelay;
+
 	//World Menu Variables
 	[HideInInspector]	public GameObject 	World;
 						public float 		rotationSpeed = 2.0f;
+
+	//Static Variables
+						public static float	riseDelay;
+						public static bool 	wait;
+						public static bool	waitOnce;
 						public static Quaternion worldRotation;
 						public static float	currentBiome; //replace with strings for biome names?
-						public static float 		currentLevel; //replace with strings for level names?
+						public static float currentLevel; //replace with strings for level names?
 		
 	void Start ()
 	{
@@ -27,6 +34,12 @@ public class CS_LevelSelect : MonoBehaviour
 		CS_LevelSelect.worldRotation = Quaternion.identity;
 		CS_LevelSelect.currentBiome = 1f;
 		CS_LevelSelect.currentBiome = 1f;
+		CS_LevelSelect.wait = true;
+		CS_LevelSelect.waitOnce = true;
+		CS_LevelSelect.riseDelay = buttonRiseDelay;
+
+		StartCoroutine(Wait());
+		buttonsAreUp = true;
 
 		//Find and assign the world
 		World = GameObject.Find ("World");
@@ -47,12 +60,22 @@ public class CS_LevelSelect : MonoBehaviour
 		//Rotate the world sprite while the rotation is not equal to the desired rotation
 		if(World.transform.eulerAngles != CS_LevelSelect.worldRotation.eulerAngles)
 		{
-			buttonsAreUp = false;
+			if (!CS_LevelSelect.wait && CS_LevelSelect.waitOnce)
+			{	
+				CS_LevelSelect.waitOnce = false;
+				buttonsAreUp = false;
+				StartCoroutine(Wait());
+			}
+			else if (CS_LevelSelect.wait)
+			{
+				buttonsAreUp = true;
+				CS_LevelSelect.riseDelay = buttonRiseDelay;
+			}
 			World.transform.eulerAngles = Vector3.Slerp(World.transform.eulerAngles, CS_LevelSelect.worldRotation.eulerAngles, rotationSpeed * Time.deltaTime);
 		}
 	
 		//Bring up the level buttons while the position is not equal to the desired rotation
-		if(subButton_01.transform.position != offset_01 && subButton_02.transform.position != offset_02 && subButton_03.transform.position != offset_03 && buttonsAreUp == true)
+		if(subButton_01.transform.position != offset_01 && subButton_02.transform.position != offset_02 && subButton_03.transform.position != offset_03 && buttonsAreUp && CS_LevelSelect.wait)
 		{
 			SlideButtonsUp();
 		}
@@ -68,18 +91,26 @@ public class CS_LevelSelect : MonoBehaviour
 		switch (Level)
 		{
 		case LevelType.Cave:
+			CS_LevelSelect.riseDelay = buttonRiseDelay;
+			CS_LevelSelect.wait = false;
 			CS_LevelSelect.worldRotation = Quaternion.identity;
 			currentBiome = 1f;
 			break;
 		case LevelType.Arctic:
+			CS_LevelSelect.riseDelay = buttonRiseDelay;
+			CS_LevelSelect.wait = false;
 			CS_LevelSelect.worldRotation.eulerAngles = new Vector3(0,0,90);
 			currentBiome = 2f;
 			break;
 		case LevelType.Forest:
+			CS_LevelSelect.riseDelay = buttonRiseDelay;
+			CS_LevelSelect.wait = false;
 			CS_LevelSelect.worldRotation.eulerAngles = new Vector3(0,0,180);
 			currentBiome = 3f;
 			break;
 		case LevelType.Volcano:
+			CS_LevelSelect.riseDelay = buttonRiseDelay;
+			CS_LevelSelect.wait = false;
 			CS_LevelSelect.worldRotation.eulerAngles = new Vector3(0,0,270);
 			currentBiome = 4f;
 			break;
@@ -106,15 +137,15 @@ public class CS_LevelSelect : MonoBehaviour
 	}
 	void SlideButtonsDown ()
 	{
-		subButton_01.transform.position = Vector3.Slerp(subButton_01.transform.position, new Vector3(-6.5f,-1f,0f), subButtonRiseSpeed * Time.deltaTime);
-		subButton_02.transform.position = Vector3.Slerp(subButton_02.transform.position, new Vector3(-6.5f,-1f,0f), subButtonRiseSpeed * Time.deltaTime);
-		subButton_03.transform.position = Vector3.Slerp(subButton_03.transform.position, new Vector3(-6.5f,-1f,0f), subButtonRiseSpeed * Time.deltaTime);
-		StartCoroutine(Wait());
+		subButton_01.transform.position = Vector3.Slerp(subButton_01.transform.position, new Vector3(-6.5f,-1f,0f), subButtonRiseSpeed * 4 * Time.deltaTime);
+		subButton_02.transform.position = Vector3.Slerp(subButton_02.transform.position, new Vector3(-6.5f,-1f,0f), subButtonRiseSpeed * 4 * Time.deltaTime);
+		subButton_03.transform.position = Vector3.Slerp(subButton_03.transform.position, new Vector3(-6.5f,-1f,0f), subButtonRiseSpeed * 4 * Time.deltaTime);
 	}
 
 	IEnumerator Wait()
 	{		
-		yield return new WaitForSeconds(0.1f);
-		buttonsAreUp = true;
+		yield return new WaitForSeconds(riseDelay);
+		CS_LevelSelect.wait = true;
+		CS_LevelSelect.waitOnce = true;
 	}
 }
