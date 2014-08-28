@@ -12,7 +12,6 @@ public class CS_FadeInOut : MonoBehaviour
 	void Awake ()
 	{
 		guiTexture.pixelInset = new Rect(0f, 0f, Screen.width, Screen.height);
-		mainMenu = GameObject.Find ("Button_Continue").GetComponent<CS_MainMenu>();
 	}
 	
 	void Update()
@@ -58,7 +57,7 @@ public class CS_FadeInOut : MonoBehaviour
 		
 		if(guiTexture.color.a >= 0.95f)
 		{
-			Application.LoadLevel("" + mainMenu.buttonSelected);
+			guiTexture.color = Color.black;
 			sceneEnding = false;
 		}
 	}

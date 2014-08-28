@@ -12,25 +12,34 @@ public class CS_MainMenu : MonoBehaviour
 	void Awake()
 	{
 		fadeInOut = GameObject.Find ("PFB_FadeScreen").GetComponent<CS_FadeInOut>();
+		buttonSelected = null;
+	}
+
+	void Update()
+	{
+		if (fadeInOut.guiTexture.color.a >= 0.95f && buttonSelected != null)
+		{Application.LoadLevel("" + buttonSelected);}
 	}
 		
 	void OnMouseUp ()
 	{
 		//Determines which button you clicked
-		switch (button)
+		if (fadeInOut.guiTexture.color == Color.clear || fadeInOut.guiTexture.color == Color.black)
 		{
-		case ButtonType.Continue:
-			fadeInOut.EndScene();
-			buttonSelected = "UI_LevelSelect";
-			break;
-		case ButtonType.NewGame:
-			//Confirmation Prompt
-			//buttonSelected = "UI_LevelMenu";
-			break;
-		case ButtonType.Options:
-			//Options Menu Appears
-			Application.LoadLevel("UI_LevelSelect");
-			break;
+			switch (button)
+			{
+			case ButtonType.Continue:
+				fadeInOut.EndScene();
+				buttonSelected = "UI_LevelSelect";
+				break;
+			case ButtonType.NewGame:
+				//Confirmation Prompt
+				buttonSelected = "UI_LevelMenu";
+				break;
+			case ButtonType.Options:
+				//Options Menu Appears
+				break;
+			}
 		}
 	}
 
