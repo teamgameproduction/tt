@@ -131,6 +131,7 @@ public class CS_Controller : MonoBehaviour
 			//Resets Red if he is being carried by Blue
 			if (bluePickup.PickedUp == true)
 			{
+				BlueFlapForce = BlueFlapForce * 3;
 				bluePickup.PickedUpObject.rigidbody.isKinematic = false;
 				bluePickup.PickedUp = false;
 				gmcharacterBlue.rigidbody.mass = gmcharacterBlue.rigidbody.mass - bluePickup.PickedUpObject.rigidbody.mass;
@@ -138,6 +139,10 @@ public class CS_Controller : MonoBehaviour
 				bluePickup.PickedUpObject.collider.enabled = true;
 				bluePickup.BlueBoxColl.size = new Vector3(1.0f,1.5f,1.0f);
 				bluePickup.BlueBoxColl.center = new Vector3(0,0,0);
+			}
+			else
+			{
+				BlueFlapForce = BlueFlapRestoreForce;
 			}
 		}
 
