@@ -13,10 +13,12 @@ public class CS_Generic_Pickup : MonoBehaviour
 	void OnTriggerEnter(Collider other)
 	{
 		if(other.gameObject.tag == "Player")
+		{
 			print ("I Found A Thing!");
 		//Update GUI
 		collectableCounter.collectableCounter++;
 		// Set the counter to inactive
 		gameObject.SetActive (false);
+		}
 	}
 }
