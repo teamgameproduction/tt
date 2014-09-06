@@ -10,7 +10,7 @@ public class CS_LevelSelect : MonoBehaviour
 	[HideInInspector]	public Vector3 		offset_01;
 	[HideInInspector]	public Vector3 		offset_02;
 	[HideInInspector]	public Vector3 		offset_03;
-						public enum 		LevelType {Null, Cave, Arctic, Forest, Volcano, Sub1, Sub2, Sub3}
+						public enum 		LevelType {Null, Cave, Arctic, Forest, Volcano, Sub1, Sub2, Sub3, Ship}
 						public LevelType 	Level;
 						public bool			buttonsAreUp = true;
 						public float		subButtonRiseSpeed = 0.8f;
@@ -125,6 +125,9 @@ public class CS_LevelSelect : MonoBehaviour
 		case LevelType.Sub3:
 			CS_LevelSelect.currentLevel = currentBiome + 0.3f;
 			print ("I'm loading" + CS_LevelSelect.currentLevel);
+			break;
+		case LevelType.Ship:
+			Application.LoadLevel ("Ship_Blockout");
 			break;
 		}
 	}
