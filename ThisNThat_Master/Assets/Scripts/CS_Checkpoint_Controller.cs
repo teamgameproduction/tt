@@ -46,7 +46,7 @@ public class CS_Checkpoint_Controller : MonoBehaviour
 			
 			
 		}
-		Application.LoadLevel(Application.loadedLevel);
+		//Application.LoadLevel(Application.loadedLevel);
 		spawnPos = checkPointArray[x-1].transform.position;
 		gmcharacterBlue.transform.position = new Vector3(spawnPos.x, spawnPos.y + 1, spawnPos.z);
 		gmcharacterRed.transform.position = new Vector3(spawnPos.x - 2, spawnPos.y + 1, spawnPos.z);
