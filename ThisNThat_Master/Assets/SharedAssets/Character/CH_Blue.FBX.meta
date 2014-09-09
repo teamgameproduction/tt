@@ -1,0 +1,999 @@
+fileFormatVersion: 2
+guid: e766b10416d95f4448dc21c5ba13a2fa
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: BE_Leg_L
+    100002: BE_Leg_R
+    100004: BE_Shoulder_L
+    100006: BE_Shoulder_R
+    100008: BE_Spine
+    100010: BE_Toe_I_L
+    100012: BE_Toe_I_R
+    100014: BE_Toe_P_L
+    100016: BE_Toe_P_R
+    100018: BE_Toe_T_L
+    100020: BE_Toe_T_R
+    100022: BN_Arm1_L
+    100024: BN_Arm1_R
+    100026: BN_Arm2_L
+    100028: BN_Arm2_R
+    100030: BN_Arm3_L
+    100032: BN_Arm3_R
+    100034: BN_Ear1_L
+    100036: BN_Ear1_R
+    100038: BN_Ear2_L
+    100040: BN_Ear2_R
+    100042: BN_Finger1_I_L
+    100044: BN_Finger1_I_R
+    100046: BN_Finger1_M_L
+    100048: BN_Finger1_M_R
+    100050: BN_Finger1_P_L
+    100052: BN_Finger1_P_R
+    100054: BN_Finger2_I_L
+    100056: BN_Finger2_I_R
+    100058: BN_Finger2_M_L
+    100060: BN_Finger2_M_R
+    100062: BN_Finger2_P_L
+    100064: BN_Finger2_P_R
+    100066: BN_Finger3_I_L
+    100068: BN_Finger3_I_R
+    100070: BN_Finger3_M_L
+    100072: BN_Finger3_M_R
+    100074: BN_Finger3_P_L
+    100076: BN_Finger3_P_R
+    100078: BN_Finger_T_L
+    100080: BN_Finger_T_R
+    100082: BN_Head
+    100084: BN_Leg1_L
+    100086: BN_Leg1_R
+    100088: BN_Leg2_L
+    100090: BN_Leg2_R
+    100092: BN_Leg3_L
+    100094: BN_Leg3_R
+    100096: BN_Pelvis
+    100098: BN_Root
+    100100: BN_Shoulder_L
+    100102: BN_Shoulder_R
+    100104: BN_Spine1
+    100106: BN_Spine2
+    100108: BN_Spine3
+    100110: BN_Toe1_I_L
+    100112: BN_Toe1_I_R
+    100114: BN_Toe1_P_L
+    100116: BN_Toe1_P_R
+    100118: BN_Toe1_T_L
+    100120: BN_Toe1_T_R
+    100122: BN_Toe2_I_L
+    100124: BN_Toe2_I_R
+    100126: BN_Toe2_P_L
+    100128: BN_Toe2_P_R
+    100130: BN_Toe2_T_L
+    100132: BN_Toe2_T_R
+    100134: BN_Toe3_I_L
+    100136: BN_Toe3_I_R
+    100138: BN_Toe3_P_L
+    100140: BN_Toe3_P_R
+    100142: CH_Blue
+    100144: //RootNode
+    400000: BE_Leg_L
+    400002: BE_Leg_R
+    400004: BE_Shoulder_L
+    400006: BE_Shoulder_R
+    400008: BE_Spine
+    400010: BE_Toe_I_L
+    400012: BE_Toe_I_R
+    400014: BE_Toe_P_L
+    400016: BE_Toe_P_R
+    400018: BE_Toe_T_L
+    400020: BE_Toe_T_R
+    400022: BN_Arm1_L
+    400024: BN_Arm1_R
+    400026: BN_Arm2_L
+    400028: BN_Arm2_R
+    400030: BN_Arm3_L
+    400032: BN_Arm3_R
+    400034: BN_Ear1_L
+    400036: BN_Ear1_R
+    400038: BN_Ear2_L
+    400040: BN_Ear2_R
+    400042: BN_Finger1_I_L
+    400044: BN_Finger1_I_R
+    400046: BN_Finger1_M_L
+    400048: BN_Finger1_M_R
+    400050: BN_Finger1_P_L
+    400052: BN_Finger1_P_R
+    400054: BN_Finger2_I_L
+    400056: BN_Finger2_I_R
+    400058: BN_Finger2_M_L
+    400060: BN_Finger2_M_R
+    400062: BN_Finger2_P_L
+    400064: BN_Finger2_P_R
+    400066: BN_Finger3_I_L
+    400068: BN_Finger3_I_R
+    400070: BN_Finger3_M_L
+    400072: BN_Finger3_M_R
+    400074: BN_Finger3_P_L
+    400076: BN_Finger3_P_R
+    400078: BN_Finger_T_L
+    400080: BN_Finger_T_R
+    400082: BN_Head
+    400084: BN_Leg1_L
+    400086: BN_Leg1_R
+    400088: BN_Leg2_L
+    400090: BN_Leg2_R
+    400092: BN_Leg3_L
+    400094: BN_Leg3_R
+    400096: BN_Pelvis
+    400098: BN_Root
+    400100: BN_Shoulder_L
+    400102: BN_Shoulder_R
+    400104: BN_Spine1
+    400106: BN_Spine2
+    400108: BN_Spine3
+    400110: BN_Toe1_I_L
+    400112: BN_Toe1_I_R
+    400114: BN_Toe1_P_L
+    400116: BN_Toe1_P_R
+    400118: BN_Toe1_T_L
+    400120: BN_Toe1_T_R
+    400122: BN_Toe2_I_L
+    400124: BN_Toe2_I_R
+    400126: BN_Toe2_P_L
+    400128: BN_Toe2_P_R
+    400130: BN_Toe2_T_L
+    400132: BN_Toe2_T_R
+    400134: BN_Toe3_I_L
+    400136: BN_Toe3_I_R
+    400138: BN_Toe3_P_L
+    400140: BN_Toe3_P_R
+    400142: //RootNode
+    400144: CH_Blue
+    2300000: BN_Arm1_L
+    2300002: BN_Arm1_R
+    2300004: BN_Arm2_L
+    2300006: BN_Arm2_R
+    2300008: BN_Arm3_L
+    2300010: BN_Arm3_R
+    2300012: BN_Ear1_L
+    2300014: BN_Ear1_R
+    2300016: BN_Ear2_L
+    2300018: BN_Ear2_R
+    2300020: BN_Finger1_I_L
+    2300022: BN_Finger1_I_R
+    2300024: BN_Finger1_M_L
+    2300026: BN_Finger1_M_R
+    2300028: BN_Finger1_P_L
+    2300030: BN_Finger1_P_R
+    2300032: BN_Finger2_I_L
+    2300034: BN_Finger2_I_R
+    2300036: BN_Finger2_M_L
+    2300038: BN_Finger2_M_R
+    2300040: BN_Finger2_P_L
+    2300042: BN_Finger2_P_R
+    2300044: BN_Finger3_I_L
+    2300046: BN_Finger3_I_R
+    2300048: BN_Finger3_M_L
+    2300050: BN_Finger3_M_R
+    2300052: BN_Finger3_P_L
+    2300054: BN_Finger3_P_R
+    2300056: BN_Finger_T_L
+    2300058: BN_Finger_T_R
+    2300060: BN_Head
+    2300062: BN_Pelvis
+    2300064: BN_Root
+    3300000: BN_Arm1_L
+    3300002: BN_Arm1_R
+    3300004: BN_Arm2_L
+    3300006: BN_Arm2_R
+    3300008: BN_Arm3_L
+    3300010: BN_Arm3_R
+    3300012: BN_Ear1_L
+    3300014: BN_Ear1_R
+    3300016: BN_Ear2_L
+    3300018: BN_Ear2_R
+    3300020: BN_Finger1_I_L
+    3300022: BN_Finger1_I_R
+    3300024: BN_Finger1_M_L
+    3300026: BN_Finger1_M_R
+    3300028: BN_Finger1_P_L
+    3300030: BN_Finger1_P_R
+    3300032: BN_Finger2_I_L
+    3300034: BN_Finger2_I_R
+    3300036: BN_Finger2_M_L
+    3300038: BN_Finger2_M_R
+    3300040: BN_Finger2_P_L
+    3300042: BN_Finger2_P_R
+    3300044: BN_Finger3_I_L
+    3300046: BN_Finger3_I_R
+    3300048: BN_Finger3_M_L
+    3300050: BN_Finger3_M_R
+    3300052: BN_Finger3_P_L
+    3300054: BN_Finger3_P_R
+    3300056: BN_Finger_T_L
+    3300058: BN_Finger_T_R
+    3300060: BN_Head
+    3300062: BN_Pelvis
+    3300064: BN_Root
+    4300000: CH_Blue
+    4300002: BN_Root
+    4300004: BN_Pelvis
+    4300006: BN_Head
+    4300008: BN_Ear1_L
+    4300010: BN_Ear2_L
+    4300012: BN_Ear1_R
+    4300014: BN_Ear2_R
+    4300016: BN_Arm1_L
+    4300018: BN_Arm2_L
+    4300020: BN_Arm3_L
+    4300022: BN_Finger_T_L
+    4300024: BN_Finger1_I_L
+    4300026: BN_Finger2_I_L
+    4300028: BN_Finger3_I_L
+    4300030: BN_Finger1_M_L
+    4300032: BN_Finger2_M_L
+    4300034: BN_Finger3_M_L
+    4300036: BN_Finger1_P_L
+    4300038: BN_Finger2_P_L
+    4300040: BN_Finger3_P_L
+    4300042: BN_Arm1_R
+    4300044: BN_Arm2_R
+    4300046: BN_Arm3_R
+    4300048: BN_Finger1_I_R
+    4300050: BN_Finger2_I_R
+    4300052: BN_Finger3_I_R
+    4300054: BN_Finger_T_R
+    4300056: BN_Finger1_M_R
+    4300058: BN_Finger2_M_R
+    4300060: BN_Finger3_M_R
+    4300062: BN_Finger1_P_R
+    4300064: BN_Finger2_P_R
+    4300066: BN_Finger3_P_R
+    7400000: Idle
+    7400002: Run
+    7400004: Flap
+    7400006: Fall
+    9500000: //RootNode
+    13700000: CH_Blue
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 80
+      lastFrame: 302
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BN_Root
+        weight: 1
+      - path: BN_Root/BN_Pelvis
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_I_L/BN_Toe2_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_I_L/BN_Toe2_I_L/BN_Toe3_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_I_L/BN_Toe2_I_L/BN_Toe3_I_L/BE_Toe_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_P_L/BN_Toe2_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_P_L/BN_Toe2_P_L/BN_Toe3_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_P_L/BN_Toe2_P_L/BN_Toe3_P_L/BE_Toe_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_T_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_T_L/BN_Toe2_T_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_T_L/BN_Toe2_T_L/BE_Toe_T_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_I_R/BN_Toe2_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_I_R/BN_Toe2_I_R/BN_Toe3_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_I_R/BN_Toe2_I_R/BN_Toe3_I_R/BE_Toe_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_P_R/BN_Toe2_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_P_R/BN_Toe2_P_R/BN_Toe3_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_P_R/BN_Toe2_P_R/BN_Toe3_P_R/BE_Toe_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_T_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_T_R/BN_Toe2_T_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_T_R/BN_Toe2_T_R/BE_Toe_T_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_I_L/BN_Finger2_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_I_L/BN_Finger2_I_L/BN_Finger3_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_M_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_M_L/BN_Finger2_M_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_M_L/BN_Finger2_M_L/BN_Finger3_M_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_P_L/BN_Finger2_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_P_L/BN_Finger2_P_L/BN_Finger3_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger_T_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_I_R/BN_Finger2_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_I_R/BN_Finger2_I_R/BN_Finger3_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_M_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_M_R/BN_Finger2_M_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_M_R/BN_Finger2_M_R/BN_Finger3_M_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_P_R/BN_Finger2_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_P_R/BN_Finger2_P_R/BN_Finger3_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger_T_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BE_Spine
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BE_Spine/BN_Head
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BE_Spine/BN_Head/BN_Ear1_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BE_Spine/BN_Head/BN_Ear1_L/BN_Ear2_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BE_Spine/BN_Head/BN_Ear1_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BE_Spine/BN_Head/BN_Ear1_R/BN_Ear2_R
+        weight: 1
+      - path: CH_Blue
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BN_Root
+        weight: 1
+      - path: BN_Root/BN_Pelvis
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_I_L/BN_Toe2_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_I_L/BN_Toe2_I_L/BN_Toe3_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_I_L/BN_Toe2_I_L/BN_Toe3_I_L/BE_Toe_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_P_L/BN_Toe2_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_P_L/BN_Toe2_P_L/BN_Toe3_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_P_L/BN_Toe2_P_L/BN_Toe3_P_L/BE_Toe_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_T_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_T_L/BN_Toe2_T_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_T_L/BN_Toe2_T_L/BE_Toe_T_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_I_R/BN_Toe2_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_I_R/BN_Toe2_I_R/BN_Toe3_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_I_R/BN_Toe2_I_R/BN_Toe3_I_R/BE_Toe_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_P_R/BN_Toe2_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_P_R/BN_Toe2_P_R/BN_Toe3_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_P_R/BN_Toe2_P_R/BN_Toe3_P_R/BE_Toe_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_T_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_T_R/BN_Toe2_T_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_T_R/BN_Toe2_T_R/BE_Toe_T_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_I_L/BN_Finger2_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_I_L/BN_Finger2_I_L/BN_Finger3_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_M_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_M_L/BN_Finger2_M_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_M_L/BN_Finger2_M_L/BN_Finger3_M_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_P_L/BN_Finger2_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_P_L/BN_Finger2_P_L/BN_Finger3_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger_T_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_I_R/BN_Finger2_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_I_R/BN_Finger2_I_R/BN_Finger3_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_M_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_M_R/BN_Finger2_M_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_M_R/BN_Finger2_M_R/BN_Finger3_M_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_P_R/BN_Finger2_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_P_R/BN_Finger2_P_R/BN_Finger3_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger_T_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BE_Spine
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BE_Spine/BN_Head
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BE_Spine/BN_Head/BN_Ear1_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BE_Spine/BN_Head/BN_Ear1_L/BN_Ear2_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BE_Spine/BN_Head/BN_Ear1_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BE_Spine/BN_Head/BN_Ear1_R/BN_Ear2_R
+        weight: 1
+      - path: CH_Blue
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Flap
+      takeName: Take 001
+      firstFrame: 21
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BN_Root
+        weight: 1
+      - path: BN_Root/BN_Pelvis
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_I_L/BN_Toe2_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_I_L/BN_Toe2_I_L/BN_Toe3_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_I_L/BN_Toe2_I_L/BN_Toe3_I_L/BE_Toe_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_P_L/BN_Toe2_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_P_L/BN_Toe2_P_L/BN_Toe3_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_P_L/BN_Toe2_P_L/BN_Toe3_P_L/BE_Toe_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_T_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_T_L/BN_Toe2_T_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_T_L/BN_Toe2_T_L/BE_Toe_T_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_I_R/BN_Toe2_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_I_R/BN_Toe2_I_R/BN_Toe3_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_I_R/BN_Toe2_I_R/BN_Toe3_I_R/BE_Toe_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_P_R/BN_Toe2_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_P_R/BN_Toe2_P_R/BN_Toe3_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_P_R/BN_Toe2_P_R/BN_Toe3_P_R/BE_Toe_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_T_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_T_R/BN_Toe2_T_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_T_R/BN_Toe2_T_R/BE_Toe_T_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_I_L/BN_Finger2_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_I_L/BN_Finger2_I_L/BN_Finger3_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_M_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_M_L/BN_Finger2_M_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_M_L/BN_Finger2_M_L/BN_Finger3_M_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_P_L/BN_Finger2_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_P_L/BN_Finger2_P_L/BN_Finger3_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger_T_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_I_R/BN_Finger2_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_I_R/BN_Finger2_I_R/BN_Finger3_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_M_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_M_R/BN_Finger2_M_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_M_R/BN_Finger2_M_R/BN_Finger3_M_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_P_R/BN_Finger2_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_P_R/BN_Finger2_P_R/BN_Finger3_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger_T_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BE_Spine
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BE_Spine/BN_Head
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BE_Spine/BN_Head/BN_Ear1_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BE_Spine/BN_Head/BN_Ear1_L/BN_Ear2_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BE_Spine/BN_Head/BN_Ear1_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BE_Spine/BN_Head/BN_Ear1_R/BN_Ear2_R
+        weight: 1
+      - path: CH_Blue
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Fall
+      takeName: Take 001
+      firstFrame: 42
+      lastFrame: 61
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BN_Root
+        weight: 1
+      - path: BN_Root/BN_Pelvis
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_I_L/BN_Toe2_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_I_L/BN_Toe2_I_L/BN_Toe3_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_I_L/BN_Toe2_I_L/BN_Toe3_I_L/BE_Toe_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_P_L/BN_Toe2_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_P_L/BN_Toe2_P_L/BN_Toe3_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_P_L/BN_Toe2_P_L/BN_Toe3_P_L/BE_Toe_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_T_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_T_L/BN_Toe2_T_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_L/BN_Leg2_L/BN_Leg3_L/BE_Leg_L/BN_Toe1_T_L/BN_Toe2_T_L/BE_Toe_T_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_I_R/BN_Toe2_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_I_R/BN_Toe2_I_R/BN_Toe3_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_I_R/BN_Toe2_I_R/BN_Toe3_I_R/BE_Toe_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_P_R/BN_Toe2_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_P_R/BN_Toe2_P_R/BN_Toe3_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_P_R/BN_Toe2_P_R/BN_Toe3_P_R/BE_Toe_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_T_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_T_R/BN_Toe2_T_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Leg1_R/BN_Leg2_R/BN_Leg3_R/BE_Leg_R/BN_Toe1_T_R/BN_Toe2_T_R/BE_Toe_T_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_I_L/BN_Finger2_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_I_L/BN_Finger2_I_L/BN_Finger3_I_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_M_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_M_L/BN_Finger2_M_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_M_L/BN_Finger2_M_L/BN_Finger3_M_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_P_L/BN_Finger2_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger1_P_L/BN_Finger2_P_L/BN_Finger3_P_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_L/BE_Shoulder_L/BN_Arm1_L/BN_Arm2_L/BN_Arm3_L/BN_Finger_T_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_I_R/BN_Finger2_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_I_R/BN_Finger2_I_R/BN_Finger3_I_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_M_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_M_R/BN_Finger2_M_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_M_R/BN_Finger2_M_R/BN_Finger3_M_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_P_R/BN_Finger2_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger1_P_R/BN_Finger2_P_R/BN_Finger3_P_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Shoulder_R/BE_Shoulder_R/BN_Arm1_R/BN_Arm2_R/BN_Arm3_R/BN_Finger_T_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BE_Spine
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BE_Spine/BN_Head
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BE_Spine/BN_Head/BN_Ear1_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BE_Spine/BN_Head/BN_Ear1_L/BN_Ear2_L
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BE_Spine/BN_Head/BN_Ear1_R
+        weight: 1
+      - path: BN_Root/BN_Pelvis/BN_Spine1/BN_Spine2/BN_Spine3/BE_Spine/BN_Head/BN_Ear1_R/BN_Ear2_R
+        weight: 1
+      - path: CH_Blue
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: BN_Root
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

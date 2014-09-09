@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\CS_RideOn.cs" />
      <Compile Include="Assets\Scripts\CS_SlowCollider.cs" />
      <Compile Include="Assets\Scripts\Character\CS_AnimationController.cs" />
+     <Compile Include="Assets\Scripts\Character\CS_BlueAnimCTRL.cs" />
      <Compile Include="Assets\Scripts\Character\CS_BluePickup.cs" />
      <Compile Include="Assets\Scripts\Character\CS_Camera.cs" />
      <Compile Include="Assets\Scripts\Character\CS_Controller.cs" />
