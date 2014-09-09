@@ -11,6 +11,8 @@ public class CS_Checkpoint_Controller : MonoBehaviour
 	public bool spawn = false;
 	public CS_Checkpoints cS_Checkpoints ;
 	public GameObject 	gmcharacterBlue;
+	public GameObject 	gmcharacterRed;
+	public int arrayLength = 0;
 	int x = 0;
 	
 	// Use this for initialization
@@ -20,6 +22,8 @@ public class CS_Checkpoint_Controller : MonoBehaviour
 		checkPointArray = GameObject.FindGameObjectsWithTag ("CheckPoint");
 		startPosition = transform.position;
 		gmcharacterBlue = GameObject.Find ("characterBlue");
+		gmcharacterRed = GameObject.Find ("characterRed");
+		arrayLength = checkPointArray.Length;
 	}
 	
 	// Update is called once per frame
@@ -30,9 +34,9 @@ public class CS_Checkpoint_Controller : MonoBehaviour
 		}
 	}
 	
-	void Die()
+	public void Die()
 	{
-		while (spawn == false && x != 10) {
+		while (spawn == false && x != arrayLength) {
 			
 			cS_Checkpoints = checkPointArray[x].GetComponent<CS_Checkpoints>();
 			
@@ -42,8 +46,10 @@ public class CS_Checkpoint_Controller : MonoBehaviour
 			
 			
 		}
-		spawnPos = checkPointArray[x].transform.position;
-		gmcharacterBlue.transform.position = new Vector3(spawnPos.x, spawnPos.y, spawnPos.z);
+		Application.LoadLevel(Application.loadedLevel);
+		spawnPos = checkPointArray[x-1].transform.position;
+		gmcharacterBlue.transform.position = new Vector3(spawnPos.x, spawnPos.y + 1, spawnPos.z);
+		gmcharacterRed.transform.position = new Vector3(spawnPos.x - 2, spawnPos.y + 1, spawnPos.z);
 		x = 0;
 		spawn = false;
 		
