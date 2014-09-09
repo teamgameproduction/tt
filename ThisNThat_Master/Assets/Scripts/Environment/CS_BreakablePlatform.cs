@@ -5,7 +5,8 @@ public class CS_BreakablePlatform : MonoBehaviour
 {
 	private CS_GenericTrigger CollisionBool;
 	public GameObject TriggerVolume;
-	public float destroyTimer;
+	public float destroyTimer = 100.0f;
+	public bool isTouch = false;
 	
 	void Start () 
 	{
@@ -14,15 +15,26 @@ public class CS_BreakablePlatform : MonoBehaviour
 
 	void Update () 
 	{
-		if (destroyTimer == 0f)
-		{}
-		else if (CollisionBool.collision && destroyTimer > 0f)
+		//if (destroyTimer == 0.0f)
+		//{}
+		 if (isTouch == true && destroyTimer > 0.0f)
 		{
-			destroyTimer -= Time.deltaTime;
+			//destroyTimer -= Time.deltaTime;
+			destroyTimer--;
 		}
-		else if (CollisionBool.collision && destroyTimer <= 0f)
+		else if (isTouch == true && destroyTimer <= 0.0f)
 		{
 			DestroyObject(this.gameObject);
 		}
 	}
+	void OnCollisionEnter (Collision other)
+	{
+				//if (!other.gameObject.tag == "Player") {
+						//return;
+			
+				//}
+
+				isTouch = true;
+		}
+
 }
