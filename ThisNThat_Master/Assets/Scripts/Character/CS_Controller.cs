@@ -177,6 +177,16 @@ public class CS_Controller : MonoBehaviour
 				RedIsFacingRight = false;
 			}
 		}
+		else if (IsCharacterRed == 2){
+			if (Input.GetKeyDown ("d") && BlueIsFacingRight == false){
+				gmcharacterBlue.transform.rotation = Quaternion.AngleAxis(0, Vector3.up);
+				BlueIsFacingRight = true;
+			}
+			if (Input.GetKeyDown ("a") && BlueIsFacingRight == true){
+				gmcharacterBlue.transform.rotation = Quaternion.AngleAxis(180, Vector3.up);
+				BlueIsFacingRight = false;
+			}
+		}
 	}
 
 		//ICE MOVEMENT
