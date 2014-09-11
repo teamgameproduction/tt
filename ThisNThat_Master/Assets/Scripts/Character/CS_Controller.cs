@@ -225,7 +225,6 @@ public class CS_Controller : MonoBehaviour
 	void OnTriggerEnter(Collider other)
 	{
 
-
 	}
 
 //-------------------------------------------------------------------------------------------------------

@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CS_Checkpoint_Controller.cs" />
      <Compile Include="Assets\Scripts\CS_Checkpoints.cs" />
+     <Compile Include="Assets\Scripts\CS_FinishLine.cs" />
      <Compile Include="Assets\Scripts\CS_GameState.cs" />
      <Compile Include="Assets\Scripts\CS_ProxLight.cs" />
      <Compile Include="Assets\Scripts\CS_RideOn.cs" />
@@ -61,12 +62,12 @@
      <Compile Include="Assets\Scripts\Character\CS_RedAnimCTRL.cs" />
      <Compile Include="Assets\Scripts\Character\CS_RedDig.cs" />
      <Compile Include="Assets\Scripts\Chase.cs" />
-     <Compile Include="Assets\Scripts\Efficiency\CS_EnviroMovement.cs" />
      <Compile Include="Assets\Scripts\Efficiency\CS_RenderDigProx.cs" />
      <Compile Include="Assets\Scripts\Efficiency\CS_RenderProx.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_Bounce.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_BreakablePlatform.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_Digable.cs" />
+     <Compile Include="Assets\Scripts\Environment\CS_EnviroMovement.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_GenericTrigger.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_Kill.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_Timed_Kill_Platform.cs" />
