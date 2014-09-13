@@ -2,31 +2,47 @@ Initialize engine version: 4.3.4f1 (e444f76e01cd)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 650 (ID=0xfc6)
-    Vendor:   NVIDIA
-    VRAM:     973 MB
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
+    Vendor:   Intel
+    VRAM:     64 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\MAXIMUS V\Desktop\This&That_Blockout_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\MAXIMUS V\Desktop\This&That_Blockout_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\MAXIMUS V\Desktop\This&That_Blockout_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\MAXIMUS V\Desktop\This&That_Blockout_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\MAXIMUS V\Desktop\This&That_Blockout_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
-Loading C:\Users\MAXIMUS V\Desktop\This&That_Blockout_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
-- Completed reload, in  0.035 seconds
-desktop: 1920x1080 60Hz; virtual: 3688x1080 at -1768,0
+Platform assembly: C:\Users\Michelle\Documents\GitHub\tt\This&That_Blockout_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Michelle\Documents\GitHub\tt\This&That_Blockout_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Michelle\Documents\GitHub\tt\This&That_Blockout_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Michelle\Documents\GitHub\tt\This&That_Blockout_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Michelle\Documents\GitHub\tt\This&That_Blockout_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\Michelle\Documents\GitHub\tt\This&That_Blockout_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+- Completed reload, in  0.260 seconds
+desktop: 1366x768 60Hz; virtual: 3286x1204 at 0,-436
 <RI> Initializing input.
 <RI> Input initialized.
-UnloadTime: 0.541420 ms
+UnloadTime: 1.118209 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 177.
-Total: 1.582222 ms (FindLiveObjects: 0.021020 ms CreateObjectMapping: 0.012011 ms MarkObjects: 0.094591 ms  DeleteObjects: 0.040238 ms)
+Total: 8.633325 ms (FindLiveObjects: 0.030342 ms CreateObjectMapping: 0.016956 ms MarkObjects: 6.325513 ms  DeleteObjects: 0.101736 ms)
 
-UnloadTime: 0.490972 ms
+I'm loading1.1
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+I'm loading1.3
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+I'm loading1.1
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+I'm loading1.2
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+UnloadTime: 0.772840 ms
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 1462.
-Total: 1.280131 ms (FindLiveObjects: 0.079276 ms CreateObjectMapping: 0.021320 ms MarkObjects: 0.199091 ms  DeleteObjects: 0.168462 ms)
+Total: 1.573346 ms (FindLiveObjects: 0.120477 ms CreateObjectMapping: 0.029003 ms MarkObjects: 0.276205 ms  DeleteObjects: 0.180716 ms)
 
 get ready to bounce
  
@@ -36,15 +52,57 @@ get ready to bounce
  
 (Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
 
-UnloadTime: 2.453961 ms
+UnloadTime: 3.562117 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 86 unused Assets to reduce memory usage. Loaded Objects now: 211.
-Total: 1.521864 ms (FindLiveObjects: 0.019218 ms CreateObjectMapping: 0.016515 ms MarkObjects: 0.172365 ms  DeleteObjects: 0.451033 ms)
+Total: 2.010635 ms (FindLiveObjects: 0.029450 ms CreateObjectMapping: 0.020525 ms MarkObjects: 0.243185 ms  DeleteObjects: 0.707247 ms)
 
-UnloadTime: 0.457340 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+I'm loading1.1
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 1494.
-Total: 1.283434 ms (FindLiveObjects: 0.084381 ms CreateObjectMapping: 0.022821 ms MarkObjects: 0.245035 ms  DeleteObjects: 0.154348 ms)
+I'm loading1.1
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+I'm loading1.1
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+I'm loading1.2
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+I'm loading1.2
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+I'm loading1.3
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+I'm loading1.3
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+I'm loading1.3
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+I'm loading1.1
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+I'm loading1.1
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+I'm loading1.3
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+I'm loading1.3
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
 
