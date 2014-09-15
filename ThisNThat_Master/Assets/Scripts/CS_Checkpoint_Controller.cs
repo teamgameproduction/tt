@@ -71,7 +71,8 @@ public class CS_Checkpoint_Controller : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		if (Input.GetKey (KeyCode.C)) {
+		if (Input.GetKey (KeyCode.C)) 
+		{
 			Die ();
 		}
 	}

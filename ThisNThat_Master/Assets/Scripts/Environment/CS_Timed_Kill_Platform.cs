@@ -6,35 +6,32 @@ public class CS_Timed_Kill_Platform : MonoBehaviour
 	public float timer;
 	public float timerLimit = 5.5f;
 
-	public bool touch;
+	public bool touch = false;
+	public CS_Checkpoint_Controller cS_CheckPoint_Controller;
 
 	void Start ()
 	{
+		cS_CheckPoint_Controller = GameObject.Find ("GameState").GetComponent<CS_Checkpoint_Controller>();
+
 		timer = timerLimit;
-		touch = false;
+	
 	}
 	
 	void Update () 
 	{
 		timer = timer - Time.deltaTime;
 
-
-
-
 			if (touch == true && timer <= 0.5f) 
 			{
-				GetComponent<CS_Kill>();
-				
-				
-				print ("You're Dead!");
+				cS_CheckPoint_Controller.Die ();
 			}
 
-		{
-			if(timer <= 0.5f)
-			{
-				timer = timerLimit;
+				{
+				if(timer <= 0.5f)
+					{
+						timer = timerLimit;
+					}
 			}
-		}
 	}
 			
 
