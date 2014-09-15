@@ -74,7 +74,9 @@
      <Compile Include="Assets\Scripts\Environment\CS_Triggered_Lights.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_Updraft.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_WeightSense.cs" />
-     <Compile Include="Assets\Scripts\Environment\Moving_Platforms.cs" />
+     <Compile Include="Assets\Scripts\Environment\H_Moving_Platforms.cs" />
+     <Compile Include="Assets\Scripts\Environment\V_Moving_Platform.cs" />
+     <Compile Include="Assets\Scripts\Environment\Win_Move.cs" />
      <Compile Include="Assets\Scripts\GUI\CS_CollectableCounter.cs" />
      <Compile Include="Assets\Scripts\GUI\CS_FadeInOut.cs" />
      <Compile Include="Assets\Scripts\GUI\CS_Generic_Pickup.cs" />

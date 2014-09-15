@@ -5,10 +5,9 @@ public class CS_SlowCollider : MonoBehaviour
 {
 	public  CS_Controller 	controller;
 	public  CS_Controller 	Speed;
+	public bool				touch;
 	public	CS_Controller	BlueFlapForce;
 	public	CS_Controller	BlueFlaps;
-
-	public  bool			touch;
 	
 	// Use this for initialization
 	void Start () 

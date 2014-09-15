@@ -16,10 +16,10 @@ public class kill : MonoBehaviour {
 
 	void OnTriggerEnter (Collider other)
 	{
-		if(!other.CompareTag("Player"))
-		{
-			return;
-		}
+		//if(!other.CompareTag("Player"))
+		//{
+		//	return;
+	//	}
 
 		cS_CheckPoint_Controller.Die ();
 		

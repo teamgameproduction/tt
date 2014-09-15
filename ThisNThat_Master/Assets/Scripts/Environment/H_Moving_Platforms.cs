@@ -1,22 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Moving_Platforms : MonoBehaviour 
+public class H_Moving_Platforms : MonoBehaviour 
 {
 
 	float platformSpeed = 0.05f;
 	//public bool isTouched = true;
 	
-	public Transform platform;
-	public Transform start;
-	public Transform end;
+	public Transform hPlatform;
+	public Transform hStart;
+	public Transform hEnd;
 
 	Vector3 direction;
 	Transform destination;
 
 	void Start()
 	{
-		SetDestination(start);
+		SetDestination(hStart);
 	}
 	
 	void Update()
@@ -25,11 +25,11 @@ public class Moving_Platforms : MonoBehaviour
 		{
 			//isTouched = false;
 				
-			platform.rigidbody.MovePosition (platform.position + direction * platformSpeed);
+			hPlatform.rigidbody.MovePosition (hPlatform.position + direction * platformSpeed);
 				
-			if (Vector3.Distance (platform.position, destination.position) < platformSpeed)
+			if (Vector3.Distance (hPlatform.position, destination.position) < platformSpeed)
 			{
-					SetDestination(destination == start ? end : start); 
+					SetDestination(destination == hStart ? hEnd : hStart); 
 			}
 		}
 			
@@ -45,7 +45,7 @@ public class Moving_Platforms : MonoBehaviour
 	void SetDestination(Transform dest)
 	{
 		destination = dest;
-		direction = (destination.position - platform.position).normalized;
+		direction = (destination.position - hPlatform.position).normalized;
 
 	}
 
