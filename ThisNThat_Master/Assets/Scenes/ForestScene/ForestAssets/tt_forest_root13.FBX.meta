@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 356c4f2aa37ab7342b76608cf4daf0dd
+guid: 496c278e15e65754485613616d730c30
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -7,7 +7,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: tt_forest_root08
+    4300000: tt_forest_root13
     9500000: //RootNode
   materials:
     importMaterials: 1
