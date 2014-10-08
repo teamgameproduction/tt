@@ -20,14 +20,15 @@ public class CS_BlockBlue : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.gameObject == gmcharacterBlue) 
-		{
-			gameObject.collider.enabled = true;
-		}
 
-		else if (other.gameObject == gmcharacterRed) 
+		if (other.gameObject == gmcharacterRed) 
 		{
 			gameObject.collider.enabled = false;
+		}
+
+		else if (other.gameObject == gmcharacterBlue) 
+		{
+			gameObject.collider.enabled = true;
 		}
 	}
 }

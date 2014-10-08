@@ -1,11 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Environment\CS_TimedHazard.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Environment\CS_BlockBlue.cs">
     <Files>
-      <File FileName="Assets\Scripts\Environment\CS_BlockBlue.cs" Line="7" Column="54" />
-      <File FileName="Assets\Scripts\Environment\CS_Projectile.cs" Line="29" Column="4" />
-      <File FileName="Assets\Scripts\Environment\CS_TimedHazard.cs" Line="35" Column="36" />
-      <File FileName="Assets\Scripts\Character\CS_Controller.cs" Line="236" Column="2" />
+      <File FileName="Assets\Scripts\Environment\CS_BlockBlue.cs" Line="31" Column="39" />
+      <File FileName="Assets\Scripts\Environment\CS_Projectile.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Environment\CS_TimedHazard.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Character\CS_Controller.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
