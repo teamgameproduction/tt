@@ -16,6 +16,7 @@ public class CS_Controller : MonoBehaviour
 						//MOVEMENT VARIABLES
 						public float 		Speed = 4.0f;
 						public float		ResetSpeed = 4.0f;
+						public float 		TogetherSpeed = 6.0f;
 	[HideInInspector]	private float 		MoveDirection;
 
 						//ICE
@@ -113,6 +114,7 @@ public class CS_Controller : MonoBehaviour
 			//switches camera
 			//CameraRed.camera.enabled = false;
 			//CameraBlue.camera.enabled = true;
+			Speed = ResetSpeed;
 		}
 //-------------------------------------------------------------------------------------------------------
 
@@ -140,6 +142,7 @@ public class CS_Controller : MonoBehaviour
 				bluePickup.PickedUpObject.collider.enabled = true;
 				bluePickup.BlueBoxColl.size = new Vector3(1.0f,1.5f,1.0f);
 				bluePickup.BlueBoxColl.center = new Vector3(0,0,0);
+				Speed = ResetSpeed;
 			}
 			else
 			{

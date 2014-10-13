@@ -22,7 +22,7 @@ public class CS_BluePickup : MonoBehaviour //This script allows Blue to pick up 
 						public float BlueCarryingFlapSpeed = 600.0f;
 	[HideInInspector]	public BoxCollider BlueBoxColl;
 
-						public float TogetherSpeed = 6.0f;
+
 
 	// Use this for initialization
 	void Start () 
@@ -60,7 +60,7 @@ public class CS_BluePickup : MonoBehaviour //This script allows Blue to pick up 
 			PickedUpObject.collider.enabled = false;
 			BlueBoxColl.size = new Vector3(1,4,1);
 			BlueBoxColl.center = new Vector3(0.0f,-1.5f,0.0f);
-			controller.Speed = TogetherSpeed;
+			controller.Speed = controller.TogetherSpeed;
 		}
 
 		else if (Input.GetKeyDown("f") && PickedUp == true)
