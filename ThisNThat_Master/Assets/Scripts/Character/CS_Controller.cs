@@ -15,6 +15,7 @@ public class CS_Controller : MonoBehaviour
 
 						//MOVEMENT VARIABLES
 						public float 		Speed = 4.0f;
+						public float		ResetSpeed = 4.0f;
 	[HideInInspector]	private float 		MoveDirection;
 
 						//ICE
