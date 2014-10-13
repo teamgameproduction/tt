@@ -21,8 +21,10 @@ public class kill : MonoBehaviour {
 		//	return;
 	//	}
 		if (other.gameObject.tag == "Player") {
-						cS_CheckPoint_Controller.Die ();
-						print ("died");
+
+						if (other.gameObject.tag == "Player") {
+								cS_CheckPoint_Controller.Die ();
+						}
 				}
 	}
 }
