@@ -36,7 +36,7 @@ public class CS_Checkpoints : MonoBehaviour
 
 				}
 
-		if (didRed == true && didBlue == true) {
+		if (didRed == true || didBlue == true) {
 						isTouched = true;
 				}
 
