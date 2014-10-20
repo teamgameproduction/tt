@@ -47,13 +47,13 @@ public class CS_Checkpoint_Controller : MonoBehaviour
 			s0 = r + "";
 			//print (s0);
 			s1 = checkPointArray[j] + "";
-			print (s1);
+			//print (s1);
 			//print (s1.EndsWith(s0));
-				print(s0 + s1[11]);
+				//print(s0 + s1[11]);
 				if(s0 == s1[11] + "")
 			{
 				checkPointArray2[i] = checkPointArray[j];
-				print (checkPointArray2[i]);
+				//print (checkPointArray2[i]);
 			}
 			}
 
@@ -78,6 +78,7 @@ public class CS_Checkpoint_Controller : MonoBehaviour
 	
 	public void Die()
 	{
+		//print (checkPointArray [x - 1].transform.position);
 		while (spawn == false && x != arrayLength) {
 			
 			cS_Checkpoints = checkPointArray[x].GetComponent<CS_Checkpoints>();
@@ -94,6 +95,8 @@ public class CS_Checkpoint_Controller : MonoBehaviour
 		gmcharacterRed.transform.position = new Vector3(spawnPos.x - 2, spawnPos.y + 1, spawnPos.z);
 		x = 0;
 		spawn = false;
+
+		//print (checkPointArray [x - 1].transform.position);
 		
 		
 	}
