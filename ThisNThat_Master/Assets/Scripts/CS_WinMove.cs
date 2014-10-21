@@ -4,51 +4,38 @@ using System.Collections;
 public class CS_winMove : MonoBehaviour 
 {
 	public GameObject Winner;
-	public bool win01IsTouch = false;
-	public bool win02IsTouch = false;
-	public bool win03IsTouch = false;
-	public bool win04IsTouch = false;
-	public GameObject winA01;
-	public GameObject winA02;
-	public GameObject winA03;
-	public GameObject winA04;
 
-
-	// Use this for initialization
+	public bool isTouch = false;
+	
+	public CS_FWin fWin;
+	
 	void Start () 
 	{
 		Winner = GameObject.Find ("Winner");
-		winA01 = GameObject.Find ("WinAnimation01");
-		winA02 = GameObject.Find ("WinAnimation02");
-		winA03 = GameObject.Find ("WinAnimation03");
-		winA04 = GameObject.Find ("WinAnimation04");
+		fWin = GameObject.Find ("Winner").GetComponent <CS_FWin> ();
+		
 	}
-	
-	// Update is called once per frame
 	void Update () 
 	{
-	
+
 	}
 
 	void OnTriggerEnter (Collider other)
 	{
-		if (other.gameObject.tag == "Player" && (win01IsTouch = true)) 
+		if (other.gameObject.tag == "Player" && fWin.animprogress == 0) 
 			{
+				isTouch = true;
 				Winner.animation.Play("winAnim01");
-			}
-		if (other.gameObject.tag == "Player" && (win02IsTouch = true)) 
-			{
-				Winner.animation.Play("winAnim02");
-			}
-		if (other.gameObject.tag == "Player" && (win03IsTouch = true)) 
-			{
-				Winner.animation.Play("winAnim03");
-			}
-		if (other.gameObject.tag == "Player" && (win04IsTouch = true)) 
-			{
-				Winner.animation.Play("winAnim04");
+				gameObject.collider.enabled = false;
+				fWin.playanim = true;
 			}
 
-
+		else if (other.gameObject.tag == "Player" && fWin.animprogress == 1) 
+		{
+			isTouch = true;
+			Winner.animation.Play("winAnim02");
+			gameObject.collider.enabled = false;
+			fWin.playanim = true;
+		}
 	}
 }

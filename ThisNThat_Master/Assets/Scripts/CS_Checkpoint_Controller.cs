@@ -60,7 +60,7 @@ public class CS_Checkpoint_Controller : MonoBehaviour
 
 		}
 
-		cp1 = checkPointArray2 [0] + "";
+		cp1 = checkPointArray2 [0]+ "";
 		cp2 = checkPointArray2 [1]+ "";
 		cp3 = checkPointArray2 [2]+ "";
 		cp4 = checkPointArray2 [3]+ "";
