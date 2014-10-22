@@ -1,9 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\Art Instistute\FrownieFiasco\Assets\Scripts\CS_FrownieMove.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Environment\CS_EnviroMovement.cs">
     <Files>
-      <File FileName="..\..\..\Art Instistute\FrownieFiasco\Assets\Scripts\CS_FrownieMove.cs" Line="22" Column="44" />
-      <File FileName="..\..\..\Art Instistute\FrownieFiasco\Assets\Scripts\CS_FrownieSpawn.cs" Line="43" Column="2" />
+      <File FileName="Assets\Scripts\Environment\CS_EnviroMovement.cs" Line="13" Column="39" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
