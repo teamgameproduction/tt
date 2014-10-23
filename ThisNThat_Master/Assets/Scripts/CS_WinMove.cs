@@ -37,5 +37,19 @@ public class CS_winMove : MonoBehaviour
 			gameObject.collider.enabled = false;
 			fWin.playanim = true;
 		}
+
+		else if (other.gameObject.tag == "Player" && fWin.animprogress == 2) 
+		{
+			isTouch = true;
+			Winner.animation.Play("winAnim03");
+			fWin.playanim = true;
+		}
+
+		else if (other.gameObject.tag == "Player" && fWin.animprogress == 3) 
+		{
+			isTouch = true;
+			Winner.animation.Play("winAnim04");
+			fWin.playanim = true;
+		}
 	}
 }

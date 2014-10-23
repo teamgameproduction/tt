@@ -21,5 +21,10 @@ public class CS_FWin : MonoBehaviour
 			animprogress = animprogress + 1;
 			playanim = false;
 		}
+
+		if (animprogress == 3) 
+		{
+			animprogress = 2;	
+		}
 	}
 }
