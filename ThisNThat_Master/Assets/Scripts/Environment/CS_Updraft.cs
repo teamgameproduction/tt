@@ -11,6 +11,11 @@ public class CS_Updraft : MonoBehaviour
 						public  CS_FlapReset 	flapReset;
 						public bool 		IsInUpdraft = false;
 
+						public bool PushUp = true;
+						public bool PushDown = false;
+						public bool PushRight = false;
+						public bool PushLeft = false;
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -24,15 +29,45 @@ public class CS_Updraft : MonoBehaviour
 	void Update () 
 	{
 
-		if (IsInUpdraft == true)
+		if (IsInUpdraft == true && PushUp == true)
 		{
 			UpForce();
+		}
+
+		else if (IsInUpdraft == true && PushDown == true)
+		{
+			DownForce();
+		}
+
+		else if (IsInUpdraft == true && PushRight == true){
+
+			RightForce();
+		}
+
+		else if (IsInUpdraft == true && PushLeft == true){
+			
+			LeftForce();
 		}
 	}
 
 	void UpForce ()
 	{
 		gmcharacterBlue.rigidbody.AddForce (Vector3.up * UpForceSpeed);
+	}
+
+	void DownForce ()
+	{
+		gmcharacterBlue.rigidbody.AddForce (Vector3.up * UpForceSpeed * -1);
+	}
+
+	void RightForce ()
+	{
+		gmcharacterBlue.rigidbody.AddForce (Vector3.right * UpForceSpeed);
+	}
+
+	void LeftForce ()
+	{
+		gmcharacterBlue.rigidbody.AddForce (Vector3.right * UpForceSpeed * -1);
 	}
 
 	void OnTriggerEnter(Collider other)
