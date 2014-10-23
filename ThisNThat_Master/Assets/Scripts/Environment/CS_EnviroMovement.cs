@@ -16,19 +16,23 @@ public class CS_EnviroMovement : MonoBehaviour {
 	public bool Oscillating;
 	public bool OscillatingVertical;
 	public bool DestroyOnCollision;
+
+	public bool UseTimer;
+	public bool TimerExpired;
+	public float MoveTimer;
 	//[HideInInspector]	public bool ObjectMoving = false;
 	//[HideInInspector]	public bool ObjectOscillating = false;
 	
 	//Oscillation Movement
 	public int OscillatingSpeed = 0;
 	public int OscillatingResetSpeed = 2;
-	public float MovementTimer = 0.0f;
+	//public float MovementTimer = 0.0f;
 	public bool HasStarted = false;
 	public bool RightFinished = false;
-	public float RightTimer = 0.0f;
-	public float LeftTimer = 0.0f;
-	public bool RightMovement = false;
-	public bool LeftMovement = false;
+	[HideInInspector]public float RightTimer = 0.0f;
+	[HideInInspector]public float LeftTimer = 0.0f;
+	[HideInInspector]public bool RightMovement = false;
+	[HideInInspector]public bool LeftMovement = false;
 	public float MoveDistance = 2.0f;
 
 	//Vector 3 Movement
@@ -51,12 +55,21 @@ public class CS_EnviroMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		if (UseTimer == true) {
+			if (TriggerBool.collision == true && MoveTimer > -1){
+			MoveTimer -= Time.deltaTime;
+			}
+			if (MoveTimer < 0){
+				TimerExpired = true;
+			}
+				}
+
 		//Movement in the xyz directions
-		if (TriggerBool.collision == true && MovementXYZ == true){
+		if (TriggerBool.collision == true && MovementXYZ == true && TimerExpired == false){
 			MoveXYZ();
 		}
 
-		if (TriggerBool.collision == true && RotationXYZ == true){
+		if (TriggerBool.collision == true && RotationXYZ == true && TimerExpired == false){
 			RotateXYZ();
 		}
 
@@ -68,7 +81,7 @@ public class CS_EnviroMovement : MonoBehaviour {
 			OscillatingSpeed = OscillatingResetSpeed;
 		}
 
-		if (TriggerBool.collision == true && Oscillating == true) {
+		if (TriggerBool.collision == true && Oscillating == true && TimerExpired == false) {
 			if (HasStarted == false){
 				OscillatingSpeed = OscillatingResetSpeed;
 				HasStarted = true;
