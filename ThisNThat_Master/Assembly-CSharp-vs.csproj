@@ -46,7 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scenes\UndergroundScene\UndergroundAssets\CS_DestroyWithTrigger.cs" />
      <Compile Include="Assets\Scripts\CS_Checkpoint_Controller.cs" />
      <Compile Include="Assets\Scripts\CS_Checkpoints.cs" />
      <Compile Include="Assets\Scripts\CS_FWin.cs" />
@@ -70,6 +69,7 @@
      <Compile Include="Assets\Scripts\Environment\CS_BlockBlue.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_Bounce.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_BreakablePlatform.cs" />
+     <Compile Include="Assets\Scripts\Environment\CS_DestroyObjects.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_Digable.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_EnviroMovement.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_GenericTrigger.cs" />

@@ -13,7 +13,7 @@ public class CS_Triggered_Lights : MonoBehaviour
 	{
 		touch = false;
 		lightInteract = false;
-		gameObject.light.intensity = 6;
+		gameObject.light.intensity = 0;
 		
 	}
 	
@@ -22,17 +22,17 @@ public class CS_Triggered_Lights : MonoBehaviour
 	{
 		
 		
-		if (Input.GetKeyUp (KeyCode.Q) && gameObject.light.intensity == 6 && lightInteract == true)
+		if (Input.GetKeyUp (KeyCode.Q) && gameObject.light.intensity == 0 && lightInteract == true)
 		{
-			gameObject.light.intensity = 0;
+			gameObject.light.intensity = 6;
 			lightInteract = false;
 			StartCoroutine(WaitforLights());
 			print ("Lights Off");
 		}
 		
-		if (Input.GetKeyUp (KeyCode.Q) && gameObject.light.intensity == 0 && lightInteract == true)
+		if (Input.GetKeyUp (KeyCode.Q) && gameObject.light.intensity == 6 && lightInteract == true)
 		{ 
-			gameObject.light.intensity = 6;
+			gameObject.light.intensity = 0;
 			lightInteract = false;
 			StartCoroutine(WaitforLights());
 			print ("Lights On");
