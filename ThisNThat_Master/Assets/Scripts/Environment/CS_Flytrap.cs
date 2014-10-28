@@ -3,8 +3,9 @@ using System.Collections;
 
 public class CS_Flytrap : MonoBehaviour 
 {
-	public float timer;
+	public float timer = 2.5f;
 	public float timerLimit = 2.5f;
+
 	
 	public bool touch;
 	public CS_Checkpoint_Controller cS_CheckPoint_Controller;
@@ -17,28 +18,28 @@ public class CS_Flytrap : MonoBehaviour
 	
 	void Update () 
 	{
-		timer = timer + Time.deltaTime;
-
-		if (timer >= 0.5f) 
+		if (touch == true) 
 		{
-			timer = timerLimit;
+			timer = timer - Time.deltaTime;
 		}
+		if (timer < 0.5f && touch ==true)
+		{
+			print ("4");
+			cS_CheckPoint_Controller.Die ();
+			print ("5");
+			timer = timerLimit;
+			print ("6");
+		}
+
 	}
 	
 	void OnTriggerEnter (Collider other)
 	{
 		touch = true;
-
-	if (timer <= 0.5f)
-		{
-			cS_CheckPoint_Controller.Die ();
-		}
-
 	if(!other.CompareTag("Player"))
 		{
 			return;
 		}
-		
 	}
 	
 	void OnTriggerExit (Collider other)
@@ -46,6 +47,7 @@ public class CS_Flytrap : MonoBehaviour
 		if(other.gameObject.tag == "Player")
 			{
 				touch = false;
+				timer = timerLimit;
 			}
 		
 	}
