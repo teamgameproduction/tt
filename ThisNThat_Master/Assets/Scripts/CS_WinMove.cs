@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CS_winMove : MonoBehaviour 
+public class CS_WinMove : MonoBehaviour 
 {
 	public GameObject Winner;
 
@@ -22,34 +22,60 @@ public class CS_winMove : MonoBehaviour
 
 	void OnTriggerEnter (Collider other)
 	{
-		if (other.gameObject.tag == "Player" && fWin.animprogress == 0) 
+		if (other.tag == "Player")
 			{
-				isTouch = true;
-				Winner.animation.Play("winAnim01");
-				gameObject.collider.enabled = false;
-				fWin.playanim = true;
+				if (fWin.animprogress == 0) 
+					{
+						isTouch = true;
+						Winner.animation.Play("winAnim01");
+						gameObject.collider.enabled = false;
+						fWin.playanim = true;
+					}
+
+				else if (fWin.animprogress == 1) 
+				{
+					isTouch = true;
+					Winner.animation.Play("winAnim02");
+					gameObject.collider.enabled = false;
+					fWin.playanim = true;
+				}
+
+				else if (fWin.animprogress == 2) 
+				{
+					isTouch = true;
+					Winner.animation.Play("winAnim03");
+					fWin.playanim = true;
+					gameObject.collider.enabled = false;
+				}
+
+				else if (fWin.animprogress == 3) 
+				{
+					isTouch = true;
+					Winner.animation.Play("winAnim04");
+					fWin.playanim = true;
+				}
+				
+				else if (fWin.animprogress == 4) 
+				{
+					isTouch = true;
+					Winner.animation.Play("winAnim05");
+					fWin.playanim = true;
+				}
+
+				else if (fWin.animprogress == 5) 
+				{
+					isTouch = true;
+					Winner.animation.Play("winAnim04");
+					fWin.playanim = true;
+				}
+
+				else if (fWin.animprogress == 6) 
+				{
+					isTouch = true;
+					Winner.animation.Play("winAnim05");
+					fWin.playanim = true;
+				}
 			}
 
-		else if (other.gameObject.tag == "Player" && fWin.animprogress == 1) 
-		{
-			isTouch = true;
-			Winner.animation.Play("winAnim02");
-			gameObject.collider.enabled = false;
-			fWin.playanim = true;
-		}
-
-		else if (other.gameObject.tag == "Player" && fWin.animprogress == 2) 
-		{
-			isTouch = true;
-			Winner.animation.Play("winAnim03");
-			fWin.playanim = true;
-		}
-
-		else if (other.gameObject.tag == "Player" && fWin.animprogress == 3) 
-		{
-			isTouch = true;
-			Winner.animation.Play("winAnim04");
-			fWin.playanim = true;
-		}
 	}
 }

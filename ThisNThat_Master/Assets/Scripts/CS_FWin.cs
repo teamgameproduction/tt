@@ -10,21 +10,26 @@ public class CS_FWin : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-
+	
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		if (playanim == true) 
+		if (playanim == true && animprogress <= 3) 
 		{
 			animprogress = animprogress + 1;
 			playanim = false;
 		}
 
-		if (animprogress == 3) 
+		else if (animprogress == 3)
 		{
-			animprogress = 2;	
+			animprogress = 4;
+		}
+
+		else if (animprogress == 4)
+		{
+			animprogress = 3;
 		}
 	}
 }
