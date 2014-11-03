@@ -95,7 +95,7 @@
      <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
      <None Include="Assets\Scenes\UndergroundScene\Gem Shader\diamond shader.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/SilverKayin/Documents/GitHub/tt/ThisNThat_Master/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/student.AIPGH/Documents/GitHub/tt/ThisNThat_Master/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
