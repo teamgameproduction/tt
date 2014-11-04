@@ -9,7 +9,7 @@ public class CS_CollectableCounter : MonoBehaviour
 	void Update () 
 	{
 		//Set the coiin count text
-		guiText.text = "Stuff x" + collectableCounter;
+		guiText.text = "Creatures" + " " + collectableCounter + "/" + 5;
 
 	}
 }

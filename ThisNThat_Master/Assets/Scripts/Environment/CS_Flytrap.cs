@@ -14,6 +14,7 @@ public class CS_Flytrap : MonoBehaviour
 	{
 		cS_CheckPoint_Controller = GameObject.Find ("GameState").GetComponent<CS_Checkpoint_Controller>();
 		touch = false;
+		renderer.material.color = new Color(0,1,0);
 	}
 	
 	void Update () 
@@ -28,18 +29,15 @@ public class CS_Flytrap : MonoBehaviour
 			cS_CheckPoint_Controller.Die ();
 			//print ("5");
 			timer = timerLimit;
+			renderer.material.color = new Color(0,1,0);
 			//print ("6");
 		}
 
-		if (timer >= 2.0f) 
-		{
-			renderer.material.color = new Color(0,1,0);
-		}
-		else if (timer < 1.5f && timer > 1.0f)
+		if (timer < 2.0f)
 		{
 			renderer.material.color = new Color(1,1,0);
 		}
-		else if (timer <= 1.0f)
+		if (timer < 1.0f)
 		{
 			renderer.material.color = new Color(1,0,0);
 		}
@@ -61,6 +59,7 @@ public class CS_Flytrap : MonoBehaviour
 			{
 				touch = false;
 				timer = timerLimit;
+				renderer.material.color = new Color(0,1,0);
 			}
 		
 	}
