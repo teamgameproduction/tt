@@ -185,6 +185,15 @@ public class CS_EnviroMovement : MonoBehaviour {
 			
 		}
 	}
+
+	void OnTriggerEnter (Collider other)
+	{
+		if (other.gameObject.tag == CollisionType) 
+		{
+			Destroy (gameObject);
+			
+		}
+	}
 	
 }
 
