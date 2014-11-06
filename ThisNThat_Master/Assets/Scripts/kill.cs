@@ -2,11 +2,17 @@
 using System.Collections;
 
 public class kill : MonoBehaviour {
-	public CS_Checkpoint_Controller cS_CheckPoint_Controller;
+	public CS_CheckpointCTRL checkPointCTRL;
+	public GameObject TriggeringPlayer;
+
+	[HideInInspector]	public GameObject 	gmcharacterBlue;
+	[HideInInspector]	public GameObject 	gmcharacterRed;
 	// Use this for initialization
 	void Start () {
 
-		cS_CheckPoint_Controller = GameObject.Find ("GameState").GetComponent<CS_Checkpoint_Controller>();
+		checkPointCTRL = GameObject.Find ("GameState").GetComponent<CS_CheckpointCTRL>();
+		gmcharacterBlue = GameObject.Find ("characterBlue");
+		gmcharacterRed = GameObject.Find ("characterRed");
 	}
 	
 	// Update is called once per frame
@@ -22,8 +28,21 @@ public class kill : MonoBehaviour {
 	//	}
 		if (other.gameObject.tag == "Player") {
 
+
+			TriggeringPlayer = other.gameObject;
+
 						if (other.gameObject.tag == "Player") {
-								cS_CheckPoint_Controller.Die ();
+							
+							if(TriggeringPlayer == gmcharacterRed){
+					print ("DieRed1");
+								checkPointCTRL.DieRed();
+					print ("DieRed2");
+							}
+							
+							else {
+								checkPointCTRL.DieBlue();
+							}
+							
 						}
 				}
 	}

@@ -69,6 +69,8 @@
      <Compile Include="Assets\Scripts\Environment\CS_BlockBlue.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_Bounce.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_BreakablePlatform.cs" />
+     <Compile Include="Assets\Scripts\Environment\CS_Checkpoint.cs" />
+     <Compile Include="Assets\Scripts\Environment\CS_CheckpointCTRL.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_DestroyObjects.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_Digable.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_EnviroMovement.cs" />
