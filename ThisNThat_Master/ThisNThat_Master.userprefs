@@ -1,16 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Environment\CS_Flytrap.cs">
-    <Files>
-      <File FileName="Assets\Scripts\Environment\CS_BlockBlue.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Environment\CS_Flytrap.cs" Line="1" Column="1" />
-=======
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GUI\CS_LevelSelect.cs">
     <Files>
-      <File FileName="Assets\Scripts\Environment\CS_BlockBlue.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GUI\CS_LevelSelect.cs" Line="38" Column="34" />
->>>>>>> origin/master
+      <File FileName="Assets\Scripts\GUI\CS_LevelSelect.cs" Line="114" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -25,15 +25,14 @@ public class CS_LevelSelect : MonoBehaviour
 						public static bool 	wait;
 						public static bool	waitOnce;
 						public static Quaternion worldRotation;
-						public static float	currentBiome; //replace with strings for biome names?
-						public static float currentLevel; //replace with strings for level names?
+						public static string currentBiome; //replace with strings for biome names?
+						public static int currentLevel; //replace with strings for level names?
 		
 	void Start ()
 	{
 		//Initialize the static variable on start
 		CS_LevelSelect.worldRotation = Quaternion.identity;
-		CS_LevelSelect.currentBiome = 1f;
-		CS_LevelSelect.currentBiome = 1f;
+		CS_LevelSelect.currentBiome = "Underground";
 		CS_LevelSelect.wait = true;
 		CS_LevelSelect.waitOnce = true;
 		CS_LevelSelect.riseDelay = buttonRiseDelay;
@@ -94,36 +93,37 @@ public class CS_LevelSelect : MonoBehaviour
 			CS_LevelSelect.riseDelay = buttonRiseDelay;
 			CS_LevelSelect.wait = false;
 			CS_LevelSelect.worldRotation = Quaternion.identity;
-			currentBiome = 1f;
+			CS_LevelSelect.currentBiome = "Underground";
 			break;
 		case LevelType.Arctic:
 			CS_LevelSelect.riseDelay = buttonRiseDelay;
 			CS_LevelSelect.wait = false;
 			CS_LevelSelect.worldRotation.eulerAngles = new Vector3(0,0,90);
-			currentBiome = 2f;
+			CS_LevelSelect.currentBiome = "Arctic";
 			break;
 		case LevelType.Forest:
 			CS_LevelSelect.riseDelay = buttonRiseDelay;
 			CS_LevelSelect.wait = false;
 			CS_LevelSelect.worldRotation.eulerAngles = new Vector3(0,0,180);
-			currentBiome = 3f;
+			CS_LevelSelect.currentBiome = "Forest";
 			break;
 		case LevelType.Volcano:
 			CS_LevelSelect.riseDelay = buttonRiseDelay;
 			CS_LevelSelect.wait = false;
 			CS_LevelSelect.worldRotation.eulerAngles = new Vector3(0,0,270);
-			currentBiome = 4f;
+			CS_LevelSelect.currentBiome = "Volcano";
 			break;
 		case LevelType.Sub1:
-			CS_LevelSelect.currentLevel = currentBiome + 0.1f;
+			CS_LevelSelect.currentLevel = 1;
+			Application.LoadLevel("" + CS_LevelSelect.currentBiome + "_0" + CS_LevelSelect.currentLevel);
 			print ("I'm loading" + CS_LevelSelect.currentLevel);
 			break;
 		case LevelType.Sub2:
-			CS_LevelSelect.currentLevel = currentBiome + 0.2f;
+			CS_LevelSelect.currentLevel = 2;
 			print ("I'm loading" + CS_LevelSelect.currentLevel);
 			break;
 		case LevelType.Sub3:
-			CS_LevelSelect.currentLevel = currentBiome + 0.3f;
+			CS_LevelSelect.currentLevel = 3;
 			print ("I'm loading" + CS_LevelSelect.currentLevel);
 			break;
 		}
