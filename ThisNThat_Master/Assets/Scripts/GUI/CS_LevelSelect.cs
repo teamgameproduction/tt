@@ -126,9 +126,6 @@ public class CS_LevelSelect : MonoBehaviour
 			CS_LevelSelect.currentLevel = currentBiome + 0.3f;
 			print ("I'm loading" + CS_LevelSelect.currentLevel);
 			break;
-		case LevelType.Ship:
-			Application.LoadLevel ("Ship_Blockout");
-			break;
 		}
 	}
 
