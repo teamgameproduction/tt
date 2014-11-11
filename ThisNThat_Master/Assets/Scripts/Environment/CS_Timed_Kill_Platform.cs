@@ -7,6 +7,7 @@ public class CS_Timed_Kill_Platform : MonoBehaviour
 	public float timerLimit = 5.5f;
 	//public ParticleSystem posionParticle;
 	public GameObject posion;
+	public Vector3 startPosition;
 
 	public bool touch;
 	public CS_Checkpoint_Controller cS_CheckPoint_Controller;
@@ -16,11 +17,8 @@ public class CS_Timed_Kill_Platform : MonoBehaviour
 		cS_CheckPoint_Controller = GameObject.Find ("GameState").GetComponent<CS_Checkpoint_Controller>();
 		//posionParticle = (ParticleSystem)gameObject.GetComponent("ParticleSystem");
 		posion = GameObject.Find("Death");
-		print ("fjdngjfdnglkjngfdkjnfdngkjfd");
 		touch = false;
-
 		posion.SetActive(false);
-
 	}
 	
 	void Update () 
