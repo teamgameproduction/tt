@@ -10,7 +10,8 @@ public class CS_DestroyObjects : MonoBehaviour {
 		
 		if (other.gameObject == destroyer) 
 		{
-			Destroy(gameObject);
+			//Destroy(gameObject);
+			gameObject.SetActive(false);
 		}
 }
 }
