@@ -1,0 +1,613 @@
+fileFormatVersion: 2
+guid: 0a36a8e86f0385d4294d8dafe3152309
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Box017
+    100002: Box019
+    100004: Box020
+    100006: Box021
+    100008: Box022
+    100010: Box023
+    100012: Box024
+    100014: Box025
+    100016: Box026
+    100018: Box027
+    100020: Box029
+    100022: Box030
+    100024: Cone001
+    100026: Cone002
+    100028: Cone003
+    100030: Cone004
+    100032: Cone005
+    100034: Cone006
+    100036: Cone007
+    100038: Cone008
+    100040: Cone009
+    100042: Cone010
+    100044: Cone011
+    100046: Cone013
+    100048: Cone014
+    100050: Cone015
+    100052: Cone016
+    100054: Cone017
+    100056: Cone018
+    100058: Crawler
+    100060: Crawler 1
+    100062: //RootNode
+    100064: GeoSphere003
+    100066: GeoSphere004
+    100068: helix
+    100070: Object011
+    100072: Object011 1
+    100074: Object021
+    100076: Object027
+    100078: Object029
+    100080: Object032
+    100082: Object033
+    100084: Object034
+    100086: Object035
+    100088: Object036
+    100090: tt_forest_endpiece01
+    100092: tt_forest_endpiece_copy
+    100094: tt_forest_grass01
+    100096: tt_forest_grass02
+    100098: tt_forest_groundcover01
+    100100: tt_forest_groundcover02
+    100102: TT_Forest_Hazard01
+    100104: TT_Forest_Hazard01_copy
+    100106: TT_Forest_Hazard01_copy 1
+    100108: TT_Forest_Hazard01_copy 2
+    100110: TT_Forest_Hazard01_copy 3
+    100112: TT_Forest_Hazard01_copy001
+    100114: TT_Forest_Hazard01_copy002
+    100116: TT_Forest_Hazard01_copy003
+    100118: TT_Forest_Hazard01_copy004
+    100120: TT_Forest_Hazard01_copy005
+    100122: tt_forest_left_cliff
+    100124: tt_forest_midpiece01
+    100126: tt_forest_midpiece02
+    100128: tt_forest_midpiece02 1
+    100130: tt_forest_midpiece_long
+    100132: tt_forest_right_cliff
+    100134: tt_forest_rock005
+    100136: tt_forest_rock01
+    100138: tt_forest_rock010
+    100140: tt_forest_rock011
+    100142: tt_forest_rock02
+    100144: tt_forest_rock03
+    100146: tt_forest_rock03_copy
+    100148: tt_forest_rock04
+    100150: tt_forest_rock05_copy
+    100152: tt_forest_rock05_copy 1
+    100154: tt_forest_rock05_copy 2
+    100156: tt_forest_rock05_copy 3
+    100158: tt_forest_rock05_copy 4
+    100160: tt_forest_rock05_copy 5
+    100162: tt_forest_rock05_copy 6
+    100164: tt_forest_rock05_copy 7
+    100166: tt_forest_rock05_copy001
+    100168: tt_forest_rock05_copy002
+    100170: tt_forest_rock06_copy
+    100172: tt_forest_root01
+    100174: tt_forest_root015
+    100176: tt_forest_root019
+    100178: tt_forest_root02
+    100180: tt_forest_root022
+    100182: tt_forest_root023
+    100184: tt_forest_root03_a
+    100186: tt_forest_root03_b
+    100188: tt_forest_root05
+    100190: tt_forest_root07
+    100192: tt_forest_root08
+    100194: tt_forest_root09
+    100196: tt_forest_root10a
+    100198: tt_forest_root10b
+    100200: tt_forest_root11
+    100202: tt_forest_root13
+    100204: tt_forest_root14
+    100206: tt_forest_root15
+    100208: tt_forest_root17
+    100210: tt_forest_root17_copy
+    100212: tt_forest_root18
+    100214: tt_forest_root19_copy
+    100216: tt_forest_rootstep
+    100218: tt_forest_rootstep001
+    100220: tt_forest_roottie
+    400000: Box017
+    400002: Box019
+    400004: Box020
+    400006: Box021
+    400008: Box022
+    400010: Box023
+    400012: Box024
+    400014: Box025
+    400016: Box026
+    400018: Box027
+    400020: Box029
+    400022: Box030
+    400024: Cone001
+    400026: Cone002
+    400028: Cone003
+    400030: Cone004
+    400032: Cone005
+    400034: Cone006
+    400036: Cone007
+    400038: Cone008
+    400040: Cone009
+    400042: Cone010
+    400044: Cone011
+    400046: Cone013
+    400048: Cone014
+    400050: Cone015
+    400052: Cone016
+    400054: Cone017
+    400056: Cone018
+    400058: Crawler
+    400060: Crawler 1
+    400062: //RootNode
+    400064: GeoSphere003
+    400066: GeoSphere004
+    400068: helix
+    400070: Object011
+    400072: Object011 1
+    400074: Object021
+    400076: Object027
+    400078: Object029
+    400080: Object032
+    400082: Object033
+    400084: Object034
+    400086: Object035
+    400088: Object036
+    400090: tt_forest_endpiece01
+    400092: tt_forest_endpiece_copy
+    400094: tt_forest_grass01
+    400096: tt_forest_grass02
+    400098: tt_forest_groundcover01
+    400100: tt_forest_groundcover02
+    400102: TT_Forest_Hazard01
+    400104: TT_Forest_Hazard01_copy
+    400106: TT_Forest_Hazard01_copy 1
+    400108: TT_Forest_Hazard01_copy 2
+    400110: TT_Forest_Hazard01_copy 3
+    400112: TT_Forest_Hazard01_copy001
+    400114: TT_Forest_Hazard01_copy002
+    400116: TT_Forest_Hazard01_copy003
+    400118: TT_Forest_Hazard01_copy004
+    400120: TT_Forest_Hazard01_copy005
+    400122: tt_forest_left_cliff
+    400124: tt_forest_midpiece01
+    400126: tt_forest_midpiece02
+    400128: tt_forest_midpiece02 1
+    400130: tt_forest_midpiece_long
+    400132: tt_forest_right_cliff
+    400134: tt_forest_rock005
+    400136: tt_forest_rock01
+    400138: tt_forest_rock010
+    400140: tt_forest_rock011
+    400142: tt_forest_rock02
+    400144: tt_forest_rock03
+    400146: tt_forest_rock03_copy
+    400148: tt_forest_rock04
+    400150: tt_forest_rock05_copy
+    400152: tt_forest_rock05_copy 1
+    400154: tt_forest_rock05_copy 2
+    400156: tt_forest_rock05_copy 3
+    400158: tt_forest_rock05_copy 4
+    400160: tt_forest_rock05_copy 5
+    400162: tt_forest_rock05_copy 6
+    400164: tt_forest_rock05_copy 7
+    400166: tt_forest_rock05_copy001
+    400168: tt_forest_rock05_copy002
+    400170: tt_forest_rock06_copy
+    400172: tt_forest_root01
+    400174: tt_forest_root015
+    400176: tt_forest_root019
+    400178: tt_forest_root02
+    400180: tt_forest_root022
+    400182: tt_forest_root023
+    400184: tt_forest_root03_a
+    400186: tt_forest_root03_b
+    400188: tt_forest_root05
+    400190: tt_forest_root07
+    400192: tt_forest_root08
+    400194: tt_forest_root09
+    400196: tt_forest_root10a
+    400198: tt_forest_root10b
+    400200: tt_forest_root11
+    400202: tt_forest_root13
+    400204: tt_forest_root14
+    400206: tt_forest_root15
+    400208: tt_forest_root17
+    400210: tt_forest_root17_copy
+    400212: tt_forest_root18
+    400214: tt_forest_root19_copy
+    400216: tt_forest_rootstep
+    400218: tt_forest_rootstep001
+    400220: tt_forest_roottie
+    2300000: Box017
+    2300002: Box019
+    2300004: Box020
+    2300006: Box021
+    2300008: Box022
+    2300010: Box023
+    2300012: Box024
+    2300014: Box025
+    2300016: Box026
+    2300018: Box027
+    2300020: Box029
+    2300022: Box030
+    2300024: Cone001
+    2300026: Cone002
+    2300028: Cone003
+    2300030: Cone004
+    2300032: Cone005
+    2300034: Cone006
+    2300036: Cone007
+    2300038: Cone008
+    2300040: Cone009
+    2300042: Cone010
+    2300044: Cone011
+    2300046: Cone013
+    2300048: Cone014
+    2300050: Cone015
+    2300052: Cone016
+    2300054: Cone017
+    2300056: Cone018
+    2300058: Crawler
+    2300060: Crawler 1
+    2300062: GeoSphere003
+    2300064: GeoSphere004
+    2300066: helix
+    2300068: Object011
+    2300070: Object011 1
+    2300072: Object021
+    2300074: Object027
+    2300076: Object029
+    2300078: Object032
+    2300080: Object033
+    2300082: Object034
+    2300084: Object035
+    2300086: Object036
+    2300088: tt_forest_endpiece01
+    2300090: tt_forest_endpiece_copy
+    2300092: tt_forest_grass01
+    2300094: tt_forest_grass02
+    2300096: tt_forest_groundcover01
+    2300098: tt_forest_groundcover02
+    2300100: TT_Forest_Hazard01
+    2300102: TT_Forest_Hazard01_copy
+    2300104: TT_Forest_Hazard01_copy 1
+    2300106: TT_Forest_Hazard01_copy 2
+    2300108: TT_Forest_Hazard01_copy 3
+    2300110: TT_Forest_Hazard01_copy001
+    2300112: TT_Forest_Hazard01_copy002
+    2300114: TT_Forest_Hazard01_copy003
+    2300116: TT_Forest_Hazard01_copy004
+    2300118: TT_Forest_Hazard01_copy005
+    2300120: tt_forest_left_cliff
+    2300122: tt_forest_midpiece01
+    2300124: tt_forest_midpiece02
+    2300126: tt_forest_midpiece02 1
+    2300128: tt_forest_midpiece_long
+    2300130: tt_forest_right_cliff
+    2300132: tt_forest_rock005
+    2300134: tt_forest_rock01
+    2300136: tt_forest_rock010
+    2300138: tt_forest_rock011
+    2300140: tt_forest_rock02
+    2300142: tt_forest_rock03
+    2300144: tt_forest_rock03_copy
+    2300146: tt_forest_rock04
+    2300148: tt_forest_rock05_copy
+    2300150: tt_forest_rock05_copy 1
+    2300152: tt_forest_rock05_copy 2
+    2300154: tt_forest_rock05_copy 3
+    2300156: tt_forest_rock05_copy 4
+    2300158: tt_forest_rock05_copy 5
+    2300160: tt_forest_rock05_copy 6
+    2300162: tt_forest_rock05_copy 7
+    2300164: tt_forest_rock05_copy001
+    2300166: tt_forest_rock05_copy002
+    2300168: tt_forest_rock06_copy
+    2300170: tt_forest_root01
+    2300172: tt_forest_root015
+    2300174: tt_forest_root019
+    2300176: tt_forest_root02
+    2300178: tt_forest_root022
+    2300180: tt_forest_root023
+    2300182: tt_forest_root03_a
+    2300184: tt_forest_root03_b
+    2300186: tt_forest_root05
+    2300188: tt_forest_root07
+    2300190: tt_forest_root08
+    2300192: tt_forest_root09
+    2300194: tt_forest_root10a
+    2300196: tt_forest_root10b
+    2300198: tt_forest_root11
+    2300200: tt_forest_root13
+    2300202: tt_forest_root14
+    2300204: tt_forest_root15
+    2300206: tt_forest_root17
+    2300208: tt_forest_root17_copy
+    2300210: tt_forest_root18
+    2300212: tt_forest_root19_copy
+    2300214: tt_forest_rootstep
+    2300216: tt_forest_rootstep001
+    2300218: tt_forest_roottie
+    3300000: Box017
+    3300002: Box019
+    3300004: Box020
+    3300006: Box021
+    3300008: Box022
+    3300010: Box023
+    3300012: Box024
+    3300014: Box025
+    3300016: Box026
+    3300018: Box027
+    3300020: Box029
+    3300022: Box030
+    3300024: Cone001
+    3300026: Cone002
+    3300028: Cone003
+    3300030: Cone004
+    3300032: Cone005
+    3300034: Cone006
+    3300036: Cone007
+    3300038: Cone008
+    3300040: Cone009
+    3300042: Cone010
+    3300044: Cone011
+    3300046: Cone013
+    3300048: Cone014
+    3300050: Cone015
+    3300052: Cone016
+    3300054: Cone017
+    3300056: Cone018
+    3300058: Crawler
+    3300060: Crawler 1
+    3300062: GeoSphere003
+    3300064: GeoSphere004
+    3300066: helix
+    3300068: Object011
+    3300070: Object011 1
+    3300072: Object021
+    3300074: Object027
+    3300076: Object029
+    3300078: Object032
+    3300080: Object033
+    3300082: Object034
+    3300084: Object035
+    3300086: Object036
+    3300088: tt_forest_endpiece01
+    3300090: tt_forest_endpiece_copy
+    3300092: tt_forest_grass01
+    3300094: tt_forest_grass02
+    3300096: tt_forest_groundcover01
+    3300098: tt_forest_groundcover02
+    3300100: TT_Forest_Hazard01
+    3300102: TT_Forest_Hazard01_copy
+    3300104: TT_Forest_Hazard01_copy 1
+    3300106: TT_Forest_Hazard01_copy 2
+    3300108: TT_Forest_Hazard01_copy 3
+    3300110: TT_Forest_Hazard01_copy001
+    3300112: TT_Forest_Hazard01_copy002
+    3300114: TT_Forest_Hazard01_copy003
+    3300116: TT_Forest_Hazard01_copy004
+    3300118: TT_Forest_Hazard01_copy005
+    3300120: tt_forest_left_cliff
+    3300122: tt_forest_midpiece01
+    3300124: tt_forest_midpiece02
+    3300126: tt_forest_midpiece02 1
+    3300128: tt_forest_midpiece_long
+    3300130: tt_forest_right_cliff
+    3300132: tt_forest_rock005
+    3300134: tt_forest_rock01
+    3300136: tt_forest_rock010
+    3300138: tt_forest_rock011
+    3300140: tt_forest_rock02
+    3300142: tt_forest_rock03
+    3300144: tt_forest_rock03_copy
+    3300146: tt_forest_rock04
+    3300148: tt_forest_rock05_copy
+    3300150: tt_forest_rock05_copy 1
+    3300152: tt_forest_rock05_copy 2
+    3300154: tt_forest_rock05_copy 3
+    3300156: tt_forest_rock05_copy 4
+    3300158: tt_forest_rock05_copy 5
+    3300160: tt_forest_rock05_copy 6
+    3300162: tt_forest_rock05_copy 7
+    3300164: tt_forest_rock05_copy001
+    3300166: tt_forest_rock05_copy002
+    3300168: tt_forest_rock06_copy
+    3300170: tt_forest_root01
+    3300172: tt_forest_root015
+    3300174: tt_forest_root019
+    3300176: tt_forest_root02
+    3300178: tt_forest_root022
+    3300180: tt_forest_root023
+    3300182: tt_forest_root03_a
+    3300184: tt_forest_root03_b
+    3300186: tt_forest_root05
+    3300188: tt_forest_root07
+    3300190: tt_forest_root08
+    3300192: tt_forest_root09
+    3300194: tt_forest_root10a
+    3300196: tt_forest_root10b
+    3300198: tt_forest_root11
+    3300200: tt_forest_root13
+    3300202: tt_forest_root14
+    3300204: tt_forest_root15
+    3300206: tt_forest_root17
+    3300208: tt_forest_root17_copy
+    3300210: tt_forest_root18
+    3300212: tt_forest_root19_copy
+    3300214: tt_forest_rootstep
+    3300216: tt_forest_rootstep001
+    3300218: tt_forest_roottie
+    4300000: tt_forest_endpiece01
+    4300002: tt_forest_left_cliff
+    4300004: Object011
+    4300006: tt_forest_right_cliff
+    4300008: Box017
+    4300010: tt_forest_midpiece_long
+    4300012: Object011
+    4300014: Box019
+    4300016: Object021
+    4300018: Box020
+    4300020: Object027
+    4300022: tt_forest_midpiece02
+    4300024: tt_forest_root09
+    4300026: tt_forest_root10a
+    4300028: tt_forest_root10b
+    4300030: tt_forest_root11
+    4300032: tt_forest_root03_a
+    4300034: tt_forest_root03_b
+    4300036: tt_forest_root05
+    4300038: tt_forest_root07
+    4300040: tt_forest_root13
+    4300042: tt_forest_root14
+    4300044: tt_forest_root17
+    4300046: tt_forest_root08
+    4300048: tt_forest_root18
+    4300050: tt_forest_root019
+    4300052: tt_forest_rock03
+    4300054: tt_forest_rock04
+    4300056: tt_forest_rock02
+    4300058: Object029
+    4300060: tt_forest_midpiece01
+    4300062: tt_forest_rock005
+    4300064: tt_forest_rock05_copy
+    4300066: tt_forest_rock05_copy
+    4300068: tt_forest_rock05_copy
+    4300070: helix
+    4300072: tt_forest_rock05_copy
+    4300074: Crawler
+    4300076: GeoSphere003
+    4300078: GeoSphere004
+    4300080: Box021
+    4300082: Box022
+    4300084: Box023
+    4300086: Box024
+    4300088: Box025
+    4300090: Box026
+    4300092: Box027
+    4300094: tt_forest_rock010
+    4300096: tt_forest_rock011
+    4300098: tt_forest_root15
+    4300100: tt_forest_root015
+    4300102: tt_forest_root022
+    4300104: tt_forest_rootstep
+    4300106: tt_forest_rootstep001
+    4300108: tt_forest_grass02
+    4300110: tt_forest_grass01
+    4300112: tt_forest_groundcover01
+    4300114: tt_forest_groundcover02
+    4300116: tt_forest_rock05_copy
+    4300118: tt_forest_roottie
+    4300120: Box029
+    4300122: Object032
+    4300124: Object033
+    4300126: tt_forest_midpiece02
+    4300128: Object034
+    4300130: Object035
+    4300132: tt_forest_root023
+    4300134: tt_forest_root01
+    4300136: tt_forest_rock01
+    4300138: TT_Forest_Hazard01
+    4300140: TT_Forest_Hazard01_copy
+    4300142: TT_Forest_Hazard01_copy
+    4300144: TT_Forest_Hazard01_copy
+    4300146: tt_forest_rock05_copy
+    4300148: tt_forest_rock06_copy
+    4300150: tt_forest_rock05_copy
+    4300152: tt_forest_rock05_copy
+    4300154: TT_Forest_Hazard01_copy
+    4300156: Crawler
+    4300158: TT_Forest_Hazard01_copy001
+    4300160: TT_Forest_Hazard01_copy002
+    4300162: TT_Forest_Hazard01_copy003
+    4300164: TT_Forest_Hazard01_copy004
+    4300166: tt_forest_root02
+    4300168: tt_forest_root19_copy
+    4300170: tt_forest_root17_copy
+    4300172: Box030
+    4300174: tt_forest_rock05_copy001
+    4300176: tt_forest_rock05_copy002
+    4300178: Cone001
+    4300180: Cone002
+    4300182: Cone003
+    4300184: Cone004
+    4300186: Cone005
+    4300188: Cone006
+    4300190: Cone007
+    4300192: Cone008
+    4300194: Cone009
+    4300196: Cone010
+    4300198: TT_Forest_Hazard01_copy005
+    4300200: Cone011
+    4300202: Cone013
+    4300204: Cone014
+    4300206: Cone015
+    4300208: Cone016
+    4300210: Cone017
+    4300212: Cone018
+    4300214: tt_forest_endpiece_copy
+    4300216: Object036
+    4300218: tt_forest_rock03_copy
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
