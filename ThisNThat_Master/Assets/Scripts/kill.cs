@@ -3,6 +3,7 @@ using System.Collections;
 
 public class kill : MonoBehaviour {
 	public CS_CheckpointCTRL checkPointCTRL;
+	public CS_BluePickup bluePickup;
 	public GameObject TriggeringPlayer;
 
 	[HideInInspector]	public GameObject 	gmcharacterBlue;
@@ -11,6 +12,7 @@ public class kill : MonoBehaviour {
 	void Start () {
 
 		checkPointCTRL = GameObject.Find ("GameState").GetComponent<CS_CheckpointCTRL>();
+		bluePickup = GameObject.Find ("characterBlue").GetComponent<CS_BluePickup>();
 		gmcharacterBlue = GameObject.Find ("characterBlue");
 		gmcharacterRed = GameObject.Find ("characterRed");
 	}
@@ -32,11 +34,15 @@ public class kill : MonoBehaviour {
 			TriggeringPlayer = other.gameObject;
 
 						if (other.gameObject.tag == "Player") {
+
+							if(bluePickup.PickedUp == true){
+								checkPointCTRL.DieBlue();
+				}
 							
-							if(TriggeringPlayer == gmcharacterRed){
-					print ("DieRed1");
+							else if(TriggeringPlayer == gmcharacterRed){
+
 								checkPointCTRL.DieRed();
-					print ("DieRed2");
+
 							}
 							
 							else {

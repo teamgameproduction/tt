@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scenes\UndergroundScene\CS_CaveBoulder.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\kill.cs">
     <Files>
-      <File FileName="Assets\Scenes\UndergroundScene\CS_CaveBoulder.cs" Line="27" Column="4" />
+      <File FileName="Assets\Scripts\kill.cs" Line="39" Column="34" />
+      <File FileName="Assets\Scripts\Character\CS_BluePickup.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
