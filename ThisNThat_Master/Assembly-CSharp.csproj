@@ -88,6 +88,7 @@
      <Compile Include="Assets\Scripts\Environment\CS_Triggered_Lights.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_Updraft.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_WeightSense.cs" />
+     <Compile Include="Assets\Scripts\Environment\CS_Win.cs" />
      <Compile Include="Assets\Scripts\Environment\Delayed_Projectile.cs" />
      <Compile Include="Assets\Scripts\Environment\EnableOnEnter.cs" />
      <Compile Include="Assets\Scripts\Environment\Moving_Platforms.cs" />
