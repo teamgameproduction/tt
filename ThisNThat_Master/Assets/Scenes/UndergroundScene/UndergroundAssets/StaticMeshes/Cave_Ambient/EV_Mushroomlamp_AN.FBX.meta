@@ -1,0 +1,147 @@
+fileFormatVersion: 2
+guid: 385aba4f000d1294aa3a244aa26e17bb
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Be_Plant003
+    100002: Be_Plant004
+    100004: Be_Plant005
+    100006: Be_Plant006
+    100008: Bn_Plant_base002
+    100010: Bn_Plant_base003
+    100012: Bn_Plant_base004
+    100014: Bn_Plant_base005
+    100016: Bn_Plant_base_004
+    100018: Bn_Plant_base_005
+    100020: Bn_Plant_base_006
+    100022: Bn_Plant_base_007
+    100024: Bn_Plant_Leaf_009
+    100026: Bn_Plant_Leaf_010
+    100028: Bn_Plant_Leaf_011
+    100030: Bn_Plant_Leaf_012
+    100032: Bn_Plant_Leaf_013
+    100034: Bn_Plant_Leaf_014
+    100036: Bn_Plant_Leaf_015
+    100038: Bn_Plant_Leaf_016
+    100040: Bn_Plant_Leaf_017
+    100042: Bn_Plant_Leaf_018
+    100044: Bn_Plant_Leaf_019
+    100046: Bn_Plant_Leaf_020
+    100048: Bn_Plant_Mid002
+    100050: Bn_Plant_Mid003
+    100052: Bn_Plant_Mid004
+    100054: Bn_Plant_Mid005
+    100056: Bn_Plant_Top002
+    100058: Bn_Plant_Top003
+    100060: Bn_Plant_Top004
+    100062: Bn_Plant_Top005
+    100064: EV_Leaf_AN_002
+    100066: EV_Leaf_AN_003
+    100068: EV_Leaf_AN_004
+    100070: EV_Leaf_AN_01
+    100072: EV_Mushroom_SM_01
+    100074: //RootNode
+    400000: Be_Plant003
+    400002: Be_Plant004
+    400004: Be_Plant005
+    400006: Be_Plant006
+    400008: Bn_Plant_base002
+    400010: Bn_Plant_base003
+    400012: Bn_Plant_base004
+    400014: Bn_Plant_base005
+    400016: Bn_Plant_base_004
+    400018: Bn_Plant_base_005
+    400020: Bn_Plant_base_006
+    400022: Bn_Plant_base_007
+    400024: Bn_Plant_Leaf_009
+    400026: Bn_Plant_Leaf_010
+    400028: Bn_Plant_Leaf_011
+    400030: Bn_Plant_Leaf_012
+    400032: Bn_Plant_Leaf_013
+    400034: Bn_Plant_Leaf_014
+    400036: Bn_Plant_Leaf_015
+    400038: Bn_Plant_Leaf_016
+    400040: Bn_Plant_Leaf_017
+    400042: Bn_Plant_Leaf_018
+    400044: Bn_Plant_Leaf_019
+    400046: Bn_Plant_Leaf_020
+    400048: Bn_Plant_Mid002
+    400050: Bn_Plant_Mid003
+    400052: Bn_Plant_Mid004
+    400054: Bn_Plant_Mid005
+    400056: Bn_Plant_Top002
+    400058: Bn_Plant_Top003
+    400060: Bn_Plant_Top004
+    400062: Bn_Plant_Top005
+    400064: EV_Leaf_AN_002
+    400066: EV_Leaf_AN_003
+    400068: EV_Leaf_AN_004
+    400070: EV_Leaf_AN_01
+    400072: EV_Mushroom_SM_01
+    400074: //RootNode
+    2300000: EV_Mushroom_SM_01
+    3300000: EV_Mushroom_SM_01
+    4300000: EV_Leaf_AN_01
+    4300002: EV_Mushroom_SM_01
+    4300004: EV_Leaf_AN_002
+    4300006: EV_Leaf_AN_003
+    4300008: EV_Leaf_AN_004
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: EV_Leaf_AN_002
+    13700002: EV_Leaf_AN_003
+    13700004: EV_Leaf_AN_004
+    13700006: EV_Leaf_AN_01
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

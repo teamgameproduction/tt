@@ -1,0 +1,136 @@
+fileFormatVersion: 2
+guid: a90203527495f6b4ea6c85e2f7092e07
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: EV_rockwall_AN
+    100004: EV_rockwall_AN_01
+    100006: EV_rockwall_AN_02
+    100008: EV_rockwall_AN_03
+    100010: EV_rockwall_AN_04
+    100012: EV_rockwall_AN_05
+    100014: EV_rockwall_AN_06
+    100016: EV_rockwall_AN_07
+    100018: EV_rockwall_AN_08
+    100020: EV_rockwall_AN_09
+    100022: EV_rockwall_AN_10
+    100024: EV_rockwall_AN_11
+    100026: EV_rockwall_AN_12
+    100028: EV_rockwall_AN_13
+    100030: EV_rockwall_AN_14
+    400000: //RootNode
+    400002: EV_rockwall_AN
+    400004: EV_rockwall_AN_01
+    400006: EV_rockwall_AN_02
+    400008: EV_rockwall_AN_03
+    400010: EV_rockwall_AN_04
+    400012: EV_rockwall_AN_05
+    400014: EV_rockwall_AN_06
+    400016: EV_rockwall_AN_07
+    400018: EV_rockwall_AN_08
+    400020: EV_rockwall_AN_09
+    400022: EV_rockwall_AN_10
+    400024: EV_rockwall_AN_11
+    400026: EV_rockwall_AN_12
+    400028: EV_rockwall_AN_13
+    400030: EV_rockwall_AN_14
+    2300000: EV_rockwall_AN
+    2300002: EV_rockwall_AN_01
+    2300004: EV_rockwall_AN_02
+    2300006: EV_rockwall_AN_03
+    2300008: EV_rockwall_AN_04
+    2300010: EV_rockwall_AN_05
+    2300012: EV_rockwall_AN_06
+    2300014: EV_rockwall_AN_07
+    2300016: EV_rockwall_AN_08
+    2300018: EV_rockwall_AN_09
+    2300020: EV_rockwall_AN_10
+    2300022: EV_rockwall_AN_11
+    2300024: EV_rockwall_AN_12
+    2300026: EV_rockwall_AN_13
+    2300028: EV_rockwall_AN_14
+    3300000: EV_rockwall_AN
+    3300002: EV_rockwall_AN_01
+    3300004: EV_rockwall_AN_02
+    3300006: EV_rockwall_AN_03
+    3300008: EV_rockwall_AN_04
+    3300010: EV_rockwall_AN_05
+    3300012: EV_rockwall_AN_06
+    3300014: EV_rockwall_AN_07
+    3300016: EV_rockwall_AN_08
+    3300018: EV_rockwall_AN_09
+    3300020: EV_rockwall_AN_10
+    3300022: EV_rockwall_AN_11
+    3300024: EV_rockwall_AN_12
+    3300026: EV_rockwall_AN_13
+    3300028: EV_rockwall_AN_14
+    4300000: EV_rockwall_AN_13
+    4300002: EV_rockwall_AN_14
+    4300004: EV_rockwall_AN_06
+    4300006: EV_rockwall_AN_02
+    4300008: EV_rockwall_AN_03
+    4300010: EV_rockwall_AN_04
+    4300012: EV_rockwall_AN_05
+    4300014: EV_rockwall_AN_12
+    4300016: EV_rockwall_AN_11
+    4300018: EV_rockwall_AN_07
+    4300020: EV_rockwall_AN_08
+    4300022: EV_rockwall_AN_09
+    4300024: EV_rockwall_AN_10
+    4300026: EV_rockwall_AN
+    4300028: EV_rockwall_AN_01
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

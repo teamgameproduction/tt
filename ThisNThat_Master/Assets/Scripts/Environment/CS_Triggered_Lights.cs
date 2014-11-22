@@ -22,21 +22,21 @@ public class CS_Triggered_Lights : MonoBehaviour
 	{
 		
 		
-		if (Input.GetKeyUp (KeyCode.Q) && gameObject.light.intensity == 0 && lightInteract == true)
+		if (Input.GetKeyUp (KeyCode.Q) && gameObject.light.intensity == 0 && lightInteract == true && touch==true)
 		{
 			gameObject.light.intensity = 6;
 			lightInteract = false;
 			StartCoroutine(WaitforLights());
-			print ("Lights Off");
+			print ("Lights On");
 		}
 		
-		if (Input.GetKeyUp (KeyCode.Q) && gameObject.light.intensity == 6 && lightInteract == true)
+		/*if (Input.GetKeyUp (KeyCode.Q) && gameObject.light.intensity == 6 && lightInteract == true)
 		{ 
 			gameObject.light.intensity = 0;
 			lightInteract = false;
 			StartCoroutine(WaitforLights());
-			print ("Lights On");
-		}
+			print ("Lights Off");
+		}*/
 		
 	}
 	
