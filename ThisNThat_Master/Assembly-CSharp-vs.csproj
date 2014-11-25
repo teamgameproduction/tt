@@ -107,6 +107,7 @@
      <None Include="Assets\Scenes\UndergroundScene\Gem Shader\diamond shader.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/student.AIPGH/Documents/GitHub/tt/ThisNThat_Master/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/student.AIPGH/Desktop/tt/ThisNThat_Master/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
