@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scenes\ForestScene\ForestAssets\rockbreak.cs" />
      <Compile Include="Assets\Scripts\CS_Checkpoint_Controller.cs" />
      <Compile Include="Assets\Scripts\CS_Checkpoints.cs" />
      <Compile Include="Assets\Scripts\CS_FWin.cs" />

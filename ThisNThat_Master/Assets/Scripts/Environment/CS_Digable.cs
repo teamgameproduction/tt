@@ -28,6 +28,7 @@ public class CS_Digable : MonoBehaviour
 	{
 		if (IsRedTouching == true && controller.IsCharacterRed == 1 || IsRedTouching == true && bluePickup.PickedUp == true)
 		{
+			print ("gfgfdg");
 			Destroy (gameObject);
 		}
 	}
@@ -36,7 +37,7 @@ public class CS_Digable : MonoBehaviour
 	{
 		if (other.gameObject.name == "characterRed") 
 		{
-			//Debug.Log ("I dig that");
+			Debug.Log ("I dig that");
 			IsRedTouching = true;
 		}
 	}

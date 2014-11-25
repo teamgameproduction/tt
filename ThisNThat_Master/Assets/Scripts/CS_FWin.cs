@@ -24,11 +24,6 @@ public class CS_FWin : MonoBehaviour
 
 		else if (animprogress == 3)
 		{
-			animprogress = 4;
-		}
-
-		else if (animprogress == 4)
-		{
 			animprogress = 3;
 		}
 	}
