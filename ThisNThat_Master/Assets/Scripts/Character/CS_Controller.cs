@@ -118,7 +118,7 @@ public class CS_Controller : MonoBehaviour
 		}
 //-------------------------------------------------------------------------------------------------------
 
-		//ATTACH CHARACTERS
+		//SWITCH CHARACTERS BACK
 //-------------------------------------------------------------------------------------------------------
 		if (Input.GetKeyDown("e") && IsCharacterRed == 2 && PlayedOnce == false)
 		{
@@ -232,6 +232,8 @@ public class CS_Controller : MonoBehaviour
 	}
 
 //-------------------------------------------------------------------------------------------------------
+
+
 
 	//Sugar
 	//Spice

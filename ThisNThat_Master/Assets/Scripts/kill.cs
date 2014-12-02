@@ -32,24 +32,30 @@ public class kill : MonoBehaviour {
 
 
 			TriggeringPlayer = other.gameObject;
+			StartCoroutine("WaitToKill");
 
-						if (other.gameObject.tag == "Player") {
-
-							if(bluePickup.PickedUp == true){
-								checkPointCTRL.DieBlue();
-				}
-							
-							else if(TriggeringPlayer == gmcharacterRed){
-
-								checkPointCTRL.DieRed();
-
-							}
-							
-							else {
-								checkPointCTRL.DieBlue();
-							}
-							
-						}
+						
 				}
 	}
+
+	IEnumerator WaitToKill()
+	{
+		yield return new WaitForSeconds(1f);
+			
+			if(bluePickup.PickedUp == true){
+				checkPointCTRL.DieBlue();
+			}
+			
+			else if(TriggeringPlayer == gmcharacterRed){
+				
+				checkPointCTRL.DieRed();
+				
+			}
+			
+			else {
+				checkPointCTRL.DieBlue();
+			}
+			
+		
+		}
 }

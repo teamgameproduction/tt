@@ -50,6 +50,8 @@ public class CS_BluePickup : MonoBehaviour //This script allows Blue to pick up 
 		//CPRy = gmcharacterRed.transform.position.y;
 		//CPBy -= CPRy = yDifference;
 		//print (yDifference);
+
+		//To Pick Up Red
 		if (Input.GetKeyDown("f") && PickupRange == true && controller.IsCharacterRed == 2 && PickedUp == false)
 		{
 			//gmcharacterRed.transform.parent=gameObject.transform;
@@ -63,6 +65,7 @@ public class CS_BluePickup : MonoBehaviour //This script allows Blue to pick up 
 			controller.Speed = controller.TogetherSpeed;
 		}
 
+		//To Drop Red like it's hot
 		else if (Input.GetKeyDown("f") && PickedUp == true)
 		{
 			gmcharacterRed.rigidbody.isKinematic = false;
