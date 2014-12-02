@@ -19,6 +19,7 @@ public class rockbreak : MonoBehaviour
 		cage = GameObject.Find ("cage");
 		win = GameObject.Find ("Winner");
 		win.renderer.enabled = false;
+		win.collider.enabled = false;
 	}
 
 	void OnTriggerEnter(Collider other)
@@ -26,11 +27,13 @@ public class rockbreak : MonoBehaviour
 		if (other.gameObject.tag == "Rock")
 		{
 			win.renderer.enabled = true;
+			win.collider.enabled = true;
 
 			isBroke = true;
 			gameObject.SetActive(false);
 			cage.animation.Play("cagebreak");
 			cage.SetActive (false);
+
 
 		}
 	}
