@@ -65,6 +65,19 @@ public class CS_BluePickup : MonoBehaviour //This script allows Blue to pick up 
 			controller.Speed = controller.TogetherSpeed;
 		}
 
+		else if (Input.GetKeyDown ("f") && PickupRange == true && controller.IsCharacterRed == 1 && PickedUp == false) {
+
+			controller.SwitchToBlue();
+			PickedUp = true;
+			gameObject.rigidbody.mass = gameObject.rigidbody.mass + PickedUpObject.rigidbody.mass;
+			PickedUpObject.rigidbody.isKinematic = true;
+			controller.BlueFlapForce = BlueCarryingFlapSpeed;
+			PickedUpObject.collider.enabled = false;
+			BlueBoxColl.size = new Vector3(1,4,1);
+			BlueBoxColl.center = new Vector3(0.0f,-1.5f,0.0f);
+			controller.Speed = controller.TogetherSpeed;
+				}
+
 		//To Drop Red like it's hot
 		else if (Input.GetKeyDown("f") && PickedUp == true)
 		{

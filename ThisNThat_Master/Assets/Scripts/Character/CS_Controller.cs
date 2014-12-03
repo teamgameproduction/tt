@@ -10,8 +10,8 @@ public class CS_Controller : MonoBehaviour
 	[HideInInspector]	private bool 		PlayedOnce = false ;
 
 						//CAMERAS
-						public Camera 		CameraRed;
-						public Camera 		CameraBlue;
+						//public Camera 		CameraRed;
+						//public Camera 		CameraBlue;
 
 						//MOVEMENT VARIABLES
 						public float 		Speed = 4.0f;
@@ -103,54 +103,18 @@ public class CS_Controller : MonoBehaviour
 //-------------------------------------------------------------------------------------------------------
 		if (Input.GetKeyDown("e") && IsCharacterRed == 1){
 
-			//Detaches children from the controller
-			transform.DetachChildren();
-
-			//Attaches character 2 to the controller
-			gmcharacterBlue.transform.parent=gameObject.transform;
-			IsCharacterRed = 2;
-			//PlayedOnce is needed to stop the script from reattaching to character 1
-			PlayedOnce = true;
-			//switches camera
-			//CameraRed.camera.enabled = false;
-			//CameraBlue.camera.enabled = true;
-			Speed = ResetSpeed;
+			SwitchToBlue();
 		}
 //-------------------------------------------------------------------------------------------------------
 
 		//SWITCH CHARACTERS BACK
 //-------------------------------------------------------------------------------------------------------
-		if (Input.GetKeyDown("e") && IsCharacterRed == 2 && PlayedOnce == false)
+		else if (Input.GetKeyDown("e") && IsCharacterRed == 2)
 		{
-			transform.DetachChildren();
 
-			gmcharacterRed.transform.parent=gameObject.transform;
-			IsCharacterRed = 1;
-
-			//Switches camera
-			//CameraBlue.camera.enabled = false;
-			//CameraRed.camera.enabled = true;
-
-			//Resets Red if he is being carried by Blue
-			if (bluePickup.PickedUp == true)
-			{
-				BlueFlapForce = BlueFlapForce * 3;
-				bluePickup.PickedUpObject.rigidbody.isKinematic = false;
-				bluePickup.PickedUp = false;
-				gmcharacterBlue.rigidbody.mass = gmcharacterBlue.rigidbody.mass - bluePickup.PickedUpObject.rigidbody.mass;
-				BlueFlapForce = BlueFlapRestoreForce;
-				bluePickup.PickedUpObject.collider.enabled = true;
-				bluePickup.BlueBoxColl.size = new Vector3(1.0f,1.5f,1.0f);
-				bluePickup.BlueBoxColl.center = new Vector3(0,0,0);
-				Speed = ResetSpeed;
-			}
-			else
-			{
-				BlueFlapForce = BlueFlapRestoreForce;
-			}
+			SwitchToRed();
 		}
 
-		PlayedOnce = false;
 //-------------------------------------------------------------------------------------------------------
 
 		//JUMP
@@ -232,6 +196,52 @@ public class CS_Controller : MonoBehaviour
 	}
 
 //-------------------------------------------------------------------------------------------------------
+	//Use this function to switch to Blue
+	public void SwitchToBlue(){
+
+		//Detaches children from the controller
+		transform.DetachChildren();
+		
+		//Attaches character 2 to the controller
+		gmcharacterBlue.transform.parent=gameObject.transform;
+		IsCharacterRed = 2;
+		//switches camera
+		//CameraRed.camera.enabled = false;
+		//CameraBlue.camera.enabled = true;
+		Speed = ResetSpeed;
+	}
+
+//-------------------------------------------------------------------------------------------------------
+	//Use this function to switch to Red
+	public void SwitchToRed(){
+
+		transform.DetachChildren();
+		
+		gmcharacterRed.transform.parent=gameObject.transform;
+		IsCharacterRed = 1;
+		
+		//Switches camera
+		//CameraBlue.camera.enabled = false;
+		//CameraRed.camera.enabled = true;
+		
+		//Resets Red if he is being carried by Blue
+		if (bluePickup.PickedUp == true)
+		{
+			BlueFlapForce = BlueFlapForce * 3;
+			bluePickup.PickedUpObject.rigidbody.isKinematic = false;
+			bluePickup.PickedUp = false;
+			gmcharacterBlue.rigidbody.mass = gmcharacterBlue.rigidbody.mass - bluePickup.PickedUpObject.rigidbody.mass;
+			BlueFlapForce = BlueFlapRestoreForce;
+			bluePickup.PickedUpObject.collider.enabled = true;
+			bluePickup.BlueBoxColl.size = new Vector3(1.0f,1.5f,1.0f);
+			bluePickup.BlueBoxColl.center = new Vector3(0,0,0);
+			Speed = ResetSpeed;
+		}
+		else
+		{
+			BlueFlapForce = BlueFlapRestoreForce;
+		}
+	}
 
 
 
@@ -240,10 +250,12 @@ public class CS_Controller : MonoBehaviour
 	//And everything nice
 	//But professor Brian accidentally added another ingredient:
 	
-	//Coroutine Ex:
-	/*IEnumerator RedKinematicCoroutine(){
-		yield return new WaitForSeconds(0.1f);
-		gmcharacterRed.rigidbody.isKinematic = false;
-	}*/
+	//Coroutine X:
+	/*IEnumerator CreatePowerpuffGirls(){
+		GameObject.Instantiate (Blossom);
+		GameObject.Instantiate (Bubbles);
+		GameObject.Instantiate (Buttercup);
 
+	}
+	*/
 }

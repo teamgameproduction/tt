@@ -26,13 +26,16 @@ public class CS_CheckpointCTRL : MonoBehaviour {
 	
 	}
 
-	public void DieRed(){
-
+	public IEnumerator DieRed(){
+		print ("printing1");
+		yield return new WaitForSeconds (1);
 		gmcharacterRed.transform.position = CurrentCheckpointRed;
 	}
 
-	public void DieBlue(){
-
+	public IEnumerator DieBlue(){
+		print ("printing2");
+		yield return new WaitForSeconds (1);
 		gmcharacterBlue.transform.position = CurrentCheckpointBlue;
 	}
+	
 }

@@ -30,32 +30,37 @@ public class kill : MonoBehaviour {
 	//	}
 		if (other.gameObject.tag == "Player") {
 
-
 			TriggeringPlayer = other.gameObject;
-			StartCoroutine("WaitToKill");
-
-						
-				}
-	}
-
-	IEnumerator WaitToKill()
-	{
-		yield return new WaitForSeconds(1f);
 			
 			if(bluePickup.PickedUp == true){
-				checkPointCTRL.DieBlue();
+				checkPointCTRL.StopCoroutine("DieBlue");
+				checkPointCTRL.StartCoroutine("DieBlue");
 			}
 			
 			else if(TriggeringPlayer == gmcharacterRed){
 				
-				checkPointCTRL.DieRed();
+				//checkPointCTRL.DieRed();
+				checkPointCTRL.StopCoroutine("DieRed");
+				checkPointCTRL.StartCoroutine("DieRed");
+				print ("startkillingred");
 				
 			}
 			
 			else {
-				checkPointCTRL.DieBlue();
+				//checkPointCTRL.DieBlue();
+				checkPointCTRL.StopCoroutine("DieBlue");
+				checkPointCTRL.StartCoroutine("DieBlue");
+				print ("startkillingblue");
 			}
+
+
+			//Destroy (gameObject);
+						
+				}
+
+	}
+
 			
 		
-		}
+
 }
