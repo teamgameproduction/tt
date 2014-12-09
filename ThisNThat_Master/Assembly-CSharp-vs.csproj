@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\CS_GameState.cs" />
      <Compile Include="Assets\Scripts\CS_ProxLight.cs" />
      <Compile Include="Assets\Scripts\CS_RideOn.cs" />
+     <Compile Include="Assets\Scripts\CS_SetActive.cs" />
      <Compile Include="Assets\Scripts\CS_SlowCollider.cs" />
      <Compile Include="Assets\Scripts\CS_WinMove.cs" />
      <Compile Include="Assets\Scripts\Character\CS_AnimationController.cs" />
@@ -111,6 +112,7 @@
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/4.6/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/student.AIPGH/Documents/GitHub/tt/ThisNThat_Master/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
