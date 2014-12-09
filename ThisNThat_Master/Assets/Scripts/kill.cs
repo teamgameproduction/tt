@@ -35,7 +35,7 @@ public class kill : MonoBehaviour {
 			TriggeringPlayer = other.gameObject;
 			
 			if(bluePickup.PickedUp == true){
-				checkPointCTRL.StopCoroutine("DieBlue");
+				//checkPointCTRL.StopCoroutine("DieBlue");
 				checkPointCTRL.StartCoroutine("DieBlue");
 				controller.Speed = 0;
 			}
@@ -43,7 +43,7 @@ public class kill : MonoBehaviour {
 			else if(TriggeringPlayer == gmcharacterRed){
 				
 				//checkPointCTRL.DieRed();
-				checkPointCTRL.StopCoroutine("DieRed");
+				//checkPointCTRL.StopCoroutine("DieRed");
 				checkPointCTRL.StartCoroutine("DieRed");
 				controller.Speed = 0;
 				
@@ -51,7 +51,7 @@ public class kill : MonoBehaviour {
 			
 			else {
 				//checkPointCTRL.DieBlue();
-				checkPointCTRL.StopCoroutine("DieBlue");
+				//checkPointCTRL.StopCoroutine("DieBlue");
 				checkPointCTRL.StartCoroutine("DieBlue");
 				controller.Speed = 0;
 			}
