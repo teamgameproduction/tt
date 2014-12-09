@@ -8,6 +8,7 @@ public class CS_BluePickup : MonoBehaviour //This script allows Blue to pick up 
 						public GameObject PickedUpObject;
 
 	[HideInInspector]	public CS_Controller controller;
+	[HideInInspector]	public CS_FlapReset flapReset;
 						public GameObject gmcharacterRed;
 						//public GameObject gmcharacterBlue;
 
@@ -22,12 +23,16 @@ public class CS_BluePickup : MonoBehaviour //This script allows Blue to pick up 
 						public float BlueCarryingFlapSpeed = 600.0f;
 	[HideInInspector]	public BoxCollider BlueBoxColl;
 
+	//Adjust this to position Blue a little higher to be able to attach to red
+	public float BlueAttachHeightAdjustment = 1;
+
 
 
 	// Use this for initialization
 	void Start () 
 	{
-		controller = GameObject.Find ("CharacterController").GetComponent< CS_Controller>();
+		controller = GameObject.Find ("CharacterController").GetComponent<CS_Controller>();
+		flapReset = GameObject.Find ("characterBlue").GetComponent<CS_FlapReset>();
 		gmcharacterRed = GameObject.Find ("characterRed");
 		//gmcharacterBlue = GameObject.Find ("characterBlue");
 		BlueBoxColl = gameObject.collider as BoxCollider;
@@ -55,6 +60,9 @@ public class CS_BluePickup : MonoBehaviour //This script allows Blue to pick up 
 		if (Input.GetKeyDown("f") && PickupRange == true && controller.IsCharacterRed == 2 && PickedUp == false)
 		{
 			//gmcharacterRed.transform.parent=gameObject.transform;
+			if(flapReset.Grounded == true){
+				gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + BlueAttachHeightAdjustment, gameObject.transform.position.z);
+			}
 			PickedUp = true;
 			gameObject.rigidbody.mass = gameObject.rigidbody.mass + PickedUpObject.rigidbody.mass;
 			PickedUpObject.rigidbody.isKinematic = true;
@@ -64,9 +72,10 @@ public class CS_BluePickup : MonoBehaviour //This script allows Blue to pick up 
 			BlueBoxColl.center = new Vector3(0.0f,-1.5f,0.0f);
 			controller.Speed = controller.TogetherSpeed;
 		}
-
+		//To Get Picked Up By Blue
 		else if (Input.GetKeyDown ("f") && PickupRange == true && controller.IsCharacterRed == 1 && PickedUp == false) {
 
+			gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + BlueAttachHeightAdjustment, gameObject.transform.position.z);
 			controller.SwitchToBlue();
 			PickedUp = true;
 			gameObject.rigidbody.mass = gameObject.rigidbody.mass + PickedUpObject.rigidbody.mass;

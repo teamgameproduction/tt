@@ -2,7 +2,10 @@
 using System.Collections;
 
 public class CS_CheckpointCTRL : MonoBehaviour {
-	
+
+	[HideInInspector]	public CS_Controller controller;
+	[HideInInspector]	public  CS_BluePickup 	bluePickup;
+
 	public Vector3 StartingPosition;
 
 	public Vector3 CurrentCheckpointRed;
@@ -16,6 +19,8 @@ public class CS_CheckpointCTRL : MonoBehaviour {
 	
 		gmcharacterBlue = GameObject.Find ("characterBlue");
 		gmcharacterRed = GameObject.Find ("characterRed");
+		controller = GameObject.Find ("CharacterController").GetComponent< CS_Controller>();
+		bluePickup = GameObject.Find ("characterBlue").GetComponent< CS_BluePickup>();
 
 		CurrentCheckpointRed = StartingPosition;
 		CurrentCheckpointBlue = StartingPosition - new Vector3(2,0,0);
@@ -27,15 +32,19 @@ public class CS_CheckpointCTRL : MonoBehaviour {
 	}
 
 	public IEnumerator DieRed(){
-		print ("printing1");
 		yield return new WaitForSeconds (1);
 		gmcharacterRed.transform.position = CurrentCheckpointRed;
+		controller.Speed = controller.ResetSpeed;
 	}
 
 	public IEnumerator DieBlue(){
-		print ("printing2");
 		yield return new WaitForSeconds (1);
 		gmcharacterBlue.transform.position = CurrentCheckpointBlue;
+		if (bluePickup.PickedUp == false) {
+						controller.Speed = controller.ResetSpeed;
+				} else {
+						controller.Speed = controller.ResetTogetherSpeed;
+				}
 	}
 	
 }

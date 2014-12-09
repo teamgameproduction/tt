@@ -4,6 +4,7 @@ using System.Collections;
 public class kill : MonoBehaviour {
 	public CS_CheckpointCTRL checkPointCTRL;
 	public CS_BluePickup bluePickup;
+	public CS_Controller controller;
 	public GameObject TriggeringPlayer;
 
 	[HideInInspector]	public GameObject 	gmcharacterBlue;
@@ -13,6 +14,7 @@ public class kill : MonoBehaviour {
 
 		checkPointCTRL = GameObject.Find ("GameState").GetComponent<CS_CheckpointCTRL>();
 		bluePickup = GameObject.Find ("characterBlue").GetComponent<CS_BluePickup>();
+		controller = GameObject.Find ("CharacterController").GetComponent< CS_Controller>();
 		gmcharacterBlue = GameObject.Find ("characterBlue");
 		gmcharacterRed = GameObject.Find ("characterRed");
 	}
@@ -35,6 +37,7 @@ public class kill : MonoBehaviour {
 			if(bluePickup.PickedUp == true){
 				checkPointCTRL.StopCoroutine("DieBlue");
 				checkPointCTRL.StartCoroutine("DieBlue");
+				controller.Speed = 0;
 			}
 			
 			else if(TriggeringPlayer == gmcharacterRed){
@@ -42,7 +45,7 @@ public class kill : MonoBehaviour {
 				//checkPointCTRL.DieRed();
 				checkPointCTRL.StopCoroutine("DieRed");
 				checkPointCTRL.StartCoroutine("DieRed");
-				print ("startkillingred");
+				controller.Speed = 0;
 				
 			}
 			
@@ -50,7 +53,7 @@ public class kill : MonoBehaviour {
 				//checkPointCTRL.DieBlue();
 				checkPointCTRL.StopCoroutine("DieBlue");
 				checkPointCTRL.StartCoroutine("DieBlue");
-				print ("startkillingblue");
+				controller.Speed = 0;
 			}
 
 
