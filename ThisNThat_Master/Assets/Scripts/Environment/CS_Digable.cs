@@ -3,41 +3,64 @@ using System.Collections;
 
 public class CS_Digable : MonoBehaviour 
 {
-						public bool 			IsRedTouching = false;
+	public  bool 			IsRedTouching = false;
+	public 	AudioClip[] 		crushSound;
 	[HideInInspector]	public  CS_Controller 	controller;
 	[HideInInspector]	public  CS_BluePickup 	bluePickup;
-
+	
+	
 	// Use this for initialization
 	void Start () 
 	{
 		controller = GameObject.Find ("CharacterController").GetComponent< CS_Controller>();
 		bluePickup = GameObject.Find ("characterBlue").GetComponent< CS_BluePickup>();
+		//crushSound = GameObject.Find ("object_destroy").GetComponent<AudioClip>();
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
+		
+		
 		/*if (Input.GetKeyDown ("r") && IsRedTouching == true && controller.IsCharacterRed == true ||
 		    Input.GetKeyDown ("r") && IsRedTouching == true && bluePickup.PickedUp == true)
 		{
 			Destroy (gameObject);
 		}*/
+		
+		
 	}
+	
+	/*void Awake()
+	{
+		if (crushSound == null) 
+		{
+			crushSound = GameObject.Find ("object_destroy").GetComponent<AudioSource>();
+		}
 
+		}*/
+	
+	
 	void OnMouseDown()
 	{
+		
+		
 		if (IsRedTouching == true && controller.IsCharacterRed == 1 || IsRedTouching == true && bluePickup.PickedUp == true)
 		{
-			print ("gfgfdg");
+			int c = Random.Range (0, crushSound.Length);
+			AudioSource.PlayClipAtPoint(crushSound[c], transform.position);		
+			Debug.Log ("bam");			
 			Destroy (gameObject);
+			
+			
 		}
 	}
-
+	
 	void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.name == "characterRed") 
 		{
-			Debug.Log ("I dig that");
+			//Debug.Log ("I dig that");
 			IsRedTouching = true;
 		}
 	}
@@ -49,5 +72,7 @@ public class CS_Digable : MonoBehaviour
 			IsRedTouching = false;
 		}
 	}
-
+	
 }
+
+
