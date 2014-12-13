@@ -1,11 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\kill.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Environment\CS_GenericTrigger.cs">
     <Files>
-      <File FileName="..\..\..\Github\tt\ThisNThat_Master\Assets\Scripts\Environment\CS_Digable.cs" Line="79" Column="1" />
-      <File FileName="Assets\Scripts\Character\CS_Controller.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\kill.cs" Line="36" Column="4" />
-      <File FileName="Assets\Scripts\Environment\CS_CheckpointCTRL.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Environment\CS_GenericTrigger.cs" Line="38" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

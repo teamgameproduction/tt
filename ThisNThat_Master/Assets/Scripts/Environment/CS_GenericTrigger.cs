@@ -8,6 +8,7 @@ public class CS_GenericTrigger : MonoBehaviour
 	public string CollisionType;
 	public bool IfTriggerExitTogglesOff;
 	public float timerDuration;
+	public bool entered= false;
 	
 	void Start () 
 	{	
@@ -29,9 +30,10 @@ public class CS_GenericTrigger : MonoBehaviour
 	
 	void OnTriggerEnter (Collider other)
 	{
-		if (other.gameObject.tag == CollisionType) 
+		if (other.gameObject.tag == CollisionType && entered==false) 
 		{
 			collision = true;
+			entered=true;
 		}
 	}
 
@@ -40,6 +42,8 @@ public class CS_GenericTrigger : MonoBehaviour
 		if (other.gameObject.tag == CollisionType && IfTriggerExitTogglesOff == true) 
 		{
 			collision = false;
+
+		
 		}
 	}
 }
