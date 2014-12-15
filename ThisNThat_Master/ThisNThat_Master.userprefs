@@ -1,8 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Environment\CS_GenericTrigger.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Environment\CS_Flytrap.cs">
     <Files>
-      <File FileName="Assets\Scripts\Environment\CS_GenericTrigger.cs" Line="38" Column="3" />
+      <File FileName="Assets\Scripts\Environment\CS_GenericTrigger.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scenes\ForestScene\ForestAssets\rockbreak.cs" Line="36" Column="9" />
+      <File FileName="Assets\Scripts\CS_WinMove.cs" Line="14" Column="1" />
+      <File FileName="Assets\Scripts\CS_FWin.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GUI\CS_Generic_Pickup.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CS_SetActive.cs" Line="9" Column="2" />
+      <File FileName="Assets\Scripts\Environment\CS_Flytrap.cs" Line="27" Column="4" />
+      <File FileName="Assets\Scripts\kill.cs" Line="35" Column="40" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

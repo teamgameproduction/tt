@@ -7,26 +7,27 @@ public class CS_Flytrap : MonoBehaviour
 	public float timerLimit = 2.0f;
 
 	
-	public bool touch;
+	public bool isTouch;
 	public CS_CheckpointCTRL cS_CheckPoint_Controller;
 	
 	void Start ()
 	{
 		cS_CheckPoint_Controller = GameObject.Find ("GameState").GetComponent<CS_CheckpointCTRL>();
-		touch = false;
+		isTouch = false;
 		renderer.material.color = new Color(0,1,0);
 	}
 	
 	void Update () 
 	{
-		if (touch == true) 
+		if (isTouch == true) 
 		{
 			timer = timer - Time.deltaTime;
 		}
-		if (timer < 0.5f && touch ==true)
+		if (timer <= 0.5f && isTouch ==true)
 		{
 			//print ("4");
-			cS_CheckPoint_Controller.DieBlue ();
+			checkPointCTRL.StartCoroutine("DieBlue");
+			checkPointCTRL.StartCoroutine("DieRed");
 			cS_CheckPoint_Controller.DieRed ();
 			//print ("5");
 			timer = timerLimit;
@@ -34,11 +35,11 @@ public class CS_Flytrap : MonoBehaviour
 			//print ("6");
 		}
 
-		if (timer < 2.0f)
+		if (timer <= 2.0f)
 		{
 			renderer.material.color = new Color(1,1,0);
 		}
-		if (timer < 1.0f)
+		if (timer <= 1.0f)
 		{
 			renderer.material.color = new Color(1,0,0);
 		}
@@ -49,8 +50,8 @@ public class CS_Flytrap : MonoBehaviour
 	{
 		if(other.gameObject.tag == "Player")
 		{
+			isTouch = true;
 			return;
-			touch = true;
 		}
 	}
 	
@@ -58,7 +59,7 @@ public class CS_Flytrap : MonoBehaviour
 	{
 		if(other.gameObject.tag == "Player")
 			{
-				touch = false;
+				isTouch = false;
 				timer = timerLimit;
 				renderer.material.color = new Color(0,1,0);
 			}

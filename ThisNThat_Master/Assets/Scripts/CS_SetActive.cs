@@ -7,6 +7,8 @@ public class CS_SetActive : MonoBehaviour
 
 	public GameObject winner;
 
+	public GameObject part1;
+
 	public CS_Generic_Pickup pickUp;
 
 	// Use this for initialization
@@ -28,6 +30,7 @@ public class CS_SetActive : MonoBehaviour
 		{
 			print ("dfdsfs");
 			objectToSet.SetActive (true);
+			part1.SetActive(false);
 		}
 	}
 }

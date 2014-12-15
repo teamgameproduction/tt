@@ -7,8 +7,10 @@ public class CS_WinMove : MonoBehaviour
 	public rockbreak rock;
 	[HideInInspector]	public GameObject 	gmcharacterBlue;
 	[HideInInspector]	public GameObject 	gmcharacterRed;
+
 	public GameObject cbox1;
 	public GameObject cbox2;
+	
 
 
 
@@ -96,6 +98,7 @@ public class CS_WinMove : MonoBehaviour
 				else if (fWin.animprogress == 4 && isRedTouching == true && isBlueTouching == true) 
 				{
 					isTouch = true;
+					Winner.collider.enabled = true;
 					Winner.animation.Play("winAnim05");
 					fWin.playanim = true;
 					fWin.animprogress = 5;
