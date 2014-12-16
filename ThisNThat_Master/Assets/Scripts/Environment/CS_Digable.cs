@@ -50,7 +50,7 @@ public class CS_Digable : MonoBehaviour
 			int c = Random.Range (0, crushSound.Length);
 			//AudioSource.PlayClipAtPoint(crushSound[c], transform.position);		
 			Debug.Log ("bam");			
-			Destroy (gameObject);
+			gameObject.SetActive(false);
 			
 			
 		}
