@@ -27,14 +27,12 @@ public class CS_Flytrap : MonoBehaviour
 		{
 			//print ("4");
 			//checkPointCTRL.StartCoroutine("DieBlue");
-<<<<<<< HEAD
 			//checkPointCTRL.
 			cS_CheckPoint_Controller.StartCoroutine("DieRed");
 			cS_CheckPoint_Controller.StartCoroutine("DieBlue");
-=======
+
 			//checkPointCTRL.StartCoroutine("DieRed");
 			cS_CheckPoint_Controller.DieRed ();
->>>>>>> origin/master
 			//print ("5");
 			timer = timerLimit;
 			renderer.material.color = new Color(0,1,0);
