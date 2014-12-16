@@ -26,9 +26,10 @@ public class CS_Flytrap : MonoBehaviour
 		if (timer <= 0.5f && isTouch ==true)
 		{
 			//print ("4");
-			checkPointCTRL.StartCoroutine("DieBlue");
-			checkPointCTRL.StartCoroutine("DieRed");
-			cS_CheckPoint_Controller.DieRed ();
+			//checkPointCTRL.StartCoroutine("DieBlue");
+			//checkPointCTRL.
+			cS_CheckPoint_Controller.StartCoroutine("DieRed");
+			cS_CheckPoint_Controller.StartCoroutine("DieBlue");
 			//print ("5");
 			timer = timerLimit;
 			renderer.material.color = new Color(0,1,0);
