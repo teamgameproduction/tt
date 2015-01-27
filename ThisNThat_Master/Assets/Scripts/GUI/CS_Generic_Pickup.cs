@@ -4,7 +4,6 @@ using System.Collections;
 public class CS_Generic_Pickup : MonoBehaviour 
 {
 	public CS_CollectableCounter collectableCounter;
-	public bool pickedUp = false;
 	
 	void Awake()
 	{
@@ -15,13 +14,11 @@ public class CS_Generic_Pickup : MonoBehaviour
 	{
 		if(other.gameObject.tag == "Player")
 		{
-		print ("I Found A Thing!");
+			print ("I Found A Thing!");
 		//Update GUI
 		collectableCounter.collectableCounter++;
-		pickedUp = true;
 		// Set the counter to inactive
-		gameObject.renderer.enabled = false;
-		gameObject.collider.enabled = false;
+		gameObject.SetActive (false);
 		}
 	}
 }

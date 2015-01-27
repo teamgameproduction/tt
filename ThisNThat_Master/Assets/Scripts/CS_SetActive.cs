@@ -26,11 +26,11 @@ public class CS_SetActive : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		if (pickUp.pickedUp == true)
+/*		if (pickUp.pickedUp == true)
 		{
 			print ("dfdsfs");
 			objectToSet.SetActive (true);
 			part1.SetActive(false);
-		}
+		}*/
 	}
 }
