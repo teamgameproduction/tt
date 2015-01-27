@@ -104,6 +104,7 @@
      <Compile Include="Assets\Scripts\GUI\CS_LevelSelect.cs" />
      <Compile Include="Assets\Scripts\GUI\CS_LevelTitle.cs" />
      <Compile Include="Assets\Scripts\GUI\CS_MainMenu.cs" />
+     <Compile Include="Assets\Scripts\GUI\CS_Pause.cs" />
      <Compile Include="Assets\Scripts\kill.cs" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />

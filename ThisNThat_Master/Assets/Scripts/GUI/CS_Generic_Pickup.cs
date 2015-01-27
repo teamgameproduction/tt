@@ -7,7 +7,7 @@ public class CS_Generic_Pickup : MonoBehaviour
 	
 	void Awake()
 	{
-		collectableCounter = GameObject.Find ("CollectableText").GetComponent<CS_CollectableCounter>();
+		//collectableCounter = GameObject.Find ("CollectableText").GetComponent<CS_CollectableCounter>();
 	}
 	
 	void OnTriggerEnter(Collider other)
