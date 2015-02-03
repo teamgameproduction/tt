@@ -16,7 +16,7 @@ public class CS_Generic_Pickup : MonoBehaviour
 		{
 			print ("I Found A Thing!");
 		//Update GUI
-		collectableCounter.collectableCounter++;
+		//collectableCounter.collectableCounter++;
 		// Set the counter to inactive
 		gameObject.SetActive (false);
 		}
