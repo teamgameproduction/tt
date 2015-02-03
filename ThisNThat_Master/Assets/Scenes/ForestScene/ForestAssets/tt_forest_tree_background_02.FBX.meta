@@ -1,38 +1,15 @@
 fileFormatVersion: 2
-guid: 09f0c3c20f8451943ba5ac8879ea91d0
+guid: 1182ae7199fda39488bab447bbb4396c
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Bone001
-    100004: Bone002
-    100006: Bone003
-    100008: Bone004
-    100010: Bone005
-    100012: Bone006
-    100014: Bone007
-    100016: Bone008
-    100018: Bone009
-    100020: Bone010
-    100022: Cylinder003
     400000: //RootNode
-    400002: Bone001
-    400004: Bone002
-    400006: Bone003
-    400008: Bone004
-    400010: Bone005
-    400012: Bone006
-    400014: Bone007
-    400016: Bone008
-    400018: Bone009
-    400020: Bone010
-    400022: Cylinder003
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cylinder003
+    4300000: tree_003
     7400000: Take 001
     9500000: //RootNode
-    13700000: Cylinder003
   materials:
     importMaterials: 1
     materialName: 0
