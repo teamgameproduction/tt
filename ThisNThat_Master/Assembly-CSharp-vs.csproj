@@ -81,6 +81,7 @@
      <Compile Include="Assets\Scripts\Environment\CS_EmitOnce.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_EnviroMovement.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_EnviroRespawn.cs" />
+     <Compile Include="Assets\Scripts\Environment\CS_FlickeringLights.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_Flytrap.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_GenericTrigger.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_MoveWorm.cs" />
