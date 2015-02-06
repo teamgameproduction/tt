@@ -1,24 +1,30 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class CS_Generic_Pickup : MonoBehaviour 
 {
-	public CS_CollectableCounter collectableCounter;
-	
-	void Awake()
+	CS_HUD hud;
+
+	void Start () 
 	{
-		//collectableCounter = GameObject.Find ("CollectableText").GetComponent<CS_CollectableCounter>();
+		hud = GameObject.Find ("HUD Canvas").GetComponent<CS_HUD>();
 	}
-	
+
 	void OnTriggerEnter(Collider other)
 	{
 		if(other.gameObject.tag == "Player")
 		{
-			print ("I Found A Thing!");
-		//Update GUI
-		//collectableCounter.collectableCounter++;
-		// Set the counter to inactive
-		gameObject.SetActive (false);
+			IdentifyPickup();
+			gameObject.SetActive (false);
 		}
 	}
+
+	void IdentifyPickup()
+	{
+		if (gameObject.CompareTag("Small Coin"))		{	hud.SmallCoinCollected();	}
+		else if (gameObject.CompareTag("Large Coin"))	{	hud.LargeCoinCollected();	}
+		else if (gameObject.CompareTag("Critter"))		{	hud.CritterCollected();		}
+	}
+
 }

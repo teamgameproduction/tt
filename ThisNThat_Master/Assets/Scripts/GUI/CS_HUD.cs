@@ -1,34 +1,57 @@
 ﻿using UnityEngine;
 using System.Collections;
-[ExecuteInEditMode]
+using UnityEngine.UI;
 
 public class CS_HUD : MonoBehaviour 
 {
-						public static bool 	displayResultsScreen;
-						public GUIStyle		labelStyle;
-						public GUIStyle		buttonStyle;
+	public double currency = 0;
+	public Text currencyText;
+
+	public Image collectableImg;
+	public int collectableCount;
+	public Sprite[] collectableSprites;
+
+	void Awake()
+	{
+		currencyText = GameObject.Find ("Currency").GetComponent<Text>();
+		collectableImg = GameObject.Find ("CollectableImage").GetComponent<Image>();
+		collectableImg.enabled = false;
+	}
 
 	void Start () 
 	{
-		displayResultsScreen = false;
+		currencyText.text = "" + currency;
 	}
 
-	void Update () 
+	public void CritterCollected()
 	{
+		currency += 100;
+		currencyText.text = "" + currency;
+
+		collectableImg.enabled = true;
+		collectableCount ++;
+		collectableImg.sprite = collectableSprites[collectableCount];
+		StartCoroutine(CollectablesVisible());
+	}
+
+	public void SmallCoinCollected()
+	{
+		currency += 10;
+		currencyText.text = "" + currency;
+	}
+
+	public void LargeCoinCollected()
+	{
+		currency += 50;
+		currencyText.text = "" + currency;
+	}
 	
-	}
-
-	void OnGUI()
+	public IEnumerator CollectablesVisible()
 	{
-		labelStyle.fontSize = Screen.height / 10;
-		buttonStyle.fontSize = Screen.height / 18;
-
-		if (displayResultsScreen)
-		{
-			GUI.Label(new Rect((Screen.width * 0.5f) / 2, (Screen.height * 0.25f) / 2, Screen.width * 0.5f, Screen.height * 0.25f), "LEVEL COMPLETE!", labelStyle);
-
-			if (GUI.Button(new Rect((Screen.width * 0.5f) / 1.5f, (Screen.height * 0.75f), Screen.width * 0.3f, Screen.height * 0.15f), "CONTINUE", buttonStyle))
-			{	Application.LoadLevel ("UI_LevelSelect");	}
-		}
+		Debug.Log("Counting Down");
+		yield return new WaitForSeconds(3.0f);
+		Debug.Log("Counting Done");
+		collectableImg.enabled = false;
 	}
+
 }
