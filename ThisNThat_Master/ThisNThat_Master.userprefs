@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GUI\CS_Generic_Pickup.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scenes\UndergroundScene\Gem Shader\diamond shader.shader">
     <Files>
-      <File FileName="Assets\Scripts\GUI\CS_Generic_Pickup.cs" Line="26" Column="40" />
-      <File FileName="Assets\Scripts\GUI\CS_HUD.cs" Line="45" Column="18" />
+      <File FileName="Assets\Scenes\UndergroundScene\Gem Shader\diamond shader.shader" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GUI\CS_Generic_Pickup.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GUI\CS_HUD.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
