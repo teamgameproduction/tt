@@ -30,4 +30,9 @@ public class CS_LevelSelect : MonoBehaviour
 	{
 		Application.LoadLevel ("" + LevelNames[Level]);
 	}
+
+	public void TitleLoad()
+	{
+		Application.LoadLevel ("UI_LevelSelect");
+	}
 }
