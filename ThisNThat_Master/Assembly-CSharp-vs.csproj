@@ -82,6 +82,7 @@
      <Compile Include="Assets\Scripts\Environment\CS_FlickeringLights.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_Flytrap.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_GenericTrigger.cs" />
+     <Compile Include="Assets\Scripts\Environment\CS_Inside_Outside_Lighting_Trigger.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_MoveWorm.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_Projectile.cs" />
      <Compile Include="Assets\Scripts\Environment\CS_Pushable.cs" />
@@ -113,6 +114,7 @@
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

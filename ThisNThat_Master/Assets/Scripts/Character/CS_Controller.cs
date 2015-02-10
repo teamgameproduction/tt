@@ -3,11 +3,19 @@ using System.Collections;
 
 public class CS_Controller : MonoBehaviour 
 {
+	[HideInInspector]	public Vector3 RedPosition;
+	[HideInInspector]	public Vector3 BluePosition;
+	[HideInInspector]	public Vector3 RedCameraPosition;
+	[HideInInspector]	public Vector3 BlueCameraPosition;
+	[HideInInspector]	public float   cameraZposition = -10;
+	[HideInInspector]	public Vector3 cameraMoveZPosition;
+
+
 						//CHARACTER
 	[HideInInspector]	public int 			IsCharacterRed = 1;
 	[HideInInspector]	public GameObject 	gmcharacterRed;
 	[HideInInspector]	public GameObject 	gmcharacterBlue;
-	[HideInInspector]	private bool 		PlayedOnce = false ;
+	[HideInInspector]	public GameObject 	mainCamera;
 
 						//CAMERAS
 						//public Camera 		CameraRed;
@@ -43,19 +51,22 @@ public class CS_Controller : MonoBehaviour
 
 						//PICKUP
 	[HideInInspector]	public  CS_BluePickup bluePickup;
+	[HideInInspector]	public  CS_BlueAnimCTRL BlueAnimScript;
+	[HideInInspector]	public  CS_RedAnimCTRL RedAnimScript;
 
 
 	public bool RedIsFacingRight = true;
 	public bool BlueIsFacingRight = true;
-
+	
 	void Start () 
 	{
-		//Finds the two characters and the controller and labels them
 		gmcharacterRed = GameObject.Find ("characterRed");
 		gmcharacterBlue = GameObject.Find ("characterBlue");
+		mainCamera = GameObject.Find ("Camera");
 
 		//Reference the  CS_BluePickup script
 		bluePickup = GameObject.Find ("characterBlue").GetComponent< CS_BluePickup>();
+
 
 		//Set max number of flaps
 		BlueFlaps = BlueMaxFlaps;
@@ -70,6 +81,7 @@ public class CS_Controller : MonoBehaviour
 	
 	void Update () 
 	{
+			
 		//MOVEMENT
 //-------------------------------------------------------------------------------------------------------
 		if (RedOnSlip == true && IsCharacterRed == 1 || BlueOnSlip == true && IsCharacterRed == 2)
@@ -98,13 +110,25 @@ public class CS_Controller : MonoBehaviour
 				this.transform.Translate((MoveDirection * Speed) * Time.deltaTime, 0, 0);
 			}
 		}
-//-------------------------------------------------------------------------------------------------------
+		/*
+		if (MoveDirection > 0) {
+			cameraZposition = -10;
+		} else if (MoveDirection == 0) {
+			cameraZposition = -8;
+		}
+		*/
+		
+		//-------------------------------------------------------------------------------------------------------
 
 		//SWITCH CHARACTERS
 //-------------------------------------------------------------------------------------------------------
-		if (Input.GetKeyDown("e") && IsCharacterRed == 1){
-
-			SwitchToBlue();
+		if (Input.GetKeyDown("e") && IsCharacterRed == 1)
+		{	
+			BluePosition = gmcharacterBlue.transform.position;
+			BlueCameraPosition = new Vector3 (BluePosition.x, BluePosition.y, cameraZposition);
+			iTween.MoveTo(mainCamera,(BlueCameraPosition),1);	
+			Speed = 0;
+			StartCoroutine("WaitBlue");
 		}
 //-------------------------------------------------------------------------------------------------------
 
@@ -112,8 +136,11 @@ public class CS_Controller : MonoBehaviour
 //-------------------------------------------------------------------------------------------------------
 		else if (Input.GetKeyDown("e") && IsCharacterRed == 2)
 		{
-
-			SwitchToRed();
+			RedPosition = gmcharacterRed.transform.position;
+			RedCameraPosition = new Vector3 (RedPosition.x, RedPosition.y, cameraZposition);
+			iTween.MoveTo(mainCamera,(RedCameraPosition),1);
+			Speed = 0;
+			StartCoroutine("WaitRed");
 		}
 
 //-------------------------------------------------------------------------------------------------------
@@ -189,6 +216,7 @@ public class CS_Controller : MonoBehaviour
 
 //-------------------------------------------------------------------------------------------------------
 
+
 	//Slow Movement
 //-------------------------------------------------------------------------------------------------------
 	void OnTriggerEnter(Collider other)
@@ -198,14 +226,34 @@ public class CS_Controller : MonoBehaviour
 
 //-------------------------------------------------------------------------------------------------------
 	//Use this function to switch to Blue
+
+
+	IEnumerator WaitRed()
+	{
+		Debug.Log("waiting");
+		yield return new WaitForSeconds(1);
+		SwitchToRed ();
+		Speed = 4;
+	}
+	IEnumerator WaitBlue()
+	{
+		Debug.Log("waiting");
+		yield return new WaitForSeconds(1);
+		SwitchToBlue ();
+		Speed = 4;
+		
+	}
+
 	public void SwitchToBlue(){
 
 		//Detaches children from the controller
+		IsCharacterRed = 2;
+		//SwitchCheck = true;
+
 		transform.DetachChildren();
 		
 		//Attaches character 2 to the controller
 		gmcharacterBlue.transform.parent=gameObject.transform;
-		IsCharacterRed = 2;
 		//switches camera
 		//CameraRed.camera.enabled = false;
 		//CameraBlue.camera.enabled = true;
@@ -215,34 +263,30 @@ public class CS_Controller : MonoBehaviour
 //-------------------------------------------------------------------------------------------------------
 	//Use this function to switch to Red
 	public void SwitchToRed(){
+						
+		transform.DetachChildren ();
+						gmcharacterRed.transform.parent = gameObject.transform;
+						//Switches camera
+						//CameraBlue.camera.enabled = false;
+						//CameraRed.camera.enabled = true;
+						IsCharacterRed = 1;
 
-		transform.DetachChildren();
-		
-		gmcharacterRed.transform.parent=gameObject.transform;
-		IsCharacterRed = 1;
-		
-		//Switches camera
-		//CameraBlue.camera.enabled = false;
-		//CameraRed.camera.enabled = true;
-		
-		//Resets Red if he is being carried by Blue
-		if (bluePickup.PickedUp == true)
-		{
-			BlueFlapForce = BlueFlapForce * 3;
-			bluePickup.PickedUpObject.rigidbody.isKinematic = false;
-			bluePickup.PickedUp = false;
-			gmcharacterBlue.rigidbody.mass = gmcharacterBlue.rigidbody.mass - bluePickup.PickedUpObject.rigidbody.mass;
-			BlueFlapForce = BlueFlapRestoreForce;
-			bluePickup.PickedUpObject.collider.enabled = true;
-			bluePickup.BlueBoxColl.size = new Vector3(1.0f,1.5f,1.0f);
-			bluePickup.BlueBoxColl.center = new Vector3(0,0,0);
-			Speed = ResetSpeed;
-		}
-		else
-		{
-			BlueFlapForce = BlueFlapRestoreForce;
-		}
-	}
+						//Resets Red if he is being carried by Blue
+						if (bluePickup.PickedUp == true) {
+								BlueFlapForce = BlueFlapForce * 3;
+								bluePickup.PickedUpObject.rigidbody.isKinematic = false;
+								bluePickup.PickedUp = false;
+								gmcharacterBlue.rigidbody.mass = gmcharacterBlue.rigidbody.mass - bluePickup.PickedUpObject.rigidbody.mass;
+								BlueFlapForce = BlueFlapRestoreForce;
+								bluePickup.PickedUpObject.collider.enabled = true;
+								bluePickup.BlueBoxColl.size = new Vector3 (1.0f, 1.5f, 1.0f);
+								bluePickup.BlueBoxColl.center = new Vector3 (0, 0, 0);
+								Speed = ResetSpeed;
+						} else {
+								BlueFlapForce = BlueFlapRestoreForce;
+						}
+		} 
+
 
 
 
