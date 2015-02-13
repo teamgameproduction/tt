@@ -6,6 +6,9 @@ public class CS_Generic_Pickup : MonoBehaviour
 {
 	CS_HUD hud;
 
+	//------Do Not Delete! For Win conditions in Forest! Thank You---- 
+	public bool pickedUp = false;
+
 	void Start () 
 	{
 		hud = GameObject.Find ("HUD Canvas").GetComponent<CS_HUD>();
@@ -16,6 +19,8 @@ public class CS_Generic_Pickup : MonoBehaviour
 		if(other.gameObject.tag == "Player")
 		{
 			IdentifyPickup();
+	//------Do Not Delete! For Win conditions in Forest! Thank You---- 
+			pickedUp = true;
 			gameObject.SetActive (false);
 		}
 	}

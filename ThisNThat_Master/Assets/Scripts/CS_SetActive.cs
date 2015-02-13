@@ -15,22 +15,22 @@ public class CS_SetActive : MonoBehaviour
 	void Start () 
 	{
 		objectToSet.SetActive (false);
-		pickUp = GameObject.Find("Winner").GetComponent <CS_Generic_Pickup> ();
 	}
 
 	void Awake ()
 	{
 		objectToSet = GameObject.Find ("PFB_WinVolume");
+		pickUp = GameObject.Find("Winner").GetComponent <CS_Generic_Pickup> ();
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-/*		if (pickUp.pickedUp == true)
+		if (pickUp.pickedUp == true)
 		{
 			print ("dfdsfs");
 			objectToSet.SetActive (true);
-			part1.SetActive(false);
-		}*/
+			part1.SetActive(true);
+		}
 	}
 }

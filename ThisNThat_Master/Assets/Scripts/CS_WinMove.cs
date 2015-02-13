@@ -95,17 +95,33 @@ public class CS_WinMove : MonoBehaviour
 					fWin.playanim = true;
 					gameObject.collider.enabled = false;
 				}
-				else if (fWin.animprogress == 4 && isRedTouching == true && isBlueTouching == true) 
+				if (fWin.animprogress == 4 && isRedTouching == true && isBlueTouching == true) 
 				{
 					isTouch = true;
 					Winner.collider.enabled = true;
+				}
+
+				else if (fWin.animprogress == 4 && isRedTouching == true && isBlueTouching == false) 
+				{
+					isTouch = true;
+					Winner.animation.Play("winAnim05");
+					fWin.playanim = true;
+					fWin.animprogress = 5;
+					cbox1.SetActive(true);
+					cbox2.SetActive(false);
+				}
+
+				else if (fWin.animprogress == 4 && isRedTouching == false && isBlueTouching == true) 
+				{
+					isTouch = true;
 					Winner.animation.Play("winAnim05");
 					fWin.playanim = true;
 					fWin.animprogress = 5;
 					cbox1.SetActive(false);
 					cbox2.SetActive(true);
 				}
-				else if (fWin.animprogress == 5 && isRedTouching == true && isBlueTouching == true) 
+
+				else if (fWin.animprogress == 5 && isRedTouching == false && isBlueTouching == true) 
 				{
 					isTouch = true;
 					Winner.animation.Play("winAnim06");
@@ -113,6 +129,21 @@ public class CS_WinMove : MonoBehaviour
 					fWin.animprogress = 4;
 					cbox1.SetActive(true);
 					cbox2.SetActive(false);
+				}
+
+				else if (fWin.animprogress == 5 && isRedTouching == true && isBlueTouching == false) 
+				{
+					isTouch = true;
+					Winner.animation.Play("winAnim06");
+					fWin.playanim = true;
+					fWin.animprogress = 4;
+					cbox1.SetActive(false);
+					cbox2.SetActive(true);
+				}
+				if (fWin.animprogress == 5 && isRedTouching == true && isBlueTouching == true) 
+				{
+					isTouch = true;
+					Winner.collider.enabled = true;
 				}
 			}
 		}
