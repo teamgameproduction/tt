@@ -7,11 +7,13 @@ public class CS_Pause : MonoBehaviour
 
 	Canvas canvas;
 	bool resumeClick = false;
+	private CS_HUD hud;
 
 	void Start () 
 	{
 		StartCoroutine (PauseCoroutine());
 		canvas = GetComponent<Canvas>();
+		hud = GameObject.Find ("HUD Canvas").GetComponent<CS_HUD>();
 		canvas.enabled = false;
 	}
 
@@ -27,9 +29,9 @@ public class CS_Pause : MonoBehaviour
 			if (Input.GetKeyDown(KeyCode.Escape) || resumeClick)
 			{
 				if (Time.timeScale == 0)
-					{ Time.timeScale = 1; canvas.enabled = false; resumeClick = false;}
+				{ Time.timeScale = 1; canvas.enabled = false; hud.collectableImg.enabled = false; resumeClick = false;}
 				else
-					{ Time.timeScale = 0; canvas.enabled = true;}
+				{ Time.timeScale = 0; canvas.enabled = true; hud.collectableImg.enabled = true;}
 			}
 			yield return null;
 		}
