@@ -48,7 +48,7 @@ public class CS_Digable : MonoBehaviour
 		if (IsRedTouching == true && controller.IsCharacterRed == 1 || IsRedTouching == true && bluePickup.PickedUp == true)
 		{
 			int c = Random.Range (0, crushSound.Length);
-			//AudioSource.PlayClipAtPoint(crushSound[c], transform.position);		
+			AudioSource.PlayClipAtPoint(crushSound[c], transform.position);		
 			Debug.Log ("bam");			
 			gameObject.SetActive(false);
 			
