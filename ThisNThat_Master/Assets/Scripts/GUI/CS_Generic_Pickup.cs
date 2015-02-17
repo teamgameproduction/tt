@@ -25,6 +25,7 @@ public class CS_Generic_Pickup : MonoBehaviour
 			pickedUp = true;
 			AudioSource.PlayClipAtPoint(CoinCollect[cc], transform.position);
 			gameObject.SetActive (false);
+
 		}
 	}
 
