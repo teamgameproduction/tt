@@ -23,7 +23,7 @@ public class CS_Generic_Pickup : MonoBehaviour
 			IdentifyPickup();
 	//------Do Not Delete! For Win conditions in Forest! Thank You---- 
 			pickedUp = true;
-			AudioSource.PlayClipAtPoint(CoinCollect[cc], transform.position);
+			//AudioSource.PlayClipAtPoint(CoinCollect[cc], transform.position);
 			gameObject.SetActive (false);
 
 		}
