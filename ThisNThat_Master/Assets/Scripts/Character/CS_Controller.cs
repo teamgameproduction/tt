@@ -7,9 +7,15 @@ public class CS_Controller : MonoBehaviour
 	[HideInInspector]	public Vector3 BluePosition;
 	[HideInInspector]	public Vector3 RedCameraPosition;
 	[HideInInspector]	public Vector3 BlueCameraPosition;
-	[HideInInspector]	public float   cameraZposition = -10;
-	[HideInInspector]	public Vector3 cameraMoveZPosition;
+						public float cameraZposition = -08F;
+	[HideInInspector]	public Vector3 cameraPosition;
 
+						public bool animationInterupt = false;
+	private float redWait;
+	private float blueWait;
+
+	private float maxZposition = -10F;
+	private float minZposition = -8F;
 
 						//CHARACTER
 	[HideInInspector]	public int 			IsCharacterRed = 1;
@@ -81,7 +87,25 @@ public class CS_Controller : MonoBehaviour
 	
 	void Update () 
 	{
+
+		if (Input.GetAxis("Horizontal") > 0.0f && cameraZposition > maxZposition){
+
+			cameraZposition = cameraZposition + -0.1F;
+		}
+		if (Input.GetAxis("Horizontal") < 0.0f && cameraZposition > maxZposition){
 			
+			cameraZposition = cameraZposition + -0.1F;
+		}
+		if (Input.GetAxis("Horizontal") == 0.0f && cameraZposition < minZposition){
+			
+			cameraZposition = cameraZposition + 0.1F;
+		}
+
+	
+
+		cameraPosition = mainCamera.transform.position;
+		mainCamera.transform.position = new Vector3 (cameraPosition.x, cameraPosition.y, cameraZposition);
+
 		//MOVEMENT
 //-------------------------------------------------------------------------------------------------------
 		if (RedOnSlip == true && IsCharacterRed == 1 || BlueOnSlip == true && IsCharacterRed == 2)
@@ -110,13 +134,7 @@ public class CS_Controller : MonoBehaviour
 				this.transform.Translate((MoveDirection * Speed) * Time.deltaTime, 0, 0);
 			}
 		}
-		/*
-		if (MoveDirection > 0) {
-			cameraZposition = -10;
-		} else if (MoveDirection == 0) {
-			cameraZposition = -8;
-		}
-		*/
+
 		
 		//-------------------------------------------------------------------------------------------------------
 
@@ -219,10 +237,7 @@ public class CS_Controller : MonoBehaviour
 
 	//Slow Movement
 //-------------------------------------------------------------------------------------------------------
-	void OnTriggerEnter(Collider other)
-	{
-
-	}
+	
 
 //-------------------------------------------------------------------------------------------------------
 	//Use this function to switch to Blue
@@ -230,18 +245,15 @@ public class CS_Controller : MonoBehaviour
 
 	IEnumerator WaitRed()
 	{
-		Debug.Log("waiting");
-		yield return new WaitForSeconds(1);
+		yield return new WaitForSeconds (1.0F);		
 		SwitchToRed ();
 		Speed = 4;
 	}
 	IEnumerator WaitBlue()
 	{
-		Debug.Log("waiting");
-		yield return new WaitForSeconds(1);
+		yield return new WaitForSeconds(1.0F);
 		SwitchToBlue ();
 		Speed = 4;
-		
 	}
 
 	public void SwitchToBlue(){
@@ -286,7 +298,6 @@ public class CS_Controller : MonoBehaviour
 								BlueFlapForce = BlueFlapRestoreForce;
 						}
 		} 
-
 
 
 
