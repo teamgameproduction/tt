@@ -4,7 +4,7 @@ using System.Collections;
 public class CS_Digable : MonoBehaviour 
 {
 	public  bool 			IsRedTouching = false;
-	public 	AudioClip[] 		crushSound;
+	//public 	AudioClip[] 		crushSound;
 	[HideInInspector]	public  CS_Controller 	controller;
 	[HideInInspector]	public  CS_BluePickup 	bluePickup;
 	
@@ -47,7 +47,7 @@ public class CS_Digable : MonoBehaviour
 		
 		if (IsRedTouching == true && controller.IsCharacterRed == 1 || IsRedTouching == true && bluePickup.PickedUp == true)
 		{
-			int c = Random.Range (0, crushSound.Length);
+			//int c = Random.Range (0, crushSound.Length);
 			//AudioSource.PlayClipAtPoint(crushSound[c], transform.position);		
 			Debug.Log ("bam");			
 			gameObject.SetActive(false);
