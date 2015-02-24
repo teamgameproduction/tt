@@ -35,4 +35,24 @@ public class CS_LevelSelect : MonoBehaviour
 	{
 		Application.LoadLevel ("UI_LevelSelect");
 	}
+
+	public void ForestPlanet()
+	{
+		Level = 0;
+	}
+
+	public void ArcticPlanet()
+	{
+		Level = 1;
+	}
+
+	public void CavePlanet()
+	{
+		Level = 2;
+	}
+
+	public void VolcanoPlanet()
+	{
+		Level = 3;
+	}
 }
