@@ -144,9 +144,9 @@ public class CS_Controller : MonoBehaviour
 		{	
 			BluePosition = gmcharacterBlue.transform.position;
 			BlueCameraPosition = new Vector3 (BluePosition.x, BluePosition.y, cameraZposition);
-			iTween.MoveTo(mainCamera,(BlueCameraPosition),1);	
 			Speed = 0;
 			StartCoroutine("WaitBlue");
+			iTween.MoveTo(mainCamera,(BlueCameraPosition),1);	
 		}
 //-------------------------------------------------------------------------------------------------------
 
@@ -156,9 +156,9 @@ public class CS_Controller : MonoBehaviour
 		{
 			RedPosition = gmcharacterRed.transform.position;
 			RedCameraPosition = new Vector3 (RedPosition.x, RedPosition.y, cameraZposition);
-			iTween.MoveTo(mainCamera,(RedCameraPosition),1);
 			Speed = 0;
 			StartCoroutine("WaitRed");
+			iTween.MoveTo(mainCamera,(RedCameraPosition),1);
 		}
 
 //-------------------------------------------------------------------------------------------------------
