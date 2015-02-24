@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scenes\ForestScene\ForestAssets\rockbreak.cs" />
+     <Compile Include="Assets\Scripts\Audio\CS_collect_Audio.cs" />
+     <Compile Include="Assets\Scripts\Audio\CS_destructSound.cs" />
      <Compile Include="Assets\Scripts\CS_Checkpoint_Controller.cs" />
      <Compile Include="Assets\Scripts\CS_Checkpoints.cs" />
      <Compile Include="Assets\Scripts\CS_FWin.cs" />
