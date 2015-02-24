@@ -8,7 +8,7 @@ public class CS_Generic_Pickup : MonoBehaviour
 
 	//------Do Not Delete! For Win conditions in Forest! Thank You---- 
 	public bool pickedUp = false;
-	public 	AudioClip[] 	CoinCollect;
+
 
 	void Start () 
 	{
@@ -19,7 +19,7 @@ public class CS_Generic_Pickup : MonoBehaviour
 	{
 		if(other.gameObject.tag == "Player")
 		{
-			int cc = Random.Range (0, CoinCollect.Length);
+
 			IdentifyPickup();
 	//------Do Not Delete! For Win conditions in Forest! Thank You---- 
 			pickedUp = true;
