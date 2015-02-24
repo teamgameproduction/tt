@@ -15,6 +15,7 @@
             Material {
                 Diffuse [_Color]
                 Ambient [_Color]
+                
             }
             Lighting On
             SetTexture [_MainTex] {

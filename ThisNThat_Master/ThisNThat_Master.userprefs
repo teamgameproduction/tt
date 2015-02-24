@@ -1,12 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GUI\CS_Generic_Pickup.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Custom Shaders\Dbl_Side_Trans_Self_Il.shader">
     <Files>
-      <File FileName="Assets\Scripts\GUI\CS_Generic_Pickup.cs" Line="40" Column="1" />
-      <File FileName="Assets\Scripts\Environment\CS_Digable.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GUI\CS_Pause.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GUI\CS_HUD.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GUI\CS_Results.cs" Line="1" Column="1" />
+      <File FileName="Temp\ParsedCombinations-Illumin-Diffuse.shader" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Environment\Delayed_Projectile.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Environment\CS_Flytrap.cs" Line="1" Column="1" />
+      <File FileName="Assets\Custom Shaders\Dbl_Side_Trans_Self_Il.shader" Line="22" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
