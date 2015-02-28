@@ -15,19 +15,24 @@ public class CS_LevelSelect : MonoBehaviour
 	public void NextLevel()
 	{	
 		Level += 1;
-		if (Level > 3)
-			{Level = 0;}
+		if (Level > 3)	{Level = 0;}
 	}
 
 	public void PreviousLevel()
 	{	
 		Level -= 1;
-		if (Level < 0)
-			{Level = 3;}
+		if (Level < 0)	{Level = 3;}
 	}
 
 	public void LoadLevel()
 	{
+		StartCoroutine(LoadLevelDelay());
+	}
+
+	IEnumerator LoadLevelDelay()
+	{
+		yield return new WaitForSeconds(0.75f);
+		CS_LoadingScreen.show();
 		Application.LoadLevel ("" + LevelNames[Level]);
 	}
 
@@ -36,23 +41,8 @@ public class CS_LevelSelect : MonoBehaviour
 		Application.LoadLevel ("UI_LevelSelect");
 	}
 
-	public void ForestPlanet()
-	{
-		Level = 0;
-	}
-
-	public void ArcticPlanet()
-	{
-		Level = 1;
-	}
-
-	public void CavePlanet()
-	{
-		Level = 2;
-	}
-
-	public void VolcanoPlanet()
-	{
-		Level = 3;
-	}
+	public void ForestPlanet()	{	Level = 0;	}
+	public void ArcticPlanet()	{	Level = 1;	}
+	public void CavePlanet()	{	Level = 2;	}
+	public void VolcanoPlanet()	{	Level = 3;	}
 }

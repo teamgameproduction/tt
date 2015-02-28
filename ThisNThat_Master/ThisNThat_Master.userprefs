@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Environment\CS_EnviroMovement.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GUI\CS_LevelSelect.cs">
     <Files>
-      <File FileName="Assets\Scripts\Environment\CS_EnviroMovement.cs" Line="51" Column="65" />
+      <File FileName="Assets\Scripts\GUI\CS_LevelSelect.cs" Line="34" Column="36" />
+      <File FileName="Assets\Scripts\GUI\CS_LoadingScreen.cs" Line="15" Column="57" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
