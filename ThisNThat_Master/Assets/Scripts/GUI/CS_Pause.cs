@@ -13,7 +13,7 @@ public class CS_Pause : MonoBehaviour
 	{
 		StartCoroutine (PauseCoroutine());
 		canvas = GetComponent<Canvas>();
-		hud = GameObject.Find ("HUD Canvas").GetComponent<CS_HUD>();
+		hud = GameObject.Find ("HUD").GetComponent<CS_HUD>();
 		canvas.enabled = false;
 	}
 
@@ -45,6 +45,14 @@ public class CS_Pause : MonoBehaviour
 	public void Quit ()
 	{
 		Time.timeScale = 1;
+		StartCoroutine(QuitLevelDelay());
+
+	}
+
+	IEnumerator QuitLevelDelay()
+	{
+		yield return new WaitForSeconds(0.75f);
+		CS_LoadingScreen.show();
 		Application.LoadLevel("UI_LevelSelect");
 	}
 }

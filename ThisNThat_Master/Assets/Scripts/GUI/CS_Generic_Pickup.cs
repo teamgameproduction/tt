@@ -12,7 +12,7 @@ public class CS_Generic_Pickup : MonoBehaviour
 
 	void Start () 
 	{
-		hud = GameObject.Find ("HUD Canvas").GetComponent<CS_HUD>();
+		hud = GameObject.Find ("HUD").GetComponent<CS_HUD>();
 	}
 
 	void OnTriggerEnter(Collider other)
