@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scenes\ForestScene\ForestAssets\rockbreak.cs" />
+     <Compile Include="Assets\Scenes\GUI\Menu Assets\Waypoint.cs" />
      <Compile Include="Assets\Scripts\Audio\CS_MBsnd.cs" />
      <Compile Include="Assets\Scripts\Audio\CS_WaterSpash.cs" />
      <Compile Include="Assets\Scripts\Audio\CS_collect_Audio.cs" />
@@ -110,6 +111,7 @@
      <Compile Include="Assets\Scripts\GUI\CS_LoadingScreen.cs" />
      <Compile Include="Assets\Scripts\GUI\CS_MainMenu.cs" />
      <Compile Include="Assets\Scripts\GUI\CS_Pause.cs" />
+     <Compile Include="Assets\Scripts\GUI\CS_Planet.cs" />
      <Compile Include="Assets\Scripts\GUI\CS_Results.cs" />
      <Compile Include="Assets\Scripts\Water.cs" />
      <Compile Include="Assets\Scripts\kill.cs" />

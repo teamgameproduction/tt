@@ -1,9 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Environment/CS_DestroyObjects.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GUI\CS_Planet.cs">
     <Files>
-      <File FileName="Assets/Scripts/Environment/CS_Updraft.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Environment/CS_DestroyObjects.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Environment\CS_Updraft.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Environment\CS_DestroyObjects.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GUI\CS_LoadingScreen.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scenes\GUI\Menu Assets\Waypoint.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GUI\CS_MainMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GUI\CS_LevelSelect.cs" Line="48" Column="2" />
+      <File FileName="Assets\Scripts\GUI\CS_Planet.cs" Line="33" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
