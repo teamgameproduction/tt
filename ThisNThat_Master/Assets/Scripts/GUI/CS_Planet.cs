@@ -4,31 +4,39 @@ using System.Collections;
 public class CS_Planet : MonoBehaviour 
 {
 
-/*	public enum PlanetType {Null, Forest, Arctic, Caves, Volcano}
-	public PlanetType 	planet;
+	public enum PlanetType {Null, Forest, Arctic, Cave, Volcano}
+	public PlanetType planet;
 	private CS_LevelSelect levelSelect;
+	public Transform referenceLocation;
 
-	void Awake()
+	void Awake ()
 	{
-		//levelSelect = gameObject.
+		levelSelect = GameObject.Find("GameState").GetComponent<CS_LevelSelect>();
+	}
+
+	void Update () 
+	{
+		transform.LookAt (referenceLocation);
 	}
 
 	void OnMouseUp ()
 	{
 		switch (planet)
 		{
-		case PlanetType.Forest:
-			Level = 0;
-			break;
-		case PlanetType.Arctic:
-			Level = 1;
-			break;
-		case PlanetType.Caves:
-			Level = 2;
-			break;
-		case PlanetType.Volcano:
-			Level = 3;
-			break;
+			case PlanetType.Forest:
+				levelSelect.ForestPlanet();
+				break;
+			case PlanetType.Arctic:
+				levelSelect.ArcticPlanet();
+				break;
+			case PlanetType.Cave:
+				levelSelect.CavePlanet();
+				break;
+			case PlanetType.Volcano:
+				levelSelect.VolcanoPlanet();
+				break;
+			default:
+				break;
 		}
-	}*/
+	}
 }

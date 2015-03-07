@@ -47,7 +47,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scenes\ForestScene\ForestAssets\rockbreak.cs" />
-     <Compile Include="Assets\Scenes\GUI\Menu Assets\Waypoint.cs" />
      <Compile Include="Assets\Scripts\Audio\CS_MBsnd.cs" />
      <Compile Include="Assets\Scripts\Audio\CS_WaterSpash.cs" />
      <Compile Include="Assets\Scripts\Audio\CS_collect_Audio.cs" />
