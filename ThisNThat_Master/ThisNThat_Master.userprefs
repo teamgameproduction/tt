@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GUI\CS_Planet.cs">
     <Files>
-      <File FileName="Assets\Scripts\GUI\CS_LevelSelect.cs" Line="48" Column="2" />
-      <File FileName="Assets\Scripts\GUI\CS_Planet.cs" Line="48" Column="7" />
+      <File FileName="Assets\Scripts\GUI\CS_LevelSelect.cs" Line="29" Column="36" />
+      <File FileName="Assets\Scripts\GUI\CS_Planet.cs" Line="19" Column="64" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

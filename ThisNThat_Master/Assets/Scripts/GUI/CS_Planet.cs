@@ -11,21 +11,21 @@ public class CS_Planet : MonoBehaviour
 	public Transform referenceLocation;
 
 	private float lerpSpeed = 2.0f;
-	[HideInInspector] public Quaternion endRotation;
+	[HideInInspector] public static Quaternion endRotation;
 
 	void Awake ()
 	{
+
 		levelSelect = GameObject.Find("GameState").GetComponent<CS_LevelSelect>();
 		solarSystem = GameObject.Find("Planets");
+		CS_Planet.endRotation = solarSystem.transform.rotation;
 	}
 
 	void Update () 
 	{
 		transform.LookAt (referenceLocation);
 		print(solarSystem.transform.eulerAngles);
-		solarSystem.transform.rotation = Quaternion.Slerp(solarSystem.transform.rotation, endRotation, lerpSpeed * Time.deltaTime);
-		//if (endRotation.eulerAngles == solarSystem.transform.eulerAngles)
-		//{	lerpSpeed = 0;	}
+		solarSystem.transform.rotation = Quaternion.Slerp(solarSystem.transform.rotation, CS_Planet.endRotation, lerpSpeed * Time.deltaTime);
 	}
 
 	void OnMouseUp ()
@@ -34,22 +34,19 @@ public class CS_Planet : MonoBehaviour
 		{
 			case PlanetType.Forest:
 				levelSelect.ForestPlanet();
-				endRotation.eulerAngles = new  Vector3 (0,0,0);
+				CS_Planet.endRotation.eulerAngles = new  Vector3 (0,0,0);
 				break;
 			case PlanetType.Arctic:
 				levelSelect.ArcticPlanet();
-				//lerpSpeed = 2.0f;
-				endRotation.eulerAngles = new Vector3 (0,90,0);
+				CS_Planet.endRotation.eulerAngles = new Vector3 (0,90,0);
 				break;
 			case PlanetType.Cave:
 				levelSelect.CavePlanet();
-				//lerpSpeed = 0;
-				endRotation.eulerAngles = new Vector3 (0,180,0);
-				//lerpSpeed = 2.0f;
+				CS_Planet.endRotation.eulerAngles = new Vector3 (0,180,0);
 				break;
 			case PlanetType.Volcano:
 				levelSelect.VolcanoPlanet();
-				endRotation.eulerAngles = new Vector3 (0,270,0);
+			CS_Planet.endRotation.eulerAngles = new Vector3 (0,270,0);
 				break;
 			default:
 				break;
