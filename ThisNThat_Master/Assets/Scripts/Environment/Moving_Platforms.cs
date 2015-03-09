@@ -4,7 +4,7 @@ using System.Collections;
 public class Moving_Platforms : MonoBehaviour 
 {
 
-	float platformSpeed = 0.05f;
+	public float platformSpeed = 0.05f;
 
 	public Transform platform;
 	public Transform start;
