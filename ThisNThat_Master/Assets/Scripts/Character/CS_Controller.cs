@@ -52,9 +52,7 @@ public class CS_Controller : MonoBehaviour
 						//Slow Movement
 						public float    	slowMove;
 						public bool			touch = false;
-
-						
-
+	
 						//PICKUP
 	[HideInInspector]	public  CS_BluePickup bluePickup;
 	[HideInInspector]	public  CS_BlueAnimCTRL BlueAnimScript;
@@ -241,8 +239,6 @@ public class CS_Controller : MonoBehaviour
 
 //-------------------------------------------------------------------------------------------------------
 	//Use this function to switch to Blue
-
-
 	IEnumerator WaitRed()
 	{
 		yield return new WaitForSeconds (1.0F);		
@@ -255,7 +251,6 @@ public class CS_Controller : MonoBehaviour
 		SwitchToBlue ();
 		Speed = 4;
 	}
-
 	public void SwitchToBlue(){
 
 		//Detaches children from the controller
@@ -298,9 +293,6 @@ public class CS_Controller : MonoBehaviour
 								BlueFlapForce = BlueFlapRestoreForce;
 						}
 		} 
-
-
-
 	//Sugar
 	//Spice
 	//And everything nice

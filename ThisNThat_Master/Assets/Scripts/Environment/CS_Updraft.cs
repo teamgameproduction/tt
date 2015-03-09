@@ -5,6 +5,7 @@ public class CS_Updraft : MonoBehaviour
 {
 						//public GameObject gmcharacterRed;
 						public GameObject 	gmcharacterBlue;
+						public GameObject 	airVent;
 						public  CS_Controller 	controller;
 						//public float RedBounceForce = 600.0f;
 						public float 		UpForceSpeed = 8.0f;
@@ -23,6 +24,8 @@ public class CS_Updraft : MonoBehaviour
 		gmcharacterBlue = GameObject.Find ("characterBlue");
 		controller = GameObject.Find ("CharacterController").GetComponent< CS_Controller>();
 		flapReset = GameObject.Find ("characterBlue").GetComponent< CS_FlapReset>();
+		airVent = GameObject.Find ("UpDraft_01");
+
 	}
 	
 	// Update is called once per frame
@@ -76,12 +79,22 @@ public class CS_Updraft : MonoBehaviour
 		{
 			IsInUpdraft = true;
 		}
+		if (other.gameObject == airVent) {
+				
+			UpForceSpeed =0.0f;
+		}
+
 	}
 
 	void OnTriggerExit(Collider other){
 		if (other.gameObject == gmcharacterBlue) 
 		{
 			IsInUpdraft = false;
+		}
+
+		if (other.gameObject == airVent) {
+			
+			UpForceSpeed =8.0f;
 		}
 	}
 }
