@@ -7,12 +7,15 @@ public class CS_HUD : MonoBehaviour
 	public double currency = 0;
 	public Text currencyText;
 
+	private Animator collectAnimator;
+
 	public Image collectableImg;
 	public int collectableCount;
 	public Sprite[] collectableSprites;
 
 	void Awake()
 	{
+		collectAnimator = GetComponent<Animator>();
 		currencyText = GameObject.Find ("Currency").GetComponent<Text>();
 		collectableImg = GameObject.Find ("CollectableImage").GetComponent<Image>();
 		collectableImg.enabled = false;
@@ -25,6 +28,7 @@ public class CS_HUD : MonoBehaviour
 
 	public void CritterCollected()
 	{
+		collectAnimator.Play ("Anim_CollectableIn");
 		currency += 100;
 		currencyText.text = "" + currency;
 
@@ -48,9 +52,9 @@ public class CS_HUD : MonoBehaviour
 	
 	public IEnumerator CollectablesVisible()
 	{
-		Debug.Log("Counting Down");
-		yield return new WaitForSeconds(3.0f);
-		Debug.Log("Counting Done");
+		yield return new WaitForSeconds(4.0f);
+		collectAnimator.Play ("Anim_CollectableOut");
+		yield return new WaitForSeconds(.5f);
 		collectableImg.enabled = false;
 	}
 

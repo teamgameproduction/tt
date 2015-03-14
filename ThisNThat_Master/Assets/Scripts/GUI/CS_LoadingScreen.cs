@@ -35,7 +35,7 @@ public class CS_LoadingScreen : MonoBehaviour
 	public static void show()
 	{
 		//if instance does not exists return from this function
-		if (!InstanceExists()) 
+		if (!InstanceExists())
 		{
 			return;
 		}

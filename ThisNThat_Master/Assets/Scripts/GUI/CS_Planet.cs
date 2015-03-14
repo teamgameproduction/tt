@@ -10,7 +10,7 @@ public class CS_Planet : MonoBehaviour
 	public GameObject solarSystem;
 	public Transform referenceLocation;
 
-	private float lerpSpeed = 2.0f;
+	private float lerpSpeed = 1.0f;
 	[HideInInspector] public static Quaternion endRotation;
 
 	void Awake ()
@@ -34,27 +34,18 @@ public class CS_Planet : MonoBehaviour
 		{
 			case PlanetType.Forest:
 				levelSelect.ForestPlanet();
-				CS_Planet.endRotation.eulerAngles = new  Vector3 (0,0,0);
 				break;
 			case PlanetType.Arctic:
 				levelSelect.ArcticPlanet();
-				CS_Planet.endRotation.eulerAngles = new Vector3 (0,90,0);
 				break;
 			case PlanetType.Cave:
-				levelSelect.CavePlanet();
-				CS_Planet.endRotation.eulerAngles = new Vector3 (0,180,0);
+				levelSelect.CavePlanet();				
 				break;
 			case PlanetType.Volcano:
 				levelSelect.VolcanoPlanet();
-			CS_Planet.endRotation.eulerAngles = new Vector3 (0,270,0);
 				break;
 			default:
 				break;
 		}
-	}
-
-	void CalculateRotation()
-	{
-
 	}
 }

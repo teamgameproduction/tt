@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class CS_Generic_Pickup : MonoBehaviour 
 {
-	CS_HUD hud;
+	private CS_HUD hud;
 
 	//------Do Not Delete! For Win conditions in Forest! Thank You---- 
 	public bool pickedUp = false;
