@@ -10,9 +10,14 @@ public class CS_Controller : MonoBehaviour
 						public float cameraZposition = -08F;
 	[HideInInspector]	public Vector3 cameraPosition;
 
-						public bool animationInterupt = false;
+	public bool animationInterupt = false;
 	private float redWait;
 	private float blueWait;
+	private bool  canPullBack =false;
+	private bool hasMoved = false;
+	private bool switchingToblue = false;
+	private bool switchingToRed = false;
+
 
 	private float maxZposition = -10F;
 	private float minZposition = -8F;
@@ -85,21 +90,56 @@ public class CS_Controller : MonoBehaviour
 	
 	void Update () 
 	{
+		if (Input.GetAxis ("Horizontal") > 0.0f) {
+			hasMoved = true;
+			canPullBack = false;
+		}
+		if (Input.GetAxis ("Horizontal") < 0.0f) {
+			hasMoved = true;
+			canPullBack = false;
+		}
 
 		if (Input.GetAxis("Horizontal") > 0.0f && cameraZposition > maxZposition){
-
 			cameraZposition = cameraZposition + -0.1F;
 		}
 		if (Input.GetAxis("Horizontal") < 0.0f && cameraZposition > maxZposition){
-			
 			cameraZposition = cameraZposition + -0.1F;
 		}
 		if (Input.GetAxis("Horizontal") == 0.0f && cameraZposition < minZposition){
-			
-			cameraZposition = cameraZposition + 0.1F;
+			//StartCoroutine ("waitPullBack");
+		//	if(canPullBack == true){
+				cameraZposition = cameraZposition + 0.005F;
+			}
+			/*
+		if (Input.GetAxis("Horizontal") == 0.0f) {
+			StartCoroutine ("waitPullBack");
 		}
+		if (Input.GetAxis("Horizontal") == 0.0f && cameraZposition < minZposition){
+			if(canPullBack ==true && hasMoved == false){
+				cameraZposition = cameraZposition + 0.1F;
+			}
+		}
+		if (Input.GetAxis("Horizontal") == 0.0f && cameraZposition == minZposition){
+			canPullBack = false;
+		}
+		*/
 
-	
+		if (switchingToblue == true && (Input.GetKeyDown ("a") || (Input.GetKeyDown ("d")))){
+			if (hasMoved == true){
+				iTween.MoveTo(mainCamera,(BlueCameraPosition),0f);
+				SwitchToBlue ();
+				Speed = 4;
+				switchingToblue = false;
+			}
+		}
+		if (switchingToRed == true && (Input.GetKeyDown ("a") || (Input.GetKeyDown ("d")))){
+			if (hasMoved == true){
+				iTween.MoveTo(mainCamera,(RedCameraPosition),0f);
+				SwitchToRed ();
+				Speed = 4;
+				switchingToRed = false;
+			}
+		}
 
 		cameraPosition = mainCamera.transform.position;
 		mainCamera.transform.position = new Vector3 (cameraPosition.x, cameraPosition.y, cameraZposition);
@@ -141,10 +181,10 @@ public class CS_Controller : MonoBehaviour
 		if (Input.GetKeyDown("e") && IsCharacterRed == 1)
 		{	
 			BluePosition = gmcharacterBlue.transform.position;
-			BlueCameraPosition = new Vector3 (BluePosition.x, BluePosition.y, cameraZposition);
-			Speed = 0;
+			BlueCameraPosition = new Vector3 (BluePosition.x, BluePosition.y, cameraPosition.z);
 			StartCoroutine("WaitBlue");
-			iTween.MoveTo(mainCamera,(BlueCameraPosition),1);	
+			switchingToblue = true;
+			iTween.MoveTo(mainCamera,(BlueCameraPosition),1);
 		}
 //-------------------------------------------------------------------------------------------------------
 
@@ -153,9 +193,9 @@ public class CS_Controller : MonoBehaviour
 		else if (Input.GetKeyDown("e") && IsCharacterRed == 2)
 		{
 			RedPosition = gmcharacterRed.transform.position;
-			RedCameraPosition = new Vector3 (RedPosition.x, RedPosition.y, cameraZposition);
-			Speed = 0;
+			RedCameraPosition = new Vector3 (RedPosition.x, RedPosition.y, cameraPosition.z);
 			StartCoroutine("WaitRed");
+			switchingToRed = true;
 			iTween.MoveTo(mainCamera,(RedCameraPosition),1);
 		}
 
@@ -238,19 +278,32 @@ public class CS_Controller : MonoBehaviour
 	
 
 //-------------------------------------------------------------------------------------------------------
+	IEnumerator waitPullBack()
+	{
+		yield return new WaitForSeconds (3.0F);	
+			canPullBack = true;
+	}
+
 	//Use this function to switch to Blue
 	IEnumerator WaitRed()
 	{
-		yield return new WaitForSeconds (1.0F);		
-		SwitchToRed ();
-		Speed = 4;
-	}
+		yield return new WaitForSeconds (1.0F);	
+			SwitchToRed ();
+			Speed = 4;
+		if (hasMoved == true){
+			yield break;
+		} 
+				}
+	
 	IEnumerator WaitBlue()
 	{
-		yield return new WaitForSeconds(1.0F);
-		SwitchToBlue ();
-		Speed = 4;
-	}
+		yield return new WaitForSeconds (1.0F);
+			SwitchToBlue ();
+			Speed = 4;
+		if (hasMoved == true){
+			yield break;
+		} 
+		}
 	public void SwitchToBlue(){
 
 		//Detaches children from the controller
