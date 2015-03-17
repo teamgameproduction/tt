@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 
 public class CS_Results : MonoBehaviour 
 {
@@ -21,6 +23,7 @@ public class CS_Results : MonoBehaviour
 		resultCritters = GameObject.FindGameObjectsWithTag("ResultCritter");
 		hud = GameObject.Find("HUD").GetComponent<CS_HUD>();
 
+		#if UNITY_EDITOR
 		planetText = GameObject.Find("Planet Text").GetComponent<Text>();
 		if(EditorApplication.currentScene.Contains("Forest"))
 		{planetText.text = "Forest - 1";}
@@ -30,6 +33,7 @@ public class CS_Results : MonoBehaviour
 		{planetText.text = "Cave - 1";}
 		else if (EditorApplication.currentScene.Contains("Volcano"))
 		{planetText.text = "Volcano - 1";}
+		#endif
 
 		resultCam.enabled = false;
 

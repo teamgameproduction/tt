@@ -24,7 +24,7 @@ public class CS_Planet : MonoBehaviour
 	void Update () 
 	{
 		transform.LookAt (referenceLocation);
-		print(solarSystem.transform.eulerAngles);
+		//print(solarSystem.transform.eulerAngles);
 		solarSystem.transform.rotation = Quaternion.Slerp(solarSystem.transform.rotation, CS_Planet.endRotation, lerpSpeed * Time.deltaTime);
 	}
 
