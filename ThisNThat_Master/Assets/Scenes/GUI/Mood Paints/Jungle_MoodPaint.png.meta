@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: 5124afb59bd86464fb5a038b070acdc1
+guid: 740026dc917e145469480939bb184589
 TextureImporter:
   fileIDToRecycleName:
-    21300000: volcano_moodpaint_UI
+    21300000: Jungle_MoodPaint
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -23,7 +23,7 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 2048
+  maxTextureSize: 1024
   textureSettings:
     filterMode: -1
     aniso: 1

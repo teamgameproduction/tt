@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: ba2fe5e0af3c4f4489c51fdbc080d3ee
+guid: 178f0d77e0de4c24c80d1e45fb63f7c5
 TextureImporter:
   fileIDToRecycleName:
-    21300000: arctic_moodpaint_UI
+    21300000: Caves_MoodPaint
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -23,7 +23,7 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 2048
+  maxTextureSize: 1024
   textureSettings:
     filterMode: -1
     aniso: 1

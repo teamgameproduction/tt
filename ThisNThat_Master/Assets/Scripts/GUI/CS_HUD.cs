@@ -26,6 +26,7 @@ public class CS_HUD : MonoBehaviour
 		currencyText.text = "" + currency;
 	}
 
+	//called when a critter is collected
 	public void CritterCollected()
 	{
 		collectAnimator.Play ("Anim_CollectableIn");
@@ -38,21 +39,25 @@ public class CS_HUD : MonoBehaviour
 		StartCoroutine(CollectablesVisible());
 	}
 
+	//called when a Sm coin is collected
 	public void SmallCoinCollected()
 	{
 		currency += 10;
 		currencyText.text = "" + currency;
 	}
 
+	//called when a Lg coin is collected
 	public void LargeCoinCollected()
 	{
 		currency += 50;
 		currencyText.text = "" + currency;
 	}
-	
+
+	//called when a critter is collected
+	//Used to temporarily display the critter counter bar
 	public IEnumerator CollectablesVisible()
 	{
-		yield return new WaitForSeconds(4.0f);
+		yield return new WaitForSeconds(3.0f); // the duration of the critter collection bar's visibility
 		collectAnimator.Play ("Anim_CollectableOut");
 		yield return new WaitForSeconds(.5f);
 		collectableImg.enabled = false;
