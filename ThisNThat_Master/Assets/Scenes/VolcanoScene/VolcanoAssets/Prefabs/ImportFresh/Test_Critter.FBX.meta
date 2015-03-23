@@ -1,0 +1,147 @@
+fileFormatVersion: 2
+guid: 3d722d516cdde634c9e80efea4014e79
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Body
+    100002: Face
+    100004: Left Claw
+    100006: Left Fang
+    100008: Left Low Eye
+    100010: Left Low Eye001
+    100012: Left Low Eye002
+    100014: Left Low Eye003
+    100016: Left Low Eye004
+    100018: Leg
+    100020: Leg002
+    100022: Leg004
+    100024: Leg005
+    100026: Right  Fang
+    100028: Right Claw
+    100030: Shell
+    100032: //RootNode
+    100034: Top Shell
+    400000: Body
+    400002: Face
+    400004: Left Claw
+    400006: Left Fang
+    400008: Left Low Eye
+    400010: Left Low Eye001
+    400012: Left Low Eye002
+    400014: Left Low Eye003
+    400016: Left Low Eye004
+    400018: Leg
+    400020: Leg002
+    400022: Leg004
+    400024: Leg005
+    400026: Right  Fang
+    400028: Right Claw
+    400030: Shell
+    400032: //RootNode
+    400034: Top Shell
+    2300000: Body
+    2300002: Face
+    2300004: Left Claw
+    2300006: Left Fang
+    2300008: Left Low Eye
+    2300010: Left Low Eye001
+    2300012: Left Low Eye002
+    2300014: Left Low Eye003
+    2300016: Left Low Eye004
+    2300018: Leg
+    2300020: Leg002
+    2300022: Leg004
+    2300024: Leg005
+    2300026: Right  Fang
+    2300028: Right Claw
+    2300030: Shell
+    2300032: Top Shell
+    3300000: Body
+    3300002: Face
+    3300004: Left Claw
+    3300006: Left Fang
+    3300008: Left Low Eye
+    3300010: Left Low Eye001
+    3300012: Left Low Eye002
+    3300014: Left Low Eye003
+    3300016: Left Low Eye004
+    3300018: Leg
+    3300020: Leg002
+    3300022: Leg004
+    3300024: Leg005
+    3300026: Right  Fang
+    3300028: Right Claw
+    3300030: Shell
+    3300032: Top Shell
+    4300000: Shell
+    4300002: Top Shell
+    4300004: Face
+    4300006: Left Low Eye
+    4300008: Left Fang
+    4300010: Right Claw
+    4300012: Body
+    4300014: Leg
+    4300016: Left Claw
+    4300018: Right  Fang
+    4300020: Leg002
+    4300022: Left Low Eye001
+    4300024: Left Low Eye002
+    4300026: Left Low Eye003
+    4300028: Left Low Eye004
+    4300030: Leg004
+    4300032: Leg005
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
