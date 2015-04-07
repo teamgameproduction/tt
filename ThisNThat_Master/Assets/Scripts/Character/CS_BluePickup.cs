@@ -57,7 +57,7 @@ public class CS_BluePickup : MonoBehaviour //This script allows Blue to pick up 
 		//print (yDifference);
 
 		//To Pick Up Red
-		if (Input.GetKeyDown("f") && PickupRange == true && controller.IsCharacterRed == 2 && PickedUp == false)
+		if (Input.GetButtonDown ("LS_Click") && PickupRange == true && controller.IsCharacterRed == 2 && PickedUp == false)
 		{
 			//gmcharacterRed.transform.parent=gameObject.transform;
 			if(flapReset.Grounded == true){
@@ -73,7 +73,7 @@ public class CS_BluePickup : MonoBehaviour //This script allows Blue to pick up 
 			controller.Speed = controller.TogetherSpeed;
 		}
 		//To Get Picked Up By Blue
-		else if (Input.GetKeyDown ("f") && PickupRange == true && controller.IsCharacterRed == 1 && PickedUp == false) {
+		else if (Input.GetButtonDown ("LS_Click") && PickupRange == true && controller.IsCharacterRed == 1 && PickedUp == false) {
 
 			gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + BlueAttachHeightAdjustment, gameObject.transform.position.z);
 			controller.SwitchToBlue();
@@ -88,7 +88,7 @@ public class CS_BluePickup : MonoBehaviour //This script allows Blue to pick up 
 				}
 
 		//To Drop Red like it's hot
-		else if (Input.GetKeyDown("f") && PickedUp == true)
+		else if (Input.GetButtonDown ("LS_Click") && PickedUp == true)
 		{
 			gmcharacterRed.rigidbody.isKinematic = false;
 			PickedUp = false;

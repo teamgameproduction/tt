@@ -110,21 +110,8 @@ public class CS_Controller : MonoBehaviour
 		//	if(canPullBack == true){
 				cameraZposition = cameraZposition + 0.005F;
 			}
-			/*
-		if (Input.GetAxis("Horizontal") == 0.0f) {
-			StartCoroutine ("waitPullBack");
-		}
-		if (Input.GetAxis("Horizontal") == 0.0f && cameraZposition < minZposition){
-			if(canPullBack ==true && hasMoved == false){
-				cameraZposition = cameraZposition + 0.1F;
-			}
-		}
-		if (Input.GetAxis("Horizontal") == 0.0f && cameraZposition == minZposition){
-			canPullBack = false;
-		}
-		*/
 
-		if (switchingToblue == true && (Input.GetKeyDown ("a") || (Input.GetKeyDown ("d")))){
+		if (switchingToblue == true && (Input.GetAxis ("Horizontal") >0 || Input.GetAxis ("Horizontal") <0)){
 			if (hasMoved == true){
 				iTween.MoveTo(mainCamera,(BlueCameraPosition),0f);
 				SwitchToBlue ();
@@ -132,7 +119,7 @@ public class CS_Controller : MonoBehaviour
 				switchingToblue = false;
 			}
 		}
-		if (switchingToRed == true && (Input.GetKeyDown ("a") || (Input.GetKeyDown ("d")))){
+		if (switchingToRed == true && (Input.GetAxis ("Horizontal") >0 || Input.GetAxis ("Horizontal") <0)){
 			if (hasMoved == true){
 				iTween.MoveTo(mainCamera,(RedCameraPosition),0f);
 				SwitchToRed ();
@@ -178,7 +165,7 @@ public class CS_Controller : MonoBehaviour
 
 		//SWITCH CHARACTERS
 //-------------------------------------------------------------------------------------------------------
-		if (Input.GetKeyDown("e") && IsCharacterRed == 1)
+		if (Input.GetButtonDown("E") && IsCharacterRed == 1)
 		{	
 			BluePosition = gmcharacterBlue.transform.position;
 			BlueCameraPosition = new Vector3 (BluePosition.x, BluePosition.y, cameraPosition.z);
@@ -190,7 +177,7 @@ public class CS_Controller : MonoBehaviour
 
 		//SWITCH CHARACTERS BACK
 //-------------------------------------------------------------------------------------------------------
-		else if (Input.GetKeyDown("e") && IsCharacterRed == 2)
+		else if (Input.GetButtonDown("E") && IsCharacterRed == 2)
 		{
 			RedPosition = gmcharacterRed.transform.position;
 			RedCameraPosition = new Vector3 (RedPosition.x, RedPosition.y, cameraPosition.z);
@@ -220,21 +207,21 @@ public class CS_Controller : MonoBehaviour
 
 		//Turn the character
 		if (IsCharacterRed == 1){
-			if (Input.GetKeyDown ("d") && RedIsFacingRight == false){
+			if (Input.GetAxis ("Horizontal") >0 && RedIsFacingRight == false){
 				gmcharacterRed.transform.rotation = Quaternion.AngleAxis(0, Vector3.up);
 				RedIsFacingRight = true;
 			}
-			if (Input.GetKeyDown ("a") && RedIsFacingRight == true){
+			if (Input.GetAxis ("Horizontal")<0 && RedIsFacingRight == true){
 				gmcharacterRed.transform.rotation = Quaternion.AngleAxis(180, Vector3.up);
 				RedIsFacingRight = false;
 			}
 		}
 		else if (IsCharacterRed == 2){
-			if (Input.GetKeyDown ("d") && BlueIsFacingRight == false){
+			if (Input.GetAxis ("Horizontal") >0 && BlueIsFacingRight == false){
 				gmcharacterBlue.transform.rotation = Quaternion.AngleAxis(0, Vector3.up);
 				BlueIsFacingRight = true;
 			}
-			if (Input.GetKeyDown ("a") && BlueIsFacingRight == true){
+			if (Input.GetAxis ("Horizontal") <0 && BlueIsFacingRight == true){
 				gmcharacterBlue.transform.rotation = Quaternion.AngleAxis(180, Vector3.up);
 				BlueIsFacingRight = false;
 			}

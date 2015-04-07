@@ -21,14 +21,14 @@ public class CS_Digable : MonoBehaviour
 	void Update () 
 	{
 		
-		
-		/*if (Input.GetKeyDown ("r") && IsRedTouching == true && controller.IsCharacterRed == true ||
-		    Input.GetKeyDown ("r") && IsRedTouching == true && bluePickup.PickedUp == true)
-		{
-			Destroy (gameObject);
-		}*/
-		
-		
+		if (Input.GetButtonDown ("Q") || Input.GetAxis ("Right_Trigger") >0) {
+			if (IsRedTouching == true && controller.IsCharacterRed == 1 || IsRedTouching == true && bluePickup.PickedUp == true) {
+				//int c = Random.Range (0, crushSound.Length);
+				//AudioSource.PlayClipAtPoint(crushSound[c], transform.position);		
+				Debug.Log ("bam");			
+				gameObject.SetActive (false);
+			}
+		}
 	}
 	
 	/*void Awake()
@@ -39,22 +39,8 @@ public class CS_Digable : MonoBehaviour
 		}
 
 		}*/
-	
-	
-	void OnMouseDown()
-	{
 		
-		
-		if (IsRedTouching == true && controller.IsCharacterRed == 1 || IsRedTouching == true && bluePickup.PickedUp == true)
-		{
-			//int c = Random.Range (0, crushSound.Length);
-			//AudioSource.PlayClipAtPoint(crushSound[c], transform.position);		
-			Debug.Log ("bam");			
-			gameObject.SetActive(false);
-			
-			
-		}
-	}
+
 	
 	void OnTriggerEnter(Collider other)
 	{
