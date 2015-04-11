@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\CS_SetActive.cs" />
      <Compile Include="Assets\Scripts\CS_SlowCollider.cs" />
      <Compile Include="Assets\Scripts\CS_WinMove.cs" />
+     <Compile Include="Assets\Scripts\CameraShake.cs" />
      <Compile Include="Assets\Scripts\Character\CS_AnimationController.cs" />
      <Compile Include="Assets\Scripts\Character\CS_BlueAnimCTRL.cs" />
      <Compile Include="Assets\Scripts\Character\CS_BluePickup.cs" />

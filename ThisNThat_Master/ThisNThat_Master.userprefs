@@ -1,13 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Character/CS_RedDig.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CameraShake.cs">
     <Files>
-      <File FileName="Assets/Scripts/Character/CS_Controller.cs" Line="176" Column="41" />
-      <File FileName="Assets/Scripts/Character/CS_BluePickup.cs" Line="91" Column="38" />
-      <File FileName="Assets/Scripts/Character/CS_RedDig.cs" Line="30" Column="38" />
-      <File FileName="Assets/Scripts/Character/CS_RedAnimCTRL.cs" Line="21" Column="19" />
-      <File FileName="Assets/Scripts/Character/CS_BlueAnimCTRL.cs" Line="23" Column="4" />
-      <File FileName="Assets/Scripts/Environment/CS_Digable.cs" Line="24" Column="70" />
+      <File FileName="Assets\Scripts\CameraShake.cs" Line="40" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
