@@ -22,7 +22,7 @@ public class CS_Triggered_Lights : MonoBehaviour
 	{
 		
 		
-		if (Input.GetKeyUp (KeyCode.Q) && gameObject.light.intensity == 0 && lightInteract == true && touch==true)
+		if (Input.GetKeyUp (KeyCode.L) && gameObject.light.intensity == 0 && lightInteract == true && touch==true)
 		{
 			gameObject.light.intensity = 6;
 			lightInteract = false;

@@ -37,7 +37,7 @@ public class CS_MoveWorm : MonoBehaviour {
 		}
 
 		if(enteredcollision)
-		{if(Input.GetKeyDown (button))
+		{if(Input.GetKeyDown ("l"))
 		{
 			collision=true;
 		}
