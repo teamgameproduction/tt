@@ -24,13 +24,13 @@ public class Foreground_Transparent : MonoBehaviour {
 
 	void OnTriggerEnter (Collider Other){
 
-			ForegroundMAT.SetFloat ("_Cutoff", 0.5F);
+			ForegroundMAT.SetFloat ("_Cutoff", 0.2F);
 	}
 
 	void OnTriggerStay (Collider Other){
 
 			
-			ForegroundMAT.SetFloat ("_Cutoff", 0.5F);
+			ForegroundMAT.SetFloat ("_Cutoff", 0.2F);
 		}
 
 	void OnTriggerExit (Collider Other){
