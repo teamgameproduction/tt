@@ -37,7 +37,7 @@ public class CS_MoveWorm : MonoBehaviour {
 		}
 
 		if(enteredcollision)
-		{if(Input.GetKeyDown ("l"))
+		{if(Input.GetButtonDown ("Y") || Input.GetKeyDown ("right shift") || Input.GetKeyDown ("left shift") || Input.GetAxis ("Right_Trigger") >0)
 		{
 			collision=true;
 		}
@@ -66,6 +66,8 @@ public class CS_MoveWorm : MonoBehaviour {
 	}
 
 	void MoveXYZ(){
-		wormy.transform.Translate (MoveDirection.x * Time.deltaTime,MoveDirection.y * Time.deltaTime, MoveDirection.z * Time.deltaTime);
+		wormy.transform.Translate (MoveDirection.x,MoveDirection.y, MoveDirection.z);
+		Rigidbody Spike = wormy.GetComponent <Rigidbody> ();
+		Spike.isKinematic = false;
 	}
 }
