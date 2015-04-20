@@ -21,11 +21,10 @@ public class CS_Digable : MonoBehaviour
 	void Update () 
 	{
 		
-		if (Input.GetButtonDown ("Q") || Input.GetAxis ("Right_Trigger") >0) {
+		if (Input.GetKeyDown ("right shift") || Input.GetKeyDown ("left shift") || Input.GetAxis ("Right_Trigger") >0) {
 			if (IsRedTouching == true && controller.IsCharacterRed == 1 || IsRedTouching == true && bluePickup.PickedUp == true) {
 				//int c = Random.Range (0, crushSound.Length);
 				//AudioSource.PlayClipAtPoint(crushSound[c], transform.position);		
-				Debug.Log ("bam");			
 				gameObject.SetActive (false);
 			}
 		}

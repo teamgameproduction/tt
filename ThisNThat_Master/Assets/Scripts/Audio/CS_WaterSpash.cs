@@ -20,7 +20,7 @@ public class CS_WaterSpash : MonoBehaviour
 	void OnTriggerEnter()
 	{
 		//splash sound when player jumps in water
-		int ss = Random.Range (0, spashSND.Length);
+		//int ss = Random.Range (0, spashSND.Length);
 		//AudioSource.PlayClipAtPoint(spashSND[ss], transform.position);
 	}
 }
