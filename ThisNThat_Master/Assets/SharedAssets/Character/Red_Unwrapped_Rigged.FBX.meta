@@ -1,34 +1,16 @@
 fileFormatVersion: 2
-guid: 5f4373010bac2dc4880c3deb995eaf7b
+guid: f8aab440a94b34c25ab306639d7506d8
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Object005
-    100004: Object007
-    100006: Object008
-    100008: Top Shell002
     400000: //RootNode
-    400002: Object005
-    400004: Object007
-    400006: Object008
-    400008: Top Shell002
-    2300000: Object005
-    2300002: Object007
-    2300004: Object008
-    2300006: Top Shell002
-    3300000: Object005
-    3300002: Object007
-    3300004: Object008
-    3300006: Top Shell002
-    4300000: Top Shell002
-    4300002: Object005
-    4300004: Object007
-    4300006: Object008
-    7400000: Take 001
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Low_Poly_Red
     9500000: //RootNode
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
   animations:
@@ -36,7 +18,7 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
@@ -46,7 +28,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: .0250000004
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
