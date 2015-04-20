@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CS_BreakablePlatform : MonoBehaviour 
 {
-	private CS_GenericTrigger CollisionBool;
+	public CS_GenericTrigger CollisionBool;
 	public GameObject TriggerVolume;
 	public float destroyTimer = 100.0f;
 	public bool isTouch = false;

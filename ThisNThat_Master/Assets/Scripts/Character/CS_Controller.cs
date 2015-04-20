@@ -13,7 +13,7 @@ public class CS_Controller : MonoBehaviour
 	public bool animationInterupt = false;
 	private float redWait;
 	private float blueWait;
-	private bool  canPullBack =false;
+	public bool  canPullBack =false;
 	private bool hasMoved = false;
 	private bool switchingToblue = false;
 	private bool switchingToRed = false;
