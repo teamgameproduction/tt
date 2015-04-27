@@ -121,7 +121,6 @@
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Custom Shaders\Double_Sided_Diffuse.shader" />
      <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
-     <None Include="Assets\Custom Shaders\vertexlitlamberttexturerimlight.shader" />
      <None Include="Assets\Scenes\UndergroundScene\Gem Shader\diamond shader.shader" />
      <None Include="Assets\Custom Shaders\Dbl_Side_Trans_Self_Il.shader" />
  <Reference Include="UnityEngine.UI">

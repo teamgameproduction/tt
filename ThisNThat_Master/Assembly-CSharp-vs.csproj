@@ -121,11 +121,10 @@
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Custom Shaders\Double_Sided_Diffuse.shader" />
      <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
-     <None Include="Assets\Custom Shaders\vertexlitlamberttexturerimlight.shader" />
      <None Include="Assets\Scenes\UndergroundScene\Gem Shader\diamond shader.shader" />
      <None Include="Assets\Custom Shaders\Dbl_Side_Trans_Self_Il.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/Walter/Documents/GitHub/tt/ThisNThat_Master/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/ladmin/Documents/GitHub/tt/ThisNThat_Master/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.4/UnityEngine.UI.dll</HintPath>
