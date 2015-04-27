@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ab0f5fe2e692d50458695bf6c88a8988
+guid: d1397fd5f9427674b9780a221f16899c
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -11,7 +11,7 @@ ModelImporter:
     9500000: //RootNode
   materials:
     importMaterials: 1
-    materialName: 1
+    materialName: 0
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
