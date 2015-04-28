@@ -1,20 +1,20 @@
 fileFormatVersion: 2
-guid: bdac9e3462aab4075b6f9b0ee0559062
+guid: 113df0e57dec343a48449169fb142a0e
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
     100002: crystal1
-    100004: Top Shell002
+    100004: Top_Shell002
     400000: //RootNode
     400002: crystal1
-    400004: Top Shell002
+    400004: Top_Shell002
     2300000: crystal1
-    2300002: Top Shell002
+    2300002: Top_Shell002
     3300000: crystal1
-    3300002: Top Shell002
-    4300000: Top Shell002
-    4300002: crystal1
+    3300002: Top_Shell002
+    4300000: crystal1
+    4300002: Top_Shell002
     9500000: //RootNode
   materials:
     importMaterials: 1
