@@ -10,6 +10,7 @@ public class CS_LevelSelect : MonoBehaviour
 	public Sprite[] moodPaint;
 	[HideInInspector]public Image levelPaneImage;
 	[HideInInspector]public Animator planetSwapper;
+	[HideInInspector]public Button levelOneButton; 
 
 	//Set the level to 0 (forest) and get all necessary components
 	//----------------------------------------------------------------------------------------------------
@@ -18,6 +19,7 @@ public class CS_LevelSelect : MonoBehaviour
 		Level = 4;
 		levelPaneImage = GameObject.Find ("LevelFrame_img").GetComponent<Image>();
 		planetSwapper = menuCanvas.GetComponent<Animator>();
+		levelOneButton = GameObject.Find ("Button01").GetComponent<Button>();
 	}
 	//----------------------------------------------------------------------------------------------------
 
@@ -113,6 +115,7 @@ public class CS_LevelSelect : MonoBehaviour
 	public void ForestPlanet()	
 	{	
 		Level = 0;
+		levelOneButton.interactable = true;
 		levelPaneImage.sprite = moodPaint[Level];
 		planetSwapper.Play("Anim_PlanetSwap");
 		CS_Planet.endRotation.eulerAngles = new  Vector3 (0,72,0);
@@ -120,6 +123,7 @@ public class CS_LevelSelect : MonoBehaviour
 	public void ArcticPlanet()	
 	{
 		Level = 1;
+		levelOneButton.interactable = true;
 		levelPaneImage.sprite = moodPaint[Level];
 		planetSwapper.Play("Anim_PlanetSwap");
 		CS_Planet.endRotation.eulerAngles = new Vector3 (0,144,0);
@@ -127,6 +131,7 @@ public class CS_LevelSelect : MonoBehaviour
 	public void CavePlanet()	
 	{
 		Level = 2;
+		levelOneButton.interactable = true;
 		levelPaneImage.sprite = moodPaint[Level];
 		planetSwapper.Play("Anim_PlanetSwap");
 		CS_Planet.endRotation.eulerAngles = new Vector3 (0,216,0);
@@ -134,6 +139,7 @@ public class CS_LevelSelect : MonoBehaviour
 	public void VolcanoPlanet()	
 	{
 		Level = 3;
+		levelOneButton.interactable = true;
 		levelPaneImage.sprite = moodPaint[Level];
 		planetSwapper.Play("Anim_PlanetSwap");
 		CS_Planet.endRotation.eulerAngles = new Vector3 (0,288,0);
@@ -141,6 +147,7 @@ public class CS_LevelSelect : MonoBehaviour
 	public void TutorialPlanet()	
 	{	
 		Level = 4;
+		levelOneButton.interactable = false;
 		levelPaneImage.sprite = moodPaint[Level];
 		planetSwapper.Play("Anim_PlanetSwap");
 		CS_Planet.endRotation.eulerAngles = new  Vector3 (0,0,0);
