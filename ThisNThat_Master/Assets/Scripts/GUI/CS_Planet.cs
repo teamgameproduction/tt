@@ -4,13 +4,13 @@ using System.Collections;
 public class CS_Planet : MonoBehaviour 
 {
 
-	public enum PlanetType {Null, Forest, Arctic, Cave, Volcano}
+	public enum PlanetType {Null, Forest, Arctic, Cave, Volcano, Tutorial}
 	public PlanetType planet;
 	private CS_LevelSelect levelSelect;
 	public GameObject solarSystem;
 	public Transform referenceLocation;
 
-	private float lerpSpeed = 1.0f;
+	private float lerpSpeed = 1.5f;
 	[HideInInspector] public static Quaternion endRotation;
 
 	void Awake ()
@@ -43,6 +43,9 @@ public class CS_Planet : MonoBehaviour
 				break;
 			case PlanetType.Volcano:
 				levelSelect.VolcanoPlanet();
+				break;
+			case PlanetType.Tutorial:
+				levelSelect.TutorialPlanet();
 				break;
 			default:
 				break;

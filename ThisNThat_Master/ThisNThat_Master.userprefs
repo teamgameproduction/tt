@@ -1,10 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Environment/CS_Checkpoint.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GUI\CS_LevelSelect.cs">
     <Files>
-      <File FileName="Assets/SharedAssets/Checkpoint/New_Check_Anim.cs" Line="10" Column="19" />
-      <File FileName="Assets/Scripts/Environment/CS_BreakablePlatform.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Environment/CS_Checkpoint.cs" Line="34" Column="41" />
+      <File FileName="Assets\Scripts\GUI\CS_Planet.cs" Line="13" Column="31" />
+      <File FileName="Assets\Scripts\GUI\CS_LevelSelect.cs" Line="144" Column="44" />
+      <File FileName="Assets\Scripts\GUI\CS_LevelTitle.cs" Line="24" Column="1" />
+      <File FileName="Assets\Scripts\GUI\CS_LevelDescription.cs" Line="22" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

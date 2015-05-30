@@ -18,6 +18,6 @@ public class CS_LevelTitle : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		Title.text = "" + BiomeTitles[Level.Level] + " Planet";
+		Title.text = "" + BiomeTitles[Level.Level];
 	}
 }

@@ -15,7 +15,7 @@ public class CS_LevelSelect : MonoBehaviour
 	//----------------------------------------------------------------------------------------------------
 	void Start()
 	{ 
-		Level = 0;
+		Level = 4;
 		levelPaneImage = GameObject.Find ("LevelFrame_img").GetComponent<Image>();
 		planetSwapper = menuCanvas.GetComponent<Animator>();
 	}
@@ -26,7 +26,7 @@ public class CS_LevelSelect : MonoBehaviour
 	public void NextLevel()
 	{	
 		Level += 1;
-		if (Level > 3)	{Level = 0;}
+		if (Level > 4)	{Level = 0;}
 
 		switch (Level)
 		{
@@ -41,6 +41,9 @@ public class CS_LevelSelect : MonoBehaviour
 			break;
 		case 3:
 			VolcanoPlanet();
+			break;
+		case 4:
+			TutorialPlanet();
 			break;
 		default:
 			break;
@@ -53,7 +56,7 @@ public class CS_LevelSelect : MonoBehaviour
 	public void PreviousLevel()
 	{	
 		Level -= 1;
-		if (Level < 0)	{Level = 3;}
+		if (Level < 0)	{Level = 4;}
 
 		switch (Level)
 		{
@@ -68,6 +71,9 @@ public class CS_LevelSelect : MonoBehaviour
 			break;
 		case 3:
 			VolcanoPlanet();
+			break;
+		case 4:
+			TutorialPlanet();
 			break;
 		default:
 			break;
@@ -109,28 +115,35 @@ public class CS_LevelSelect : MonoBehaviour
 		Level = 0;
 		levelPaneImage.sprite = moodPaint[Level];
 		planetSwapper.Play("Anim_PlanetSwap");
-		CS_Planet.endRotation.eulerAngles = new  Vector3 (0,0,0);
+		CS_Planet.endRotation.eulerAngles = new  Vector3 (0,72,0);
 	}
 	public void ArcticPlanet()	
 	{
 		Level = 1;
 		levelPaneImage.sprite = moodPaint[Level];
 		planetSwapper.Play("Anim_PlanetSwap");
-		CS_Planet.endRotation.eulerAngles = new Vector3 (0,90,0);
+		CS_Planet.endRotation.eulerAngles = new Vector3 (0,144,0);
 	}
 	public void CavePlanet()	
 	{
 		Level = 2;
 		levelPaneImage.sprite = moodPaint[Level];
 		planetSwapper.Play("Anim_PlanetSwap");
-		CS_Planet.endRotation.eulerAngles = new Vector3 (0,180,0);
+		CS_Planet.endRotation.eulerAngles = new Vector3 (0,216,0);
 	}
 	public void VolcanoPlanet()	
 	{
 		Level = 3;
 		levelPaneImage.sprite = moodPaint[Level];
 		planetSwapper.Play("Anim_PlanetSwap");
-		CS_Planet.endRotation.eulerAngles = new Vector3 (0,270,0);
+		CS_Planet.endRotation.eulerAngles = new Vector3 (0,288,0);
+	}
+	public void TutorialPlanet()	
+	{	
+		Level = 4;
+		levelPaneImage.sprite = moodPaint[Level];
+		planetSwapper.Play("Anim_PlanetSwap");
+		CS_Planet.endRotation.eulerAngles = new  Vector3 (0,0,0);
 	}
 	//----------------------------------------------------------------------------------------------------
 }
