@@ -1,9 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Audio\CS_collect_Audio.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CS_WinMove.cs">
     <Files>
+      <File FileName="Assets\Scripts\CS_WinMove.cs" Line="9" Column="20" />
+      <File FileName="Assets\Scripts\CS_FWin.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\GUI\CS_Planet.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GUI\CS_LevelSelect.cs" Line="144" Column="41" />
+      <File FileName="Assets\Scripts\GUI\CS_LevelSelect.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\GUI\CS_LevelTitle.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\GUI\CS_LevelDescription.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Audio\CS_collect_Audio.cs" Line="1" Column="1" />

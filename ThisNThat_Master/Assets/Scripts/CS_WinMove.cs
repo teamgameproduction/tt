@@ -5,8 +5,8 @@ public class CS_WinMove : MonoBehaviour
 {
 	public GameObject Winner;
 	public rockbreak rock;
-	[HideInInspector]	public GameObject 	gmcharacterBlue;
-	[HideInInspector]	public GameObject 	gmcharacterRed;
+	public GameObject gmcharacterBlue;
+	public GameObject gmcharacterRed;
 
 	public GameObject cbox1;
 	public GameObject cbox2;
