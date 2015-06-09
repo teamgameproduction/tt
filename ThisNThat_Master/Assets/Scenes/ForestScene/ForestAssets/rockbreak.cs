@@ -32,7 +32,7 @@ public class rockbreak : MonoBehaviour
 		if (other.gameObject.tag == "Rock")
 		{
 			win.renderer.enabled = true;
-
+			win.collider.enabled = true;
 			part1.SetActive (true);
 
 			isBroke = true;
