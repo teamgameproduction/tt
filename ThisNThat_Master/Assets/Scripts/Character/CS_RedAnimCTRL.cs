@@ -26,8 +26,9 @@ public class CS_RedAnimCTRL : MonoBehaviour {
 			animator.SetBool ("Running", false);
 		}
 
-		if (Input.GetKeyDown ("space") && flapReset.Grounded == true){
+		if (Input.GetKeyDown ("space")){
 		animator.SetBool ("Jump", true);
+		animator.SetBool ("Running", false);
 		}
 
 		else if (flapReset.Grounded == true){

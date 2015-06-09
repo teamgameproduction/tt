@@ -1,0 +1,1193 @@
+fileFormatVersion: 2
+guid: 44f7b9983cc3540b89221a9939970d8a
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Be_head_end
+    100002: Be_L_Back_toe_bottom
+    100004: Be_L_inside_bottom
+    100006: Be_L_inside_toe_Bottom
+    100008: Be_L_outside_bottom
+    100010: Be_L_outside_toe_Bottom
+    100012: Be_L_Shoulder
+    100014: Be_R_Back_Bottom_top
+    100016: Be_R_inside_bottom
+    100018: Be_R_Inside_toe_bottom
+    100020: Be_R_mid_bottom
+    100022: Be_R_outside_bottom
+    100024: Be_R_outside_toe_Bottom
+    100026: Be_R_Shoulder
+    100028: Be_root
+    100030: //RootNode
+    100032: Bn_Chest
+    100034: Bn_Head
+    100036: Bn_Hips
+    100038: Bn_L_Back_toe_bottom
+    100040: Bn_L_Back_toe_top
+    100042: Bn_L_foream
+    100044: Bn_L_inside_bottom
+    100046: Bn_L_inside_toe_Bottom
+    100048: Bn_L_inside_toe_top
+    100050: Bn_L_inside_top
+    100052: Bn_L_mid_bottom
+    100054: Bn_L_mid_leg
+    100056: Bn_L_mid_top
+    100058: Bn_L_outside_bottom
+    100060: Bn_L_outside_mid
+    100062: Bn_L_outside_toe_Bottom
+    100064: Bn_L_outside_toe_top
+    100066: Bn_L_outside_top
+    100068: Bn_L_Shin
+    100070: Bn_L_Shoulder
+    100072: Bn_L_thigh
+    100074: Bn_L_upperarm
+    100076: Bn_Neck
+    100078: Bn_R_Back_Bottom_top
+    100080: Bn_R_Back_toe_top
+    100082: Bn_R_forearm
+    100084: Bn_R_inside_bottom
+    100086: Bn_R_Inside_toe_bottom
+    100088: Bn_R_Inside_toe_top
+    100090: Bn_R_inside_top
+    100092: Bn_R_mid_bottom
+    100094: Bn_R_Mid_Leg
+    100096: Bn_R_mid_top
+    100098: Bn_R_outside_bottom
+    100100: Bn_R_outside_mid
+    100102: Bn_R_outside_toe_Bottom
+    100104: Bn_R_outside_toe_top
+    100106: Bn_R_outside_top
+    100108: Bn_R_Shin
+    100110: Bn_R_Shoulder
+    100112: Bn_R_thigh
+    100114: Bn_R_Upperarm
+    100116: Bn_Spine
+    100118: Body
+    100120: Bone020
+    100122: Ctrl_chest
+    100124: Ctrl_Cog
+    100126: Ctrl_global
+    100128: Ctrl_head
+    100130: Ctrl_hips
+    100132: Ctrl_L_Leg
+    100134: Ctrl_L_shl
+    100136: Ctrl_R_Leg
+    100138: Ctrl_R_shl
+    100140: Ctrl_spine_a
+    100142: Ctrl_spine_b
+    100144: IK_Left_leg
+    100146: Ik_R_leg
+    100148: Pt_help_chest
+    100150: Pt_help_head
+    100152: Pt_help_hips
+    100154: Pt_Help_L_leg
+    100156: pt_help_L_Shl
+    100158: Pt_Help_R_leg
+    100160: pt_help_R_Shl
+    100162: Pt_help_Spine_a
+    100164: Pt_help_spine_b
+    400000: Be_head_end
+    400002: Be_L_Back_toe_bottom
+    400004: Be_L_inside_bottom
+    400006: Be_L_inside_toe_Bottom
+    400008: Be_L_outside_bottom
+    400010: Be_L_outside_toe_Bottom
+    400012: Be_L_Shoulder
+    400014: Be_R_Back_Bottom_top
+    400016: Be_R_inside_bottom
+    400018: Be_R_Inside_toe_bottom
+    400020: Be_R_mid_bottom
+    400022: Be_R_outside_bottom
+    400024: Be_R_outside_toe_Bottom
+    400026: Be_R_Shoulder
+    400028: Be_root
+    400030: //RootNode
+    400032: Bn_Chest
+    400034: Bn_Head
+    400036: Bn_Hips
+    400038: Bn_L_Back_toe_bottom
+    400040: Bn_L_Back_toe_top
+    400042: Bn_L_foream
+    400044: Bn_L_inside_bottom
+    400046: Bn_L_inside_toe_Bottom
+    400048: Bn_L_inside_toe_top
+    400050: Bn_L_inside_top
+    400052: Bn_L_mid_bottom
+    400054: Bn_L_mid_leg
+    400056: Bn_L_mid_top
+    400058: Bn_L_outside_bottom
+    400060: Bn_L_outside_mid
+    400062: Bn_L_outside_toe_Bottom
+    400064: Bn_L_outside_toe_top
+    400066: Bn_L_outside_top
+    400068: Bn_L_Shin
+    400070: Bn_L_Shoulder
+    400072: Bn_L_thigh
+    400074: Bn_L_upperarm
+    400076: Bn_Neck
+    400078: Bn_R_Back_Bottom_top
+    400080: Bn_R_Back_toe_top
+    400082: Bn_R_forearm
+    400084: Bn_R_inside_bottom
+    400086: Bn_R_Inside_toe_bottom
+    400088: Bn_R_Inside_toe_top
+    400090: Bn_R_inside_top
+    400092: Bn_R_mid_bottom
+    400094: Bn_R_Mid_Leg
+    400096: Bn_R_mid_top
+    400098: Bn_R_outside_bottom
+    400100: Bn_R_outside_mid
+    400102: Bn_R_outside_toe_Bottom
+    400104: Bn_R_outside_toe_top
+    400106: Bn_R_outside_top
+    400108: Bn_R_Shin
+    400110: Bn_R_Shoulder
+    400112: Bn_R_thigh
+    400114: Bn_R_Upperarm
+    400116: Bn_Spine
+    400118: Body
+    400120: Bone020
+    400122: Ctrl_chest
+    400124: Ctrl_Cog
+    400126: Ctrl_global
+    400128: Ctrl_head
+    400130: Ctrl_hips
+    400132: Ctrl_L_Leg
+    400134: Ctrl_L_shl
+    400136: Ctrl_R_Leg
+    400138: Ctrl_R_shl
+    400140: Ctrl_spine_a
+    400142: Ctrl_spine_b
+    400144: IK_Left_leg
+    400146: Ik_R_leg
+    400148: Pt_help_chest
+    400150: Pt_help_head
+    400152: Pt_help_hips
+    400154: Pt_Help_L_leg
+    400156: pt_help_L_Shl
+    400158: Pt_Help_R_leg
+    400160: pt_help_R_Shl
+    400162: Pt_help_Spine_a
+    400164: Pt_help_spine_b
+    4300000: Body
+    7400000: F_Idle_B
+    7400002: F_Jump_B
+    7400004: F_Walk_B
+    7400006: F_DoubleJump_B
+    7400008: F_Death_B
+    9500000: //RootNode
+    13700000: Body
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: F_Idle_B
+      takeName: Take 001
+      firstFrame: 180
+      lastFrame: 220
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bn_L_inside_toe_top
+        weight: 1
+      - path: Bn_L_inside_toe_top/Bn_L_inside_toe_Bottom
+        weight: 1
+      - path: Bn_L_inside_toe_top/Bn_L_inside_toe_Bottom/Be_L_inside_toe_Bottom
+        weight: 1
+      - path: Bn_L_outside_toe_top
+        weight: 1
+      - path: Bn_L_outside_toe_top/Bn_L_outside_toe_Bottom
+        weight: 1
+      - path: Bn_L_outside_toe_top/Bn_L_outside_toe_Bottom/Be_L_outside_toe_Bottom
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Ctrl_global
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh/Bn_L_mid_leg
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh/Bn_L_mid_leg/Bn_L_Shin
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh/Bn_L_mid_leg/Bn_L_Shin/Bn_L_Back_toe_top
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh/Bn_L_mid_leg/Bn_L_Shin/Bn_L_Back_toe_top/Bn_L_Back_toe_bottom
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh/Bn_L_mid_leg/Bn_L_Shin/Bn_L_Back_toe_top/Bn_L_Back_toe_bottom/Be_L_Back_toe_bottom
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Back_toe_top
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Back_toe_top/Bn_R_Back_Bottom_top
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Back_toe_top/Bn_R_Back_Bottom_top/Be_R_Back_Bottom_top
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Inside_toe_top
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Inside_toe_top/Bn_R_Inside_toe_bottom
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Inside_toe_top/Bn_R_Inside_toe_bottom/Be_R_Inside_toe_bottom
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_outside_toe_top
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_outside_toe_top/Bn_R_outside_toe_Bottom
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_outside_toe_top/Bn_R_outside_toe_Bottom/Be_R_outside_toe_Bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Hips
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Hips/Bone020
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Be_L_Shoulder
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_inside_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_inside_top/Bn_L_inside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_inside_top/Bn_L_inside_bottom/Be_L_inside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_mid_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_mid_top/Bn_L_mid_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_outside_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_outside_top/Bn_L_outside_mid
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_outside_top/Bn_L_outside_mid/Bn_L_outside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_outside_top/Bn_L_outside_mid/Bn_L_outside_bottom/Be_L_outside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_Neck
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_Neck/Bn_Head
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_Neck/Bn_Head/Be_head_end
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Be_R_Shoulder
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_inside_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_inside_top/Bn_R_inside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_inside_top/Bn_R_inside_bottom/Be_R_inside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_mid_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_mid_top/Bn_R_mid_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_mid_top/Bn_R_mid_bottom/Be_R_mid_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_outside_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_outside_top/Bn_R_outside_mid
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_outside_top/Bn_R_outside_mid/Bn_R_outside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_outside_top/Bn_R_outside_mid/Bn_R_outside_bottom/Be_R_outside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_chest
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_chest/Pt_help_chest
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_head
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_head/Pt_help_head
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_hips
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_hips/Pt_help_Spine_a
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_L_shl
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_L_shl/pt_help_L_Shl
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_R_shl
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_R_shl/pt_help_R_Shl
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_spine_a
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_spine_a/Pt_help_hips
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_spine_b
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_spine_b/Pt_help_spine_b
+        weight: 1
+      - path: Ctrl_global/Ctrl_L_Leg
+        weight: 1
+      - path: Ctrl_global/Ctrl_L_Leg/Pt_Help_L_leg
+        weight: 1
+      - path: Ctrl_global/Ctrl_L_Leg/Pt_Help_L_leg/IK_Left_leg
+        weight: 1
+      - path: Ctrl_global/Ctrl_R_Leg
+        weight: 1
+      - path: Ctrl_global/Ctrl_R_Leg/Pt_Help_R_leg
+        weight: 1
+      - path: Ctrl_global/Ctrl_R_Leg/Pt_Help_R_leg/Ik_R_leg
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: F_Walk_B
+      takeName: Take 001
+      firstFrame: 311
+      lastFrame: 361
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bn_L_inside_toe_top
+        weight: 1
+      - path: Bn_L_inside_toe_top/Bn_L_inside_toe_Bottom
+        weight: 1
+      - path: Bn_L_inside_toe_top/Bn_L_inside_toe_Bottom/Be_L_inside_toe_Bottom
+        weight: 1
+      - path: Bn_L_outside_toe_top
+        weight: 1
+      - path: Bn_L_outside_toe_top/Bn_L_outside_toe_Bottom
+        weight: 1
+      - path: Bn_L_outside_toe_top/Bn_L_outside_toe_Bottom/Be_L_outside_toe_Bottom
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Ctrl_global
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh/Bn_L_mid_leg
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh/Bn_L_mid_leg/Bn_L_Shin
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh/Bn_L_mid_leg/Bn_L_Shin/Bn_L_Back_toe_top
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh/Bn_L_mid_leg/Bn_L_Shin/Bn_L_Back_toe_top/Bn_L_Back_toe_bottom
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh/Bn_L_mid_leg/Bn_L_Shin/Bn_L_Back_toe_top/Bn_L_Back_toe_bottom/Be_L_Back_toe_bottom
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Back_toe_top
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Back_toe_top/Bn_R_Back_Bottom_top
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Back_toe_top/Bn_R_Back_Bottom_top/Be_R_Back_Bottom_top
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Inside_toe_top
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Inside_toe_top/Bn_R_Inside_toe_bottom
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Inside_toe_top/Bn_R_Inside_toe_bottom/Be_R_Inside_toe_bottom
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_outside_toe_top
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_outside_toe_top/Bn_R_outside_toe_Bottom
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_outside_toe_top/Bn_R_outside_toe_Bottom/Be_R_outside_toe_Bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Hips
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Hips/Bone020
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Be_L_Shoulder
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_inside_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_inside_top/Bn_L_inside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_inside_top/Bn_L_inside_bottom/Be_L_inside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_mid_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_mid_top/Bn_L_mid_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_outside_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_outside_top/Bn_L_outside_mid
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_outside_top/Bn_L_outside_mid/Bn_L_outside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_outside_top/Bn_L_outside_mid/Bn_L_outside_bottom/Be_L_outside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_Neck
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_Neck/Bn_Head
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_Neck/Bn_Head/Be_head_end
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Be_R_Shoulder
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_inside_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_inside_top/Bn_R_inside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_inside_top/Bn_R_inside_bottom/Be_R_inside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_mid_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_mid_top/Bn_R_mid_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_mid_top/Bn_R_mid_bottom/Be_R_mid_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_outside_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_outside_top/Bn_R_outside_mid
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_outside_top/Bn_R_outside_mid/Bn_R_outside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_outside_top/Bn_R_outside_mid/Bn_R_outside_bottom/Be_R_outside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_chest
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_chest/Pt_help_chest
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_head
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_head/Pt_help_head
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_hips
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_hips/Pt_help_Spine_a
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_L_shl
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_L_shl/pt_help_L_Shl
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_R_shl
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_R_shl/pt_help_R_Shl
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_spine_a
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_spine_a/Pt_help_hips
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_spine_b
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_spine_b/Pt_help_spine_b
+        weight: 1
+      - path: Ctrl_global/Ctrl_L_Leg
+        weight: 1
+      - path: Ctrl_global/Ctrl_L_Leg/Pt_Help_L_leg
+        weight: 1
+      - path: Ctrl_global/Ctrl_L_Leg/Pt_Help_L_leg/IK_Left_leg
+        weight: 1
+      - path: Ctrl_global/Ctrl_R_Leg
+        weight: 1
+      - path: Ctrl_global/Ctrl_R_Leg/Pt_Help_R_leg
+        weight: 1
+      - path: Ctrl_global/Ctrl_R_Leg/Pt_Help_R_leg/Ik_R_leg
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: F_Jump_B
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bn_L_inside_toe_top
+        weight: 1
+      - path: Bn_L_inside_toe_top/Bn_L_inside_toe_Bottom
+        weight: 1
+      - path: Bn_L_inside_toe_top/Bn_L_inside_toe_Bottom/Be_L_inside_toe_Bottom
+        weight: 1
+      - path: Bn_L_outside_toe_top
+        weight: 1
+      - path: Bn_L_outside_toe_top/Bn_L_outside_toe_Bottom
+        weight: 1
+      - path: Bn_L_outside_toe_top/Bn_L_outside_toe_Bottom/Be_L_outside_toe_Bottom
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Ctrl_global
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh/Bn_L_mid_leg
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh/Bn_L_mid_leg/Bn_L_Shin
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh/Bn_L_mid_leg/Bn_L_Shin/Bn_L_Back_toe_top
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh/Bn_L_mid_leg/Bn_L_Shin/Bn_L_Back_toe_top/Bn_L_Back_toe_bottom
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh/Bn_L_mid_leg/Bn_L_Shin/Bn_L_Back_toe_top/Bn_L_Back_toe_bottom/Be_L_Back_toe_bottom
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Back_toe_top
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Back_toe_top/Bn_R_Back_Bottom_top
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Back_toe_top/Bn_R_Back_Bottom_top/Be_R_Back_Bottom_top
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Inside_toe_top
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Inside_toe_top/Bn_R_Inside_toe_bottom
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Inside_toe_top/Bn_R_Inside_toe_bottom/Be_R_Inside_toe_bottom
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_outside_toe_top
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_outside_toe_top/Bn_R_outside_toe_Bottom
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_outside_toe_top/Bn_R_outside_toe_Bottom/Be_R_outside_toe_Bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Hips
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Hips/Bone020
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Be_L_Shoulder
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_inside_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_inside_top/Bn_L_inside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_inside_top/Bn_L_inside_bottom/Be_L_inside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_mid_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_mid_top/Bn_L_mid_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_outside_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_outside_top/Bn_L_outside_mid
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_outside_top/Bn_L_outside_mid/Bn_L_outside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_outside_top/Bn_L_outside_mid/Bn_L_outside_bottom/Be_L_outside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_Neck
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_Neck/Bn_Head
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_Neck/Bn_Head/Be_head_end
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Be_R_Shoulder
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_inside_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_inside_top/Bn_R_inside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_inside_top/Bn_R_inside_bottom/Be_R_inside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_mid_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_mid_top/Bn_R_mid_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_mid_top/Bn_R_mid_bottom/Be_R_mid_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_outside_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_outside_top/Bn_R_outside_mid
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_outside_top/Bn_R_outside_mid/Bn_R_outside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_outside_top/Bn_R_outside_mid/Bn_R_outside_bottom/Be_R_outside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_chest
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_chest/Pt_help_chest
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_head
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_head/Pt_help_head
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_hips
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_hips/Pt_help_Spine_a
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_L_shl
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_L_shl/pt_help_L_Shl
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_R_shl
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_R_shl/pt_help_R_Shl
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_spine_a
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_spine_a/Pt_help_hips
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_spine_b
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_spine_b/Pt_help_spine_b
+        weight: 1
+      - path: Ctrl_global/Ctrl_L_Leg
+        weight: 1
+      - path: Ctrl_global/Ctrl_L_Leg/Pt_Help_L_leg
+        weight: 1
+      - path: Ctrl_global/Ctrl_L_Leg/Pt_Help_L_leg/IK_Left_leg
+        weight: 1
+      - path: Ctrl_global/Ctrl_R_Leg
+        weight: 1
+      - path: Ctrl_global/Ctrl_R_Leg/Pt_Help_R_leg
+        weight: 1
+      - path: Ctrl_global/Ctrl_R_Leg/Pt_Help_R_leg/Ik_R_leg
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: F_DoubleJump_B
+      takeName: Take 001
+      firstFrame: 40
+      lastFrame: 82
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bn_L_inside_toe_top
+        weight: 1
+      - path: Bn_L_inside_toe_top/Bn_L_inside_toe_Bottom
+        weight: 1
+      - path: Bn_L_inside_toe_top/Bn_L_inside_toe_Bottom/Be_L_inside_toe_Bottom
+        weight: 1
+      - path: Bn_L_outside_toe_top
+        weight: 1
+      - path: Bn_L_outside_toe_top/Bn_L_outside_toe_Bottom
+        weight: 1
+      - path: Bn_L_outside_toe_top/Bn_L_outside_toe_Bottom/Be_L_outside_toe_Bottom
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Ctrl_global
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh/Bn_L_mid_leg
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh/Bn_L_mid_leg/Bn_L_Shin
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh/Bn_L_mid_leg/Bn_L_Shin/Bn_L_Back_toe_top
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh/Bn_L_mid_leg/Bn_L_Shin/Bn_L_Back_toe_top/Bn_L_Back_toe_bottom
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh/Bn_L_mid_leg/Bn_L_Shin/Bn_L_Back_toe_top/Bn_L_Back_toe_bottom/Be_L_Back_toe_bottom
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Back_toe_top
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Back_toe_top/Bn_R_Back_Bottom_top
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Back_toe_top/Bn_R_Back_Bottom_top/Be_R_Back_Bottom_top
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Inside_toe_top
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Inside_toe_top/Bn_R_Inside_toe_bottom
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Inside_toe_top/Bn_R_Inside_toe_bottom/Be_R_Inside_toe_bottom
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_outside_toe_top
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_outside_toe_top/Bn_R_outside_toe_Bottom
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_outside_toe_top/Bn_R_outside_toe_Bottom/Be_R_outside_toe_Bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Hips
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Hips/Bone020
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Be_L_Shoulder
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_inside_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_inside_top/Bn_L_inside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_inside_top/Bn_L_inside_bottom/Be_L_inside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_mid_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_mid_top/Bn_L_mid_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_outside_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_outside_top/Bn_L_outside_mid
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_outside_top/Bn_L_outside_mid/Bn_L_outside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_outside_top/Bn_L_outside_mid/Bn_L_outside_bottom/Be_L_outside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_Neck
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_Neck/Bn_Head
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_Neck/Bn_Head/Be_head_end
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Be_R_Shoulder
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_inside_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_inside_top/Bn_R_inside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_inside_top/Bn_R_inside_bottom/Be_R_inside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_mid_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_mid_top/Bn_R_mid_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_mid_top/Bn_R_mid_bottom/Be_R_mid_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_outside_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_outside_top/Bn_R_outside_mid
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_outside_top/Bn_R_outside_mid/Bn_R_outside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_outside_top/Bn_R_outside_mid/Bn_R_outside_bottom/Be_R_outside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_chest
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_chest/Pt_help_chest
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_head
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_head/Pt_help_head
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_hips
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_hips/Pt_help_Spine_a
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_L_shl
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_L_shl/pt_help_L_Shl
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_R_shl
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_R_shl/pt_help_R_Shl
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_spine_a
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_spine_a/Pt_help_hips
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_spine_b
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_spine_b/Pt_help_spine_b
+        weight: 1
+      - path: Ctrl_global/Ctrl_L_Leg
+        weight: 1
+      - path: Ctrl_global/Ctrl_L_Leg/Pt_Help_L_leg
+        weight: 1
+      - path: Ctrl_global/Ctrl_L_Leg/Pt_Help_L_leg/IK_Left_leg
+        weight: 1
+      - path: Ctrl_global/Ctrl_R_Leg
+        weight: 1
+      - path: Ctrl_global/Ctrl_R_Leg/Pt_Help_R_leg
+        weight: 1
+      - path: Ctrl_global/Ctrl_R_Leg/Pt_Help_R_leg/Ik_R_leg
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: F_Death_B
+      takeName: Take 001
+      firstFrame: 240
+      lastFrame: 281
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bn_L_inside_toe_top
+        weight: 1
+      - path: Bn_L_inside_toe_top/Bn_L_inside_toe_Bottom
+        weight: 1
+      - path: Bn_L_inside_toe_top/Bn_L_inside_toe_Bottom/Be_L_inside_toe_Bottom
+        weight: 1
+      - path: Bn_L_outside_toe_top
+        weight: 1
+      - path: Bn_L_outside_toe_top/Bn_L_outside_toe_Bottom
+        weight: 1
+      - path: Bn_L_outside_toe_top/Bn_L_outside_toe_Bottom/Be_L_outside_toe_Bottom
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Ctrl_global
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh/Bn_L_mid_leg
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh/Bn_L_mid_leg/Bn_L_Shin
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh/Bn_L_mid_leg/Bn_L_Shin/Bn_L_Back_toe_top
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh/Bn_L_mid_leg/Bn_L_Shin/Bn_L_Back_toe_top/Bn_L_Back_toe_bottom
+        weight: 1
+      - path: Ctrl_global/Bn_L_thigh/Bn_L_mid_leg/Bn_L_Shin/Bn_L_Back_toe_top/Bn_L_Back_toe_bottom/Be_L_Back_toe_bottom
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Back_toe_top
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Back_toe_top/Bn_R_Back_Bottom_top
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Back_toe_top/Bn_R_Back_Bottom_top/Be_R_Back_Bottom_top
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Inside_toe_top
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Inside_toe_top/Bn_R_Inside_toe_bottom
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_Inside_toe_top/Bn_R_Inside_toe_bottom/Be_R_Inside_toe_bottom
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_outside_toe_top
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_outside_toe_top/Bn_R_outside_toe_Bottom
+        weight: 1
+      - path: Ctrl_global/Bn_R_thigh/Bn_R_Mid_Leg/Bn_R_Shin/Bn_R_outside_toe_top/Bn_R_outside_toe_Bottom/Be_R_outside_toe_Bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Hips
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Hips/Bone020
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Be_L_Shoulder
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_inside_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_inside_top/Bn_L_inside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_inside_top/Bn_L_inside_bottom/Be_L_inside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_mid_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_mid_top/Bn_L_mid_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_outside_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_outside_top/Bn_L_outside_mid
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_outside_top/Bn_L_outside_mid/Bn_L_outside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_L_Shoulder/Bn_L_upperarm/Bn_L_foream/Bn_L_outside_top/Bn_L_outside_mid/Bn_L_outside_bottom/Be_L_outside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_Neck
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_Neck/Bn_Head
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_Neck/Bn_Head/Be_head_end
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Be_R_Shoulder
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_inside_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_inside_top/Bn_R_inside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_inside_top/Bn_R_inside_bottom/Be_R_inside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_mid_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_mid_top/Bn_R_mid_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_mid_top/Bn_R_mid_bottom/Be_R_mid_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_outside_top
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_outside_top/Bn_R_outside_mid
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_outside_top/Bn_R_outside_mid/Bn_R_outside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Be_root/Bn_Spine/Bn_Chest/Bn_R_Shoulder/Bn_R_Upperarm/Bn_R_forearm/Bn_R_outside_top/Bn_R_outside_mid/Bn_R_outside_bottom/Be_R_outside_bottom
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_chest
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_chest/Pt_help_chest
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_head
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_head/Pt_help_head
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_hips
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_hips/Pt_help_Spine_a
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_L_shl
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_L_shl/pt_help_L_Shl
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_R_shl
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_R_shl/pt_help_R_Shl
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_spine_a
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_spine_a/Pt_help_hips
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_spine_b
+        weight: 1
+      - path: Ctrl_global/Ctrl_Cog/Ctrl_spine_b/Pt_help_spine_b
+        weight: 1
+      - path: Ctrl_global/Ctrl_L_Leg
+        weight: 1
+      - path: Ctrl_global/Ctrl_L_Leg/Pt_Help_L_leg
+        weight: 1
+      - path: Ctrl_global/Ctrl_L_Leg/Pt_Help_L_leg/IK_Left_leg
+        weight: 1
+      - path: Ctrl_global/Ctrl_R_Leg
+        weight: 1
+      - path: Ctrl_global/Ctrl_R_Leg/Pt_Help_R_leg
+        weight: 1
+      - path: Ctrl_global/Ctrl_R_Leg/Pt_Help_R_leg/Ik_R_leg
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
