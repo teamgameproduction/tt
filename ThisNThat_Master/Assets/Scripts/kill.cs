@@ -6,6 +6,9 @@ public class kill : MonoBehaviour {
 	public CS_BluePickup bluePickup;
 	public CS_Controller controller;
 	public GameObject TriggeringPlayer;
+	public Animator animatorR;
+	public Animator animatorB;
+
 
 	[HideInInspector]	public GameObject 	gmcharacterBlue;
 	[HideInInspector]	public GameObject 	gmcharacterRed;
@@ -17,6 +20,9 @@ public class kill : MonoBehaviour {
 		controller = GameObject.Find ("CharacterController").GetComponent< CS_Controller>();
 		gmcharacterBlue = GameObject.Find ("characterBlue");
 		gmcharacterRed = GameObject.Find ("characterRed");
+
+		animatorR = GameObject.Find ("Master_AnimationFile_002").GetComponent <Animator> ();
+		animatorB = GameObject.Find ("blue_animationTest_3").GetComponent <Animator> ();
 	}
 	
 	// Update is called once per frame
@@ -31,13 +37,12 @@ public class kill : MonoBehaviour {
 		//	return;
 	//	}
 		if (other.gameObject.tag == "Player") {
-
 			TriggeringPlayer = other.gameObject;
-			
 			if(bluePickup.PickedUp == true){
 				//checkPointCTRL.StopCoroutine("DieBlue");
 				checkPointCTRL.StartCoroutine("DieBlue");
 				controller.Speed = 0;
+				animatorB.SetBool ("Death", true);
 			}
 			
 			else if(TriggeringPlayer == gmcharacterRed){
@@ -46,6 +51,7 @@ public class kill : MonoBehaviour {
 				//checkPointCTRL.StopCoroutine("DieRed");
 				checkPointCTRL.StartCoroutine("DieRed");
 				controller.Speed = 0;
+				animatorR.SetBool ("Death", true);
 				
 			}
 			
@@ -54,6 +60,8 @@ public class kill : MonoBehaviour {
 				//checkPointCTRL.StopCoroutine("DieBlue");
 				checkPointCTRL.StartCoroutine("DieBlue");
 				controller.Speed = 0;
+				animatorB.SetBool ("Death", false);
+				animatorR.SetBool ("Death", false);
 			}
 
 

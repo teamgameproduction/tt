@@ -21,7 +21,6 @@ public class CS_Checkpoint : MonoBehaviour {
 		gmcharacterBlue = GameObject.Find ("characterBlue");
 		gmcharacterRed = GameObject.Find ("characterRed");
 		CheckPointAnim = gameObject.GetComponent <Animator> ();
-
 	}
 	
 	// Update is called once per frame
