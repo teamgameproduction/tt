@@ -68,7 +68,7 @@ public class CS_BluePickup : MonoBehaviour //This script allows Blue to pick up 
 			PickedUpObject.rigidbody.isKinematic = true;
 			controller.BlueFlapForce = BlueCarryingFlapSpeed;
 			PickedUpObject.collider.enabled = false;
-			BlueBoxColl.size = new Vector3(1,4,1);
+			BlueBoxColl.size = new Vector3(1,5,1);
 			BlueBoxColl.center = new Vector3(0.0f,-1.5f,0.0f);
 			controller.Speed = controller.TogetherSpeed;
 		}
@@ -82,7 +82,7 @@ public class CS_BluePickup : MonoBehaviour //This script allows Blue to pick up 
 			PickedUpObject.rigidbody.isKinematic = true;
 			controller.BlueFlapForce = BlueCarryingFlapSpeed;
 			PickedUpObject.collider.enabled = false;
-			BlueBoxColl.size = new Vector3(1,4,1);
+			BlueBoxColl.size = new Vector3(1,5,1);
 			BlueBoxColl.center = new Vector3(0.0f,-1.5f,0.0f);
 			controller.Speed = controller.TogetherSpeed;
 				}

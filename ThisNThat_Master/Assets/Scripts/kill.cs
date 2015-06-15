@@ -21,8 +21,8 @@ public class kill : MonoBehaviour {
 		gmcharacterBlue = GameObject.Find ("characterBlue");
 		gmcharacterRed = GameObject.Find ("characterRed");
 
-		animatorR = GameObject.Find ("Master_AnimationFile_002").GetComponent <Animator> ();
-		animatorB = GameObject.Find ("blue_animationTest_3").GetComponent <Animator> ();
+		animatorR = GameObject.Find ("Red_Animation_All_Final").GetComponent <Animator> ();
+		animatorB = GameObject.Find ("Blue_animationTest_wk10").GetComponent <Animator> ();
 	}
 	
 	// Update is called once per frame
@@ -43,6 +43,16 @@ public class kill : MonoBehaviour {
 				checkPointCTRL.StartCoroutine("DieBlue");
 				controller.Speed = 0;
 				animatorB.SetBool ("Death", true);
+				animatorR.SetBool ("Death", true);
+			}
+			else if(TriggeringPlayer == gmcharacterBlue){
+				
+				//checkPointCTRL.DieRed();
+				//checkPointCTRL.StopCoroutine("DieRed");
+				checkPointCTRL.StartCoroutine("DieRed");
+				controller.Speed = 0;
+				animatorB.SetBool ("Death", true);
+				
 			}
 			
 			else if(TriggeringPlayer == gmcharacterRed){

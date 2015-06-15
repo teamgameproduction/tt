@@ -21,7 +21,9 @@ public class CS_BlueAnimCTRL : MonoBehaviour {
 		if (controller.IsCharacterRed == 2 && bluePickup.PickedUp == false) {
 						if (Input.GetKey ("d") && flapReset.Grounded == true || Input.GetKey ("a") && flapReset.Grounded == true) {
 								animator.SetBool ("Running", true);
-						} else if (Input.GetKey ("d") && Input.GetKeyDown ("space") || Input.GetKey ("a") && Input.GetKeyDown ("space")) {
+								animatorR.SetBool ("Running", false);
+
+			} else if (Input.GetKey ("d") && Input.GetKeyDown ("space") || Input.GetKey ("a") && Input.GetKeyDown ("space")) {
 								animator.SetBool ("Jump", true);
 						} else {
 								animator.SetBool ("Running", false);
@@ -37,7 +39,6 @@ public class CS_BlueAnimCTRL : MonoBehaviour {
 		if (controller.IsCharacterRed == 2 && bluePickup.PickedUp == true) {
 			if(flapReset.Grounded == false){
 				animatorR.SetBool ("Running", false);
-
 			}
 			if (Input.GetKeyUp ("space") || Input.GetKeyDown ("space")) {
 				animator.SetBool ("Jump", true);

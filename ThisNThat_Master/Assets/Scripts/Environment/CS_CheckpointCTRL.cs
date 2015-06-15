@@ -25,9 +25,9 @@ public class CS_CheckpointCTRL : MonoBehaviour {
 		bluePickup = GameObject.Find ("characterBlue").GetComponent< CS_BluePickup>();
 
 		CurrentCheckpointRed = StartingPosition;
-		CurrentCheckpointBlue = StartingPosition - new Vector3(2,0,0);
-		animatorR = GameObject.Find ("Master_AnimationFile_002").GetComponent <Animator> ();
-		animatorB = GameObject.Find ("blue_animationTest_3").GetComponent <Animator> ();
+		CurrentCheckpointBlue = StartingPosition - new Vector3(2.5f,0,0);
+		animatorR = GameObject.Find ("Red_Animation_All_Final").GetComponent <Animator> ();
+		animatorB = GameObject.Find ("Blue_animationTest_wk10").GetComponent <Animator> ();
 	}
 	
 	// Update is called once per frame
@@ -47,6 +47,7 @@ public class CS_CheckpointCTRL : MonoBehaviour {
 		yield return new WaitForSeconds (1);
 		gmcharacterBlue.transform.position = CurrentCheckpointBlue;
 		animatorB.SetBool ("Death", false);
+		animatorR.SetBool ("Death", false);
 		if (bluePickup.PickedUp == false) {
 						controller.Speed = controller.ResetSpeed;
 				} else {

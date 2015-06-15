@@ -1,8 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../Time_Banana/TimeBannana/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/RigidbodyFirstPersonController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/kill.cs">
     <Files>
-      <File FileName="../../Time_Banana/TimeBannana/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/RigidbodyFirstPersonController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Character/CS_RedAnimCTRL.cs" Line="13" Column="39" />
+      <File FileName="Assets/Scripts/Character/CS_Controller.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Environment/CS_Digable.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Character/CS_FlapReset.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Character/CS_BlueAnimCTRL.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Character/CS_BluePickup.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Environment/CS_CheckpointCTRL.cs" Line="29" Column="56" />
+      <File FileName="Assets/Scripts/kill.cs" Line="54" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

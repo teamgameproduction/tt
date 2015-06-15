@@ -11,6 +11,8 @@ public class CS_RedAnimCTRL : MonoBehaviour {
 	void Start () {
 	
 		animator = GetComponent<Animator>();
+		flapReset = GameObject.Find ("characterBlue").GetComponent<CS_FlapReset>();
+		bluePickup = GameObject.Find ("characterBlue").GetComponent<CS_BluePickup>();
 		controller = GameObject.Find ("CharacterController").GetComponent< CS_Controller>();
 	}
 	
@@ -39,7 +41,7 @@ public class CS_RedAnimCTRL : MonoBehaviour {
 			animator.SetBool ("Jump", false);
 		}		}
 		else if (controller.IsCharacterRed == 2 && bluePickup.PickedUp == true){
-			if (Input.GetKey ("d") || Input.GetKey ("a")){
+			if (Input.GetKey ("d") && flapReset.Grounded == true|| Input.GetKey ("a") && flapReset.Grounded == true){
 				animator.SetBool ("Running", true);
 			}
 			else{
