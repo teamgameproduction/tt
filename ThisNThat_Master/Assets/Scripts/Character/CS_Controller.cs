@@ -17,8 +17,7 @@ public class CS_Controller : MonoBehaviour
 	private bool hasMoved = false;
 	private bool switchingToblue = false;
 	private bool switchingToRed = false;
-
-
+	
 	private float maxZposition = -10F;
 	private float minZposition = -8F;
 
@@ -206,23 +205,39 @@ public class CS_Controller : MonoBehaviour
 //-------------------------------------------------------------------------------------------------------
 
 		//Turn the character
-		if (IsCharacterRed == 1){
-			if (Input.GetAxis ("Horizontal") >0 && RedIsFacingRight == false){
-				gmcharacterRed.transform.rotation = Quaternion.AngleAxis(0, Vector3.up);
-				RedIsFacingRight = true;
-			}
-			if (Input.GetAxis ("Horizontal")<0 && RedIsFacingRight == true){
-				gmcharacterRed.transform.rotation = Quaternion.AngleAxis(180, Vector3.up);
-				RedIsFacingRight = false;
-			}
-		}
-		else if (IsCharacterRed == 2){
-			if (Input.GetAxis ("Horizontal") >0 && BlueIsFacingRight == false){
-				gmcharacterBlue.transform.rotation = Quaternion.AngleAxis(0, Vector3.up);
+		if (IsCharacterRed == 1 && bluePickup.PickedUp == false) {
+						if (Input.GetAxis ("Horizontal") > 0 && RedIsFacingRight == false) {
+								gmcharacterRed.transform.rotation = Quaternion.AngleAxis (0, Vector3.up);
+								RedIsFacingRight = true;
+						}
+						if (Input.GetAxis ("Horizontal") < 0 && RedIsFacingRight == true) {
+								gmcharacterRed.transform.rotation = Quaternion.AngleAxis (180, Vector3.up);
+								RedIsFacingRight = false;
+						}
+		} else if (IsCharacterRed == 2 && bluePickup.PickedUp == false) {
+						if (Input.GetAxis ("Horizontal") > 0 && BlueIsFacingRight == false) {
+								gmcharacterBlue.transform.rotation = Quaternion.AngleAxis (0, Vector3.up);
+								BlueIsFacingRight = true;
+						}
+						if (Input.GetAxis ("Horizontal") < 0 && BlueIsFacingRight == true) {
+								gmcharacterBlue.transform.rotation = Quaternion.AngleAxis (180, Vector3.up);
+								BlueIsFacingRight = false;
+						}
+		} else if (bluePickup.PickedUp == true) {
+					if (Input.GetAxis ("Horizontal") > 0 && RedIsFacingRight == false) {
+						gmcharacterRed.transform.rotation = Quaternion.AngleAxis (0, Vector3.up);
+						RedIsFacingRight = true;
+					}
+					if (Input.GetAxis ("Horizontal") < 0 && RedIsFacingRight == true) {
+						gmcharacterRed.transform.rotation = Quaternion.AngleAxis (180, Vector3.up);
+						RedIsFacingRight = false;
+					}
+			if (Input.GetAxis ("Horizontal") > 0 && BlueIsFacingRight == false) {
+				gmcharacterBlue.transform.rotation = Quaternion.AngleAxis (0, Vector3.up);
 				BlueIsFacingRight = true;
 			}
-			if (Input.GetAxis ("Horizontal") <0 && BlueIsFacingRight == true){
-				gmcharacterBlue.transform.rotation = Quaternion.AngleAxis(180, Vector3.up);
+			if (Input.GetAxis ("Horizontal") < 0 && BlueIsFacingRight == true) {
+				gmcharacterBlue.transform.rotation = Quaternion.AngleAxis (180, Vector3.up);
 				BlueIsFacingRight = false;
 			}
 		}

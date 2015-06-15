@@ -4,37 +4,47 @@ using System.Collections;
 public class CS_BlueAnimCTRL : MonoBehaviour {
 	
 	public Animator animator;
+	public Animator animatorR;
 	public CS_FlapReset flapReset;
 	public  CS_Controller 	controller;
-	[HideInInspector]	public  CS_BluePickup bluePickup;
+    public  CS_BluePickup bluePickup;
 	// Use this for initialization
 	void Start () {
 		
 		animator = GetComponent<Animator>();
-		flapReset = GameObject.Find ("characterBlue").GetComponent< CS_FlapReset>();
+		animatorR = GameObject.Find ("Red_Animation_All_Final").GetComponent<Animator>();
 		controller = GameObject.Find ("CharacterController").GetComponent< CS_Controller>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (controller.IsCharacterRed == 2){
-		if (Input.GetKey ("d") && flapReset.Grounded == true || Input.GetKey ("a") && flapReset.Grounded == true){
-			animator.SetBool ("Running", true);
-		}
+		if (controller.IsCharacterRed == 2 && bluePickup.PickedUp == false) {
+						if (Input.GetKey ("d") && flapReset.Grounded == true || Input.GetKey ("a") && flapReset.Grounded == true) {
+								animator.SetBool ("Running", true);
+						} else if (Input.GetKey ("d") && Input.GetKeyDown ("space") || Input.GetKey ("a") && Input.GetKeyDown ("space")) {
+								animator.SetBool ("Jump", true);
+						} else {
+								animator.SetBool ("Running", false);
+
+						}
 		
-		else {
-			animator.SetBool ("Running", false);
-		}
-		
-		if ((Input.GetKeyDown ("space")) || flapReset.Grounded == false) {
-			animator.SetBool ("Running", false);
-			animator.SetBool ("Jump", true);
-		}
-		
-		else if (flapReset.Grounded == true){
-		animator.SetBool ("Jump", false);
-			animator.SetBool ("Falling", false);
-		}	
-		}
+						if (Input.GetKeyUp ("space") || Input.GetKeyDown ("space")) {
+								animator.SetBool ("Jump", true);
+						} else {
+								animator.SetBool ("Jump", false);
+						}	
+				}
+		if (controller.IsCharacterRed == 2 && bluePickup.PickedUp == true) {
+			if(flapReset.Grounded == false){
+				animatorR.SetBool ("Running", false);
+
+			}
+			if (Input.GetKeyUp ("space") || Input.GetKeyDown ("space")) {
+				animator.SetBool ("Jump", true);
+
+			} else {
+				animator.SetBool ("Jump", false);
+			}	
+			}
 	}
 }

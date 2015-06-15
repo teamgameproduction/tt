@@ -20,6 +20,9 @@ public class CS_FlapReset : MonoBehaviour
 	{
 	
 	}
+	void OnCollisionStay(Collision other){
+		Grounded = true;
+		}
 
 	void OnCollisionEnter(Collision other)
 	{
